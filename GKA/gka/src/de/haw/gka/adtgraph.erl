@@ -26,16 +26,19 @@ addVertex(G, V) ->
     false -> G
   end.
 
-% TODO
+% TODO: directed
 deleteVertex([], _) -> [];
-deleteVertex([V,X|_], V) -> case X == nil of
-                              % Vertex is not connected
-                              true -> T;
-                              % Vertex is connected
-                              false -> nil
-                            end;
-deleteVertex([X,V|_], V) ->
-deleteVertex([_,X|T], V) -> deleteVertex([X|T], V).
+% Vertex is first head and not connected
+deleteVertex([V, nil|T], V) -> deleteVertex(T, V);
+% Vertex is second head and not connected
+deleteVertex([nil, V|T], V) -> deleteVertex(T, V);
+% Vertex is first head and not connected
+deleteVertex([V, W|T], V) -> [nil, W|deleteVertex(T, V)];
+% Vertex is second head and not connected
+deleteVertex([W, V|T], V) -> [W, nil|T];
+% Vertex is neither first, nor second head
+deleteVertex([H|T], V) -> [H|deleteVertex(T, V)].
+
 
 % --- Helper
 hasVertex([], _) -> false;
@@ -50,10 +53,9 @@ findVertex([], _, _) -> nil;
 findVertex([V|_], V, C) -> C;
 findVertex([_|T], V, C) -> findVertex(T, V, C+1).
 
-% TODO
-deleteVertexP(G, L, V) -> case findVertex(G, V, 0) rem 2 == 0 of
-                            % Index of vertex is even
-                            true -> nil;
-                            % Index of vertex is odd
-                            false -> nil
-                          end.
+print(G) ->
+  {ok, S} = file:open("graph.dot", [write]),
+  io:format(S, "~s~n", [io:format("graph {\n~s\n}", [toString(G)])]),
+  os:cmd("dot -Tpng graph.dot -o graph.png").
+
+toString([H1, H2|T]) -> io:format("~b--~b", [H1, H2]).

@@ -1,0 +1,17 @@
+plugins {
+    id 'java'
+}
+
+group 'de.haw.isp'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    // Jama
+    compile group: 'gov.nist.math', name: 'jama', version: '1.0.3'
+}

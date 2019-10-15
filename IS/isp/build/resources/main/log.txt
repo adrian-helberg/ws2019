@@ -1,0 +1,11 @@
+--------------------------------------------------
+Intelligente Systeme Praktikum
+Aufgabe 2 - Lernen
+Handschrifterkennung mittels neuronalem Netzwerk
+--------------------------------------------------
+[NeuralNetwork] Initialisiere 'Netz#1'
+0 'Input Layer' Knoten
+0 'Hidden Layer' Knoten
+0 'Output Layer' Knoten
+0.0 Lern Rate
+[Training] Trainiere neuronales Netz 'Netz#1'

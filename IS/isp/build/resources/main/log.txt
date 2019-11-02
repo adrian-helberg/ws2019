@@ -1,11 +1,12 @@
---------------------------------------------------
-Intelligente Systeme Praktikum
-Aufgabe 2 - Lernen
-Handschrifterkennung mittels neuronalem Netzwerk
---------------------------------------------------
-[NeuralNetwork] Initialisiere 'Netz#1'
-0 'Input Layer' Knoten
-0 'Hidden Layer' Knoten
-0 'Output Layer' Knoten
-0.0 Lern Rate
-[Training] Trainiere neuronales Netz 'Netz#1'
+[App] ------------------------------------------------
+[App] Intelligente Systeme Praktikum
+[App] Aufgabe 2 - Lernen
+[App] Handschrifterkennung mittels neuronalem Netzwerk
+[App] ------------------------------------------------
+[App] Erstelle Trainings- und Testumgebung
+[MNISTData] Lese Daten ein (./mnist_train.csv.csv)
+[MNISTData] Lese Daten ein (./mnist_test.csv.csv)
+[Environment] Starte Training des neuronalen Netzes
+[Environment] Teste neuronales Netz
+[Environment] Training und Testing abgeschlossen
+[Environment] Genauigkeit des neuronalen Netzes: 95.53%

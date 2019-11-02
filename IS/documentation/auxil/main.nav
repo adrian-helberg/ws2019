@@ -29,7 +29,7 @@
 \headcommand {\beamer@framepages {10}{10}}
 \headcommand {\beamer@sectionpages {10}{10}}
 \headcommand {\beamer@subsectionpages {10}{10}}
-\headcommand {\sectionentry {4}{Aktivierungsfunktion - \"Uberlegung}{11}{Aktivierungsfunktion - \"Uberlegung}{0}}
+\headcommand {\sectionentry {4}{Aktivierungsfunktion}{11}{Aktivierungsfunktion}{0}}
 \headcommand {\slideentry {4}{0}{1}{11/11}{}{0}}
 \headcommand {\beamer@framepages {11}{11}}
 \headcommand {\slideentry {4}{0}{2}{12/12}{}{0}}
@@ -45,8 +45,24 @@
 \headcommand {\beamer@framepages {15}{15}}
 \headcommand {\slideentry {5}{0}{4}{16/16}{}{0}}
 \headcommand {\beamer@framepages {16}{16}}
-\headcommand {\beamer@partpages {1}{16}}
-\headcommand {\beamer@subsectionpages {13}{16}}
 \headcommand {\beamer@sectionpages {13}{16}}
-\headcommand {\beamer@documentpages {16}}
-\headcommand {\gdef \inserttotalframenumber {16}}
+\headcommand {\beamer@subsectionpages {13}{16}}
+\headcommand {\sectionentry {6}{Qualit\"at}{17}{Qualit\"at}{0}}
+\headcommand {\slideentry {6}{0}{1}{17/17}{}{0}}
+\headcommand {\beamer@framepages {17}{17}}
+\headcommand {\slideentry {6}{0}{2}{18/18}{}{0}}
+\headcommand {\beamer@framepages {18}{18}}
+\headcommand {\slideentry {6}{0}{3}{19/19}{}{0}}
+\headcommand {\beamer@framepages {19}{19}}
+\headcommand {\slideentry {6}{0}{4}{20/20}{}{0}}
+\headcommand {\beamer@framepages {20}{20}}
+\headcommand {\beamer@sectionpages {17}{20}}
+\headcommand {\beamer@subsectionpages {17}{20}}
+\headcommand {\sectionentry {7}{Fazit}{21}{Fazit}{0}}
+\headcommand {\slideentry {7}{0}{1}{21/21}{}{0}}
+\headcommand {\beamer@framepages {21}{21}}
+\headcommand {\beamer@partpages {1}{21}}
+\headcommand {\beamer@subsectionpages {21}{21}}
+\headcommand {\beamer@sectionpages {21}{21}}
+\headcommand {\beamer@documentpages {21}}
+\headcommand {\gdef \inserttotalframenumber {21}}

@@ -100,13 +100,13 @@ Da sich das Erkennen von handschriftlichen Zeichen nicht direkt in einem Flussdi
 
 \begin{frame}{Neuronale Netze - Neuron}
 \begin{center}
-\includegraphics[height=7cm]{../Neuronenmodell.png}
+\includegraphics[height=6cm]{../Neuronenmodell.png}
 \end{center}
 \end{frame}
 
 \begin{frame}{Neuronale Netze - Formales Neuron}
 \begin{center}
-\includegraphics[height=3.2cm]{../Softwarebaustein_Neuron.png}
+\includegraphics[height=2.8cm]{../Softwarebaustein_Neuron.png}
 \begin{blue}{Beschreibung}
 \begin{itemize}
 \item Netzeingabe: Propagieren aller Eingabeinformationen mit den Gewichten der Verbindungen zu einer einzigen Netzeingabe
@@ -141,7 +141,7 @@ It is a good database for people who want to try learning techniques and pattern
 \end{definition}
 \end{frame}
 
-\section{Aktivierungsfunktion - \"Uberlegung}
+\section{Aktivierungsfunktion}
 \begin{frame}{Aktivierungsfunktion}
 \begin{blue}{Biologisches Vorbild}
 \begin{itemize}
@@ -156,7 +156,7 @@ It is a good database for people who want to try learning techniques and pattern
 \begin{definition}{Sigmoidfunktionen}
 \begin{center}
 Schwellwertfunktion / logistische Funktion \includegraphics[height=1cm]{../Sigmoidfunktion.png}
-\includegraphics[height=4.5cm]{../Sigmoidfunktion_koordinatensystem.png}
+\includegraphics[height=4.2cm]{../Sigmoidfunktion_koordinatensystem.png}
 \end{center}
 \end{definition}
 \end{frame}
@@ -203,6 +203,51 @@ $\rightarrow$
 \end{center}
 Mit \textit{E} als m\"ogliche Fehlerkurve \textit{E(w\textsubscript{1}, w\textsubscript{2}) }f\"ur zwei Gewichte; Lernrate $\gamma$, als Grad der \"Anderung und Momentum $\alpha$
 \end{definition}
+\end{frame}
+
+\section{Qualit\"at}
+\begin{frame}{Qualit\"at}
+\begin{blue}{Einfluss auf die Qualit\"at des Backpropagation-Lernverfahrens}
+\begin{itemize}
+\item Festlegung des Lernparameters $\gamma$
+\item Wahl und Symmetrie der Initialisierungsgewichte
+\item Anzahl der Neuronen
+\end{itemize}
+\end{blue}
+\end{frame}
+
+\begin{frame}{Qualit\"at - Belegungen I}
+\begin{blue}{Lernparameter $\gamma$}
+\begin{itemize}
+\item Wird meist zwischen 0 und 1 festgelegt (in Ausnahmef\"allen kann dieser Wert aber auch h\"oher sein)
+\item Es existieren keine Regeln, da der Parameter in Abh\"angigkeit von der Problemstellung und den Trainingsdaten gew\"ahlt wird
+\end{itemize}
+\end{blue}
+\begin{lightblue}{Belegungen}
+Durch ''Herumprobieren'' sollen passende Belegungen f\"ur $\gamma$ und die pseudo-zuf\"alligen Gewichte gefunden werden. Die Qualit\"at des Ergebnisses machen wir and der ''Genauigkeit'' (Accuracy) des neuronalen Netzes aus
+\end{lightblue}
+\end{frame}
+
+\begin{frame}{Qualit\"at - Belegungen II}
+\begin{blue}{Anzahl Neuronen}
+Die Anzahl der Neuronen im Hidden-Layer sollte...
+\begin{itemize}
+\item zwischen der Anzahl an Input-Layer-Neuronen und der Anzahl an Output-Layer-Neuronen sein
+\item 2/3 der Anzahl der Input-Layer-Neuronen + die Anzahl an Output-Layer-Neuronen sein
+\item weniger als die doppelte Anzahl an Input-Layer-Neuronen sein
+\end{itemize}
+\end{blue}
+\end{frame}
+
+\begin{frame}{Tests - $\gamma$}
+\includegraphics[height=5.5cm]{../Belegungen.png}
+\end{frame}
+
+\section{Fazit}
+\begin{frame}{Fazit}
+\begin{lightblue}{Fazit}
+Wir haben nun alles, um eine Handschrifterkennung mittels neuronalem Netz in einer Programmiersprache (Java) umzusetzen
+\end{lightblue}
 \end{frame}
 
 \end{document}

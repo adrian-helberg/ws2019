@@ -9,4 +9,4 @@
 [Environment] Starte Training des neuronalen Netzes
 [Environment] Teste neuronales Netz
 [Environment] Training und Testing abgeschlossen
-[Environment] Genauigkeit des neuronalen Netzes: 95.53%
+[Environment] Genauigkeit des neuronalen Netzes: 95.14%

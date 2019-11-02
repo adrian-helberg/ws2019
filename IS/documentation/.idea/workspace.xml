@@ -2,93 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c36356b8-843e-4efd-8308-f04d07014bfc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../GKA/gka/test/test.beam" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../GKA/gka/test/test.erl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/$PRODUCT_WORKSPACE_FILE$" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/rebar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Backpropagation.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Erste_ableitung_fehlerfunktion.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Korrektur_gewicht.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Lernprozess.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Neuronenmodell.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sigmoidfunktion.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sigmoidfunktion_koordinatensystem.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Softwarebaustein_Neuron.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auxil/main.nav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auxil/main.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auxil/main.snm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/documentation.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/haw_logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/neuralnetworks.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/main.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/main.synctex.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../isp/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../isp/src/main/java/de/haw/isp/Environment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../isp/src/main/java/de/haw/isp/MnistData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../isp/src/main/java/de/haw/isp/NumberDraw.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../isp/src/main/java/de/haw/isp/UserDraw.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../isp/src/main/resources/mnist_0-9.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../isp/src/main/resources/mnist_100.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../isp/src/main/resources/mnist_test.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../isp/src/main/resources/mnist_train.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../GKA/Quellen/parallel_graph_representation.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/../../GKA/Quellen/parallel_graph_representation.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../GKA/gka/.idea/$PRODUCT_WORKSPACE_FILE$" beforeDir="false" afterPath="$PROJECT_DIR$/../../GKA/gka/.idea/$PRODUCT_WORKSPACE_FILE$" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../GKA/gka/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../../GKA/gka/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../GKA/gka/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../GKA/gka/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../GKA/gka/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../GKA/gka/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../GKA/gka/gka.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../../GKA/gka/gka.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../GKA/gka/out/production/gka/util.beam" beforeDir="false" afterPath="$PROJECT_DIR$/../../GKA/gka/out/production/gka/util.beam" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../GKA/gka/out/test/gka/util.beam" beforeDir="false" afterPath="$PROJECT_DIR$/../../GKA/gka/out/test/gka/util.beam" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../GKA/gka/resources/graph_01.graph" beforeDir="false" afterPath="$PROJECT_DIR$/../../GKA/gka/resources/graph_01.graph" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../GKA/gka/resources/graph_02.graph" beforeDir="false" afterPath="$PROJECT_DIR$/../../GKA/gka/resources/graph_02.graph" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../GKA/gka/resources/graph_03.graph" beforeDir="false" afterPath="$PROJECT_DIR$/../../GKA/gka/resources/graph_03.graph" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../GKA/gka/resources/graph_04.graph" beforeDir="false" afterPath="$PROJECT_DIR$/../../GKA/gka/resources/graph_04.graph" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../GKA/gka/resources/graph_05.graph" beforeDir="false" afterPath="$PROJECT_DIR$/../../GKA/gka/resources/graph_05.graph" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../GKA/gka/resources/graph_06.graph" beforeDir="false" afterPath="$PROJECT_DIR$/../../GKA/gka/resources/graph_06.graph" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../GKA/gka/resources/graph_07.graph" beforeDir="false" afterPath="$PROJECT_DIR$/../../GKA/gka/resources/graph_07.graph" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../GKA/gka/resources/graph_08.graph" beforeDir="false" afterPath="$PROJECT_DIR$/../../GKA/gka/resources/graph_08.graph" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../GKA/gka/resources/graph_09.graph" beforeDir="false" afterPath="$PROJECT_DIR$/../../GKA/gka/resources/graph_09.graph" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../GKA/gka/resources/graph_10.graph" beforeDir="false" afterPath="$PROJECT_DIR$/../../GKA/gka/resources/graph_10.graph" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../GKA/gka/resources/graph_11.graph" beforeDir="false" afterPath="$PROJECT_DIR$/../../GKA/gka/resources/graph_11.graph" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../GKA/gka/resources/graph_12.graph" beforeDir="false" afterPath="$PROJECT_DIR$/../../GKA/gka/resources/graph_12.graph" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../GKA/gka/resources/graph_13.graph" beforeDir="false" afterPath="$PROJECT_DIR$/../../GKA/gka/resources/graph_13.graph" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../GKA/gka/resources/testaufg1.graph" beforeDir="false" afterPath="$PROJECT_DIR$/../../GKA/gka/resources/testaufg1.graph" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../GKA/gka/src/de/haw/gka/aufg1zeit.beam" beforeDir="false" afterPath="$PROJECT_DIR$/../../GKA/gka/src/de/haw/gka/aufg1zeit.beam" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../GKA/gka/src/de/haw/gka/graph.dot" beforeDir="false" afterPath="$PROJECT_DIR$/../../GKA/gka/src/de/haw/gka/graph.dot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../GKA/gka/src/de/haw/gka/graph.png" beforeDir="false" afterPath="$PROJECT_DIR$/../../GKA/gka/src/de/haw/gka/graph.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../GKA/gka/src/de/haw/gka/util.beam" beforeDir="false" afterPath="$PROJECT_DIR$/../../GKA/gka/src/de/haw/gka/util.beam" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../GKA/gka/src/de/haw/gka/util.erl" beforeDir="false" afterPath="$PROJECT_DIR$/../../GKA/gka/src/de/haw/gka/util.erl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Belegungen.PNG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Belegungen.xlsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/~$Belegungen.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auxil/main.aux" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/main.aux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auxil/main.log" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/main.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auxil/main.nav" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/main.nav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auxil/main.out" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/main.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auxil/main.toc" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/main.toc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/main.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/out/main.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/main.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/out/main.synctex.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.tex" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../isp/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../isp/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../isp/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../isp/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../isp/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../isp/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../isp/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../isp/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../isp/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../isp/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../isp/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../isp/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../isp/.gradle/5.2.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../isp/.gradle/5.2.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../isp/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../isp/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../isp/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../isp/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../isp/build/classes/java/main/de/haw/isp/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/../isp/build/classes/java/main/de/haw/isp/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../isp/build/classes/java/main/de/haw/isp/NeuralNetwork.class" beforeDir="false" afterPath="$PROJECT_DIR$/../isp/build/classes/java/main/de/haw/isp/NeuralNetwork.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../isp/build/classes/java/main/de/haw/isp/Training.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../isp/build/classes/java/main/de/haw/isp/Environment.class" beforeDir="false" afterPath="$PROJECT_DIR$/../isp/build/classes/java/main/de/haw/isp/Environment.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../isp/build/resources/main/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../isp/build/resources/main/log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../isp/build/resources/main/t10k-images.idx3-ubyte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../isp/build/resources/main/t10k-labels.idx1-ubyte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../isp/build/resources/main/train-images.idx3-ubyte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../isp/build/resources/main/train-labels.idx1-ubyte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../isp/src/main/java/de/haw/isp/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../isp/src/main/java/de/haw/isp/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../isp/src/main/java/de/haw/isp/NeuralNetwork.java" beforeDir="false" afterPath="$PROJECT_DIR$/../isp/src/main/java/de/haw/isp/NeuralNetwork.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../isp/src/main/java/de/haw/isp/Training.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../isp/src/main/resources/log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../isp/src/main/resources/log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../isp/src/main/resources/t10k-images.idx3-ubyte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../isp/src/main/resources/t10k-labels.idx1-ubyte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../isp/src/main/resources/train-images.idx3-ubyte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../isp/src/main/resources/train-labels.idx1-ubyte" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../neuralnetworks.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../isp/src/main/java/de/haw/isp/Environment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../isp/src/main/java/de/haw/isp/Environment.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -112,7 +47,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../isp" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -214,6 +149,7 @@
       <workItem from="1572520761687" duration="6227000" />
       <workItem from="1572621267597" duration="6108000" />
       <workItem from="1572635781896" duration="2066000" />
+      <workItem from="1572724547144" duration="5348000" />
     </task>
     <servers />
   </component>

@@ -16,8 +16,8 @@ import Jama.Matrix;
  */
 class Environment {
     // Number of input, hidden and output nodes.
-    private int inputNodes = 784;
-    private int hiddenNodes = 150;
+    private int inputNodes = 784; // 28 * 28 Pixel
+    private int hiddenNodes = 150; // 520
     private int outputNodes = 10;
     // Degree of change while correcting weights
     private double learningRate = 0.2;
@@ -52,6 +52,7 @@ class Environment {
             Matrix inputs = new Matrix(Arrays.copyOfRange(doubleInputs, 1, doubleInputs.length), doubleInputs.length - 1);
             // Train the actual neural network
             neuralNetwork.train(inputs, createTargetMatrix(doubleInputs[0]));
+            System.out.println("Train data " + i + 1 + "/" + mnistTrainingData.getSize());
         }
     }
 

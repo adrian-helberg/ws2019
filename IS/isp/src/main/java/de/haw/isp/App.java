@@ -2,10 +2,6 @@ package de.haw.isp;
 
 import javax.swing.*;
 import java.awt.*;
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.util.Objects;
 
 /**
  * Intelligente Systeme Praktikum, Aufgabe 2
@@ -19,22 +15,13 @@ import java.util.Objects;
 public class App {
     // Logging
     private static StringBuilder sb = new StringBuilder();
-    private static File logFile;
     // App entry point
     public static void main(String[] args) {
-        // Request logfile from resource folder
-        logFile = new File(
-                Objects.requireNonNull(
-                        App.class.getClassLoader().getResource("log.txt")
-                ).getFile()
-        );
-
         print("------------------------------------------------", App.class);
         print("Intelligente Systeme Praktikum", App.class);
         print("Aufgabe 2 - Lernen", App.class);
         print("Handschrifterkennung mittels neuronalem Netzwerk", App.class);
         print("------------------------------------------------", App.class);
-
         // Setup neural network environment
         print("Erstelle Trainings- und Testumgebung", App.class);
 
@@ -67,9 +54,9 @@ public class App {
         buttonPanel.add(Box.createRigidArea(new Dimension(0, 10)));
         buttonPanel.add(btnClear);
         buttonPanel.add(Box.createVerticalGlue());
-        frame.add(userDraw, BorderLayout.LINE_START);
-        frame.add(buttonPanel, BorderLayout.CENTER);
-        frame.add(numberDraw, BorderLayout.LINE_END);
+        frame.add(userDraw, BorderLayout.WEST);
+        frame.add(numberDraw, BorderLayout.EAST);
+        frame.add(buttonPanel, BorderLayout.SOUTH);
         frame.getRootPane().setBorder(BorderFactory.createEmptyBorder(5, 5, 5, 5));
         frame.pack();
         frame.setResizable(false);
@@ -92,18 +79,10 @@ public class App {
     }
 
     /**
-     * Print and log
+     * Print
      */
     private static void printAndReset() {
         System.out.println(sb.toString());
-
-        // Log
-        try (FileWriter fileWriter = new FileWriter(logFile, true);) {
-            fileWriter.write(sb.toString() + System.lineSeparator());
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
         sb.setLength(0);
         sb = new StringBuilder();
     }

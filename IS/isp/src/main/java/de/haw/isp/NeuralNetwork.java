@@ -51,9 +51,9 @@ class NeuralNetwork {
         Matrix hiddenOutput = generateHiddenOutput(inputs);
         Matrix outputOutput = generateOutputOutput(hiddenOutput);
 
-        //calulate output error. (targets - actuall)
+        // Calulate output error. (targets - actuall)
         Matrix outputError = targets.minus(outputOutput);
-        // apply weightHiddenOutput to output error.
+        // Apply weightHiddenOutput to output error.
         Matrix hiddenError = weightOutputHidden.transpose().times(outputError);
 
         backwardPropagation(weightOutputHidden, outputError, outputOutput, hiddenOutput);

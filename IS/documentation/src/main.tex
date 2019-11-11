@@ -161,8 +161,20 @@ Schwellwertfunktion / logistische Funktion \includegraphics[height=1cm]{../Sigmo
 \end{definition}
 \end{frame}
 
-\section{Lernregel}
-\begin{frame}{Lernregel - Beschreibung}
+\section{Lernen}
+\begin{frame}{Lernen}
+\begin{definition}{Fehler}
+Die Differenz zwischen Soll- und Ist-Ausgabe eines Neurons
+\end{definition}
+\begin{definition}{Fehlerfunktion}
+Durchschnitt der quadratischen Fehler aller Inputs
+\end{definition}
+\begin{definition}{Lernen}
+Minimierung der Fehlerfunktion durch Gradientenabstiegsverfahren, wobei der Gradient alle Gewichtsanpassungen sind
+\end{definition}
+\end{frame}
+
+\begin{frame}{Lernen - Lernregel}
 Die Lernregel gestattet es, dass ein KNN durch eine gegebene Aufgabe (weitgehend) selbst\"andig aus Beispielen lernt
 \begin{definition}{Die Lernregel bestimmt}
 \begin{itemize}
@@ -185,24 +197,6 @@ Da wir eine nicht-lineare Aktivierungsfunktion gew\"ahlt haben, muss die
 \begin{blue}{Backpropagation}
 Die Backpropagation-Regel erf\"ullt die Kriterien
 \end{blue}
-\end{frame}
-
-\begin{frame}{Lernregel - Backpropagation I}
-\begin{center}
-\includegraphics[height=6.5cm]{../Backpropagation.png}
-\end{center}
-\end{frame}
-
-\begin{frame}{Lernregel - Backpropagation II}
-\begin{definition}{Korrektur von Gewichten}
-Die partielle erste Ableitung der Fehlerfunktion nach einer Gewichtsvariablen kann für die Korrektur dieses Gewichtes verwendet werden:
-\begin{center}
-\includegraphics[height=1.4cm]{../Erste_ableitung_fehlerfunktion.png}
-$\rightarrow$
-\includegraphics[height=1.4cm]{../Korrektur_gewicht.png}
-\end{center}
-Mit \textit{E} als m\"ogliche Fehlerkurve \textit{E(w\textsubscript{1}, w\textsubscript{2}) }f\"ur zwei Gewichte; Lernrate $\gamma$, als Grad der \"Anderung und Momentum $\alpha$
-\end{definition}
 \end{frame}
 
 \section{Qualit\"at}

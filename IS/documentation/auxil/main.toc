@@ -3,6 +3,6 @@
 \beamer@sectionintoc {2}{Neuronale Netze}{4}{0}{2}
 \beamer@sectionintoc {3}{MNIST}{10}{0}{3}
 \beamer@sectionintoc {4}{Aktivierungsfunktion}{11}{0}{4}
-\beamer@sectionintoc {5}{Lernregel}{13}{0}{5}
-\beamer@sectionintoc {6}{Qualit\"at}{17}{0}{6}
-\beamer@sectionintoc {7}{Fazit}{21}{0}{7}
+\beamer@sectionintoc {5}{Lernen}{13}{0}{5}
+\beamer@sectionintoc {6}{Qualit\"at}{16}{0}{6}
+\beamer@sectionintoc {7}{Fazit}{20}{0}{7}

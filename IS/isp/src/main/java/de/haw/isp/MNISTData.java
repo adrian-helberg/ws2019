@@ -63,4 +63,12 @@ class MNISTData {
     int getSize() {
         return this.data.size();
     }
+
+    /**
+     * Get the data
+     * @return String array list
+     */
+    ArrayList<String> getData() {
+        return data;
+    }
 }

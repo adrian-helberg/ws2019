@@ -45,8 +45,7 @@ class UserDraw extends JPanel implements MouseMotionListener {
     }
 
     @Override
-    public void mouseMoved(MouseEvent e) {
-    }
+    public void mouseMoved(MouseEvent e) {}
 
     @Override
     public void paintComponent(Graphics g) {
@@ -63,8 +62,8 @@ class UserDraw extends JPanel implements MouseMotionListener {
 
     String getImageString() {
         String mnistString = "";
-        for (int i = 0; i < this.width; i += scale) {
-            for (int j = 0; j < this.height; j += scale) {
+        for (int i = 0; i < width; i += scale) {
+            for (int j = 0; j < height; j += scale) {
                 mnistString += ",";
                 mnistString += String.valueOf(scalePixel(j, i));
 

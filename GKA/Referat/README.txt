@@ -5,6 +5,7 @@
 		* Messungen, Interpretationen etc.
 	* Keine Mehrfachabgaben
 	* Max. 6MB als komprimierte Abgabe
+
 * Am Abend vor dem Referatstermin
 	* Alle geforderten Unterlagen sind bis 20:00 Uhr per E-Mail abzugeben
 	
@@ -20,3 +21,14 @@ der zugehörige Programmcode von mir selbständig implementiert wurde ohne diesen 
 von Dritten im Wortlaut oder dem Sinn nach übernommen zu haben. Die Arbeit habe ich bisher keinem 
 anderen Prüfungsamt in gleicher oder vergleichbarer Form vorgelegt. Sie wurde bisher nicht veröffentlicht.
 UNTERSCHRIFT
+
+--- Aufgabe 3 ---
+* Algorithmus, wie in der Vorlesung, kein Residualnetzwerk
+* Schnittstellen 
+	* fordfulkerson:fordfulkerson(<Graph>,<Quelle>,<Senke>):[im letzten Lauf inspizierte Ecken], *.dot, *.svg
+	* fordfulkersonT (mit Laufzeitmessung)
+	* edmondskarp:edmondskarp(<Filename>,<Quelle>,<Senke>):[im letzten Lauf inspizierte Ecken]
+	* edmondskarpT (mit Laufzeitmessung)
+	* printGFF(<Graph>,<Filename>): *.dot
+* Laufzeitmessung
+	* Laufzeitkomplexität der Algorithmen nachweisen

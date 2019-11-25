@@ -52,7 +52,7 @@ class Environment {
             Matrix inputs = new Matrix(Arrays.copyOfRange(doubleInputs, 1, doubleInputs.length), doubleInputs.length - 1);
             // Train the actual neural network
             neuralNetwork.train(inputs, createTargetMatrix(doubleInputs[0]));
-            System.out.println("Train data " + i + 1 + "/" + mnistTrainingData.getSize());
+            System.out.println("Train data " + (i + 1) + "/" + mnistTrainingData.getSize());
         }
     }
 

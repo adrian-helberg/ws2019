@@ -1,0 +1,113 @@
+%! Graphentheoretische Konzepte und Algorithmen
+%! Referat - Ausarbeitung
+%! Adrian Helberg (ace346)
+%! Start: 25.11.2019
+%! Abgabe: 15.12.2016 20°°
+
+% Preamble
+\documentclass[11pt]{article}
+
+% Packages
+\usepackage[ngerman]{babel} % German Language Layout
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{tocloft}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}} % ToC Dots
+\setcounter{tocdepth}{2} % ToC Depth Counter
+
+\title{
+\Large Graphentheoretische Konzepte und Algorithmen\\
+\huge Referat - Ausarbeitung\\
+\Large Aufgabe 3: Flu\ss{}probleme\\[0.3in]
+}
+\sub
+\author{Adrian Helberg\\}
+\date{\today}
+
+\makeatletter
+\def\@maketitle{
+\linespread{2}
+\raggedleft
+\includegraphics[width=10cm]{../haw_logo.png}
+\begin{center}
+{\bfseries \sffamily \@title}
+Autor: {\@author}~\\~\\
+\end{center}
+\raggedright
+\\~\\~\\~\\~\\~\\~\\~\\~\\~\\~\\~\\
+Referat eingereicht im Rahmen der Vorlesung\\
+Graphentheoretische Konzepte und Algorithmen\\~\\
+im Studiengang Angewandte Informatik (AI)\\
+am Department Informatik der Fakult\"at Technik und Informatik\\
+der Hochschule f\"ur Angewandte Wissenschaften Hamburg\\~\\
+Betreuender Pr\"ufer: Prof. Dr. C. Klauck
+Abgegeben am \today
+}
+\makeatother
+
+% Document
+\begin{document}
+    \maketitle
+    \newpage
+    \tableofcontents
+
+    \newpage
+
+    %%%%%%%%%%%%%%%%%%%%
+    %%% ARBEITSPLAN %%%%
+    %%%%%%%%%%%%%%%%%%%%
+    \section{Arbeitsplan}
+    Im Folgenden wird die Arbeitsweise und das Vorgehen zur Erarbeitung der Aufgabenstellung vorgestellt.
+    Hierf\"ur wird die Aufgabenstellung gezeigt, die n\"otige Recherche beschrieben und die detailierte Erarbeitung vorgestellt.
+
+    \subsection{Kontext}
+    \subsubsection{Aufgabenstellung}\\
+    Ziel der Aufgaben ist sowohl die Implementierung zweier Algorithmen zum Finden des maximalen Durchsatzes (Flusses) als auch deren Vergleich.\\~\\
+    Folgende Algorithmen werden bearbeitet:
+    \begin{itemize}
+        \item[I.] Der Algorithmus von \textbf{Ford und Fulkerson} \footnote[1]{" `Ford-Fulkerson"', 1956, L.R.Ford \& D.R.Fulkerson}
+        \item[II.] Der Algorithmus von \textbf{Edmonds und Karp} \footnote[2]{"`Edmonds-Karp"', 1970, Yefim Dinitz, 1972, J.Edmonds \& R.Karp}
+    \end{itemize}\\~\\
+    \underline{Zusatz}: Es soll nicht mittels Residualnetzwerks gearbeitet werden\\~\\
+    Weitere Vorgaben:
+    \begin{itemize}
+        \item Ergebnisse sind nachvollziehbar: Ausgaben in Dateien
+        \item Berechneter Fluss ist als Attribut an Kanten zu speichern
+        \newpage
+        \item Schnittstellen:
+        \begin{itemize}
+            \item fordfulkerson:fordfulkerson($<Filename>$,$<Quelle>$,$<Senke>$):\\ \indet [$<$Liste der im letzten Lauf inspizierten Ecken$>$]
+            \item fordfulkerson:fordfulkersonT($<Graph>$,$<Quelle>$,$<Senke>$):\\ \indet [$<$Liste der im letzten Lauf inspizierten Ecken$>$]
+            \item edmondskarp:edmondskarp($<Filename>$,$<Quelle>$,$<Senke>$):\\ \indet [$<$Liste der im letzten Lauf inspizierten Ecken$>$]
+            \item edmondskarp:edmondskarpT($<Graph>$,$<Quelle>$,$<Senke>$):\\ \indet [$<$Liste der im letzten Lauf inspizierten Ecken$>$]
+        \end{itemize}
+        \item Nachweis der erwarteten Komplexit\"at durch Laufzeitmessung
+        \item Gegebene Graphen sind zum Test der Korrektheit anzuwenden
+        \item Logdateien zur Zeitmessung der Algorithmen sind anzulegen
+        \item Bildschirmausgabe des Tests der Datei aufg3test.beam ist zu protokollieren
+    \end{itemize}
+
+    \subsubsection{}
+    Recherche (Buch Seite 102)~\cite{grbuch} \\
+    Erarbeitung des Algorithmus\\
+
+    \subsection{Ziele}
+    Entwurf
+
+    \subsection{Diskussion}
+    Was kann diskutiert werden?\\
+    Fragen
+
+    \section{Entwurf}
+
+    \section{Quellen}
+    \bibliographystyle{plain}
+    \bibliography{quellen}
+
+    \newpage
+
+    \section{Erkl\"arung zur schriftlichen Ausarbeitung}
+
+    Hiermit erkl\"are ich, dass ich diese schriftliche Ausarbeitung meines Referates selbstst\"andig und ohne fremde Hilfe verfasst habe und keine anderen als die angegebenen Quellen und Hilfsmittel benutzt habe sowie die aus fremden Quellen (dazu z\"ahlen auch Internetquellen) direkt oder indirekt \"ubernommenen Gedanken oder Wortlaute als solche kenntlich gemacht habe. Zudem erkl\"are ich, dass der zugeh\"orige Programmcode von mir selbst\"andig implementiert wurde ohne diesen oder Teile davon von Dritten im Wortlaut oder dem Sinn nach \"ubernommen zu haben. Die Arbeit habe ich bisher keinem anderen Pr\"ufungsamt in gleicher oder vergleichbarer Form vorgelegt. Sie wurde bisher nicht ver\"offentlicht.\\ \\ \\ \\
+    Hamburg, den \today \indent\rule{8.5cm}{0.4pt}
+\end{document}

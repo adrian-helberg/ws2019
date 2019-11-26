@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.2.5)  26 NOV 2019 16:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.2.5)  26 NOV 2019 17:00
 entering extended mode
 **./ausarbeitung.tex
 (ausarbeitung.tex
@@ -373,7 +373,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 111--113
 Here is how much of TeX's memory you used:
  2837 strings out of 492946
  40794 string characters out of 3135531
- 121509 words of memory out of 3000000
+ 120510 words of memory out of 3000000
  6689 multiletter control sequences out of 15000+200000
  10037 words of font info for 35 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -389,7 +389,7 @@ gram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:/Program F
 iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiK
 TeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
 Output written on D:/git\ws2019\GKA\Referat\out\ausarbeitung.pdf (5 pages, 1544
-50 bytes).
+59 bytes).
 PDF statistics:
  61 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

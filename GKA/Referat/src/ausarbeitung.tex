@@ -31,7 +31,7 @@
 \includegraphics[width=10cm]{../haw_logo.png}
 \begin{center}
 {\bfseries \sffamily \@title}
-Autor: {\@author}~\\~\\
+    Autor: {\@author}~\\~\\
 \end{center}
 \raggedright
 \\~\\~\\~\\~\\~\\~\\~\\~\\~\\~\\~\\
@@ -61,8 +61,9 @@ Abgegeben am \today
     Hierf\"ur wird die Aufgabenstellung gezeigt, die n\"otige Recherche beschrieben und die detailierte Erarbeitung vorgestellt.
 
     \subsection{Kontext}
+
     \subsubsection{Aufgabenstellung}\\
-    Ziel der Aufgaben ist sowohl die Implementierung zweier Algorithmen zum Finden des maximalen Durchsatzes (Flusses) als auch deren Vergleich.\\~\\
+    Ziel der Aufgaben ist sowohl eine Implementierung zweier Algorithmen zum Finden des maximalen Durchsatzes (Flusses) als auch deren Vergleich.\\~\\
     Folgende Algorithmen werden bearbeitet:
     \begin{itemize}
         \item[I.] Der Algorithmus von \textbf{Ford und Fulkerson} \footnote[1]{" `Ford-Fulkerson"', 1956, L.R.Ford \& D.R.Fulkerson}
@@ -87,9 +88,72 @@ Abgegeben am \today
         \item Bildschirmausgabe des Tests der Datei aufg3test.beam ist zu protokollieren
     \end{itemize}
 
-    \subsubsection{}
-    Recherche (Buch Seite 102)~\cite{grbuch} \\
-    Erarbeitung des Algorithmus\\
+    \subsubsection{Recherche}
+    Graphen werden hier durch $G(V,E)$ mit $|V|$ Ecken und $|E|$ Kanten beschrieben.\\~\\
+    Im Folgenden wird auf das Kapitel "`Flussprobleme"' aus dem Buch zur Vorlesung eingegangen~\cite{grbuch} (ab Seite 95).\\~\\
+    $[\ldots]$ \textit{grunds\"atzlich mit schwach zusammenh\"angenden, schlichten gerichteten Graphen} $[\ldots]$\\~\\
+    Ein Graph hei\ss{}t
+    \begin{itemize}
+        \item \textbf{zusammenh\"angend}, wenn die Knoten paarweise durch eine Kantenfolge verbunden sind
+        \item \textbf{schwach zusammenh\"angend}, wenn der Graph, der entsteht, wenn man jede gerichtete Kante duch eine ungerichtete Kante ersetzt, zusammenh\"angend ist
+        \item \textbf{schlicht}, wenn er ungerichtet ist und weder Mehrfachkanten, noch Schleifen besitzt
+    \end{itemize}\\~\\
+    $[\ldots]$ \textit{jede Kante gibt die Kapazit\"at $c(e\textsubscript{ij})=c\textsubscript{ij}$ der Kante an $[\ldots]$. Aus praktischen Gr\"unden nehmen wir dabei an, dass alle $c\textsubscript{ij}$ rationale Zahlen sind.}\\~\\
+    In dieser Arbeit wird im Weiteren der Begriff \textbf{Netzwerk} verwendet, sollten Graphen die genannten Eigenschaften aufweisen.\\~\\
+    \textbf{Definition 4.1} $[\ldots]$ \textit{Eine Kapazit\"at ist eine Funktion c, die jeder Kante $e\textsubscript{ij} \in E$  eine positive rationale Zahl ($> 0$) als Kapazi\"at zuordnet. Ein Fluss in $G$ von der Quelle $q = v\textsubscript{1}$ zu der Senke $s = v\textsubscript{n}$ ist eine Funktion $f$, die jeder Kante $e\textsubscript{ij} \in E$ eine nicht negative rationale Zahl zuordnet} $[\ldots]$\\~\\
+    In einer Implementierung der Algorithmen kann $c$ als Kapazit\"at und $f$ als Fluss f\"ur Namen des jeweile Kantenattributs gesetzt werden.\\
+    Weiter gilt die
+    \begin{itemize}
+        \item \textbf{Kapazit\"atsbeschr\"ankung} ($e\textsubscript{ij}: f(e\textsubscript{ij} \leq c(e\textsubscript{ij})$) und
+        \item die \textbf{Flusserhaltung} \\ ($\forall \textsubscript{j} \in \{1,\ldots n\}: \[ \sum_{e\textsubscript{ij} \in O(v\textsubscript{i}, e\textsubscript{ji} \in I(v\textsubscript{i}))} \] f(e\textsubscript{1j}) = \[ \sum_{} \] (f(e\textsubscript{ij}) - f(e\textsubscript{ji})) = 0$)
+    \end{itemize}
+    In dieser Arbeit wird im Weiteren der Begriff \textbf{Flussnetzwerk} verwendet, sollten Graphen diese Eigenschaften aufweisen $(V, E, f, c)$.\\
+    Der Wert des \textbf{Flusses} $f$ mit $d = \[ \sum_{e\textsubscript{1j} \in O(q)} \] f(e\textsubscript{1j}) = \[ \sum_{e\textsubscript{in} \in I(s)} \] f(e\textsubscript{in})$ betr\"agt in den Ecken $q$ (Quelle) und $s$ (Senke) 0 [Null] (\textbf{Flusserhaltung}). Dies ist bei einer Implementierung zu beachten. Die maximale Menge, die von der Quelle zur Senke transportiert werden kann ist ein Fluss maximaler St\"arke.\\~\\
+    \textbf{Definition 4.2} \textit{Ein Schnitt ist die Menge von Kanten $A(X,\bar X)$, wobei $q \in C$ und $s \in \bar X$.}\\~\\
+    \textbf{Definition 4.3} \textit{Ein Fluss, dessen Wert} $min\{c(X,\bar X) \| A(X,\bar X)$ ist ein beliebiger Schnitt$\}$ \textit{entspricht hei\ss{}t ein \textbf{maximaler Fluss}.}\\~\\
+    \textbf{Definition 4.4} \textit{Ein ungerichteter Weg von der Quelle q zur Senke s hei\ss{}t ein vergr\"u\ss{}ernder Weg, wenn gilt:}
+    \begin{itemize}
+        \item F\"ur jede Kante $e\textsubscript{ij}$ , die auf dem Weg entsprechend ihrer Richtung durchlaufen
+        wird (sie wird als \textbf{Vorw\"artskante} bezeichnet), ist $f(e\textsubscript{ij}) < c(e\textsubscript{ij})$.
+        \item F\"ur jede Kante $e\textsubscript{ij}$ , die auf dem Weg entgegen ihrer Richtung durchlaufen
+        wird (sie wird als \textbf{R\"uckw\"artskante} bezeichnet), ist $f(e\textsubscript{ij}) > 0)$.
+    \end{itemize}\\~\\
+    \textbf{Satz 4.2} \textit{Wenn in einem Graphen G ein Fluss der St\"arke $d$ von der Quelle $q$ zur Senke $s$ flie\ss{}t, gilt genau eine der beiden Aussagen:}
+    \begin{itemize}
+        \item[1.] \textit{Es gibt einen vergr\"o\ss{}ernden Weg.}
+        \item[2.] \textit{Es gibt einen Schnitt} $A(X,\bar X)$ \textit{mit} $c(X,\bar X) = d$.
+    \end{itemize}\\~\\
+    \textit{1.} kann bei einer Implementierung eine Rekursion ausl\"sen ("`Ein maximaler Fluss ist noch nicht gefunden"' - Erweiterbarkeit ist gegeben), wobei \textit{2.} die Abbruchbedingung beschreibt ("`Ein maximaler Fluss ist gefunden"' - Erweiterbarkeit nicht gegeben).
+
+    \subsubsection{Erarbeitung der Algorithmen}
+    \begin{Large}
+        \textbf{\\Ford-Fulkerson}
+    \end{Large}\\~\\
+    Ecken des Graphen werden w\"ahrend der Suche nach einem vergr\"o\ss{}ernden (vergr.) Weg mit $(Vorg\textsubscript{i},\delta\textsubscript{i})$ markiert.
+    \begin{itemize}
+        \item $Vorg\textsubscript{i}$ beschreibt den Vorg\"anger von $v\textsubscript{i}$ auf einem vergr. Weg
+        \item $\delta\textsubscript{i}$ gibt die bisher auf dem vergr. Weg maximal m\"ogliche \"Anderung der Flussst\"arke an
+        \item $Vorg\textsubscript{i}$ wird mit einem Vorzeichen versehen, das angibt, ob eine Kante entsprechend ($+$) oder entgegen ($-$) ihrer Richtung durchlaufen wird
+    \end{itemize}
+    \newpage
+    \underline{Pseudocode}:
+    \begin{itemize}
+        \item[1.] \textit{(Initialisierung) \\ Weise allen Kanten $f(e\textsubscript{ij})$ als einen (initialen) Wert zu, der die Nebenbedingungen erf\"ullt. Markiere $q$ mit $(undefiniert, \infty)$.}
+        \item[2.] \textit{(Inpektion und Markierung)}
+        \begin{itemize}
+            \item[(a)] \textit{Falls alle markierten Ecken inspiziert wurden, gehe nach 4.}
+            \item[(b)] \textit{W\"ahle eine beliebige markierte, aber noch nicht inspizierte Ecke v\textsubscript{i} und inspiziere sie wie folg (Berechnung des Inkrements)}
+            \begin{itemize}
+                \item[$\bullet$] \textit{(Vorw\"artskante) F\"ur jede Kante $e\textsubscript{ij} \in O(v\textsubscript{i})$ mit unmarkierter Ecke $v\textsubscript{j}$ und $f(e\textsubscript{ij})$ markiere $v\textsubscript{j}$ mit $(+v\textsubscript{i},\delte\textsubscript{j})$, wobei $\delta\textsubscript{j}$ die kleinere der beiden Zahlen $c(e\textsubscript{ij}) - f(e\textsubscript{ij})$ und $\delta\textsubscript{i}$ ist.}
+                \item[$\bullet$] \textit{(R\"uckw\"artskante) F\"ur jede Kante $e\textsubscript{ji} \in I(v\textsubscript{i})$ mit unmarkierter Ecke $v\textsubscript{j}$ und $f(e\textsubscript{ji}) > 0$ markiere $v\textsubscript{j}$ mit $(−v\textsubscript{i}, \delta\textsubscript{j})$, wobei $\delta\textsubscript{j}$ die kleinere der beiden Zahlen $f(e\textsubscript{ji})$ und $\delta\textsubscript{i}$ ist.}
+            \end{itemize}
+            \item[(c)] \textit{Falls $s$ markiert ist, gehe zu 3., sonst zu 2.(a)}.
+        \end{itemize}
+        \item[3.] \textit{(Vergr\"o\ss{}erung der Flussst\"arke) \\ Bei $s$ beginnend l\"asst sich anhand der Markierungen der gefundene verg. Weg bis zur Ecke $q$ r\"uckw\"arts durchlaufen. F\"ur jede Verw\"artskante wird $f(e\textsubscript{ij})$ um $\delta\textsubscript{s}$ erh\"oht, und f\"ur jede R\"uckw\"artskante wird $f(e\textsubscript{ji})$ um $\delta\textsubscript{s}$ vermindert. Anschlie\ss{}end werden bei allen Ecken mit Ausnahme von $q$ die Markierungen entfernt. Gehe zu 2.}
+        \item[4.] \textit{Es gibt keinen verg. Weg. Der jetzige Wert von $d$ ist optimal. Ein Schnitt $A(X,\bar X)$ mit $c(X,\bar X) = d$ wird gebildet von genau denjenigen Kanten, bei denen entweder die Anfangsecke oder die Endecke inspiziert ist.}
+    \end{itemize}
+    In Schritt \textit{1.} wird i.allg. $f(e\textsubscript{ij}) := 0$ f\"ur alle $i$ und $j$ gew\"ahlt.
+    \newpage
 
     \subsection{Ziele}
     Entwurf

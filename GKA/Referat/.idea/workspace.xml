@@ -4,11 +4,13 @@
     <list default="true" id="19ffdd42-8312-49b4-ad48-9772bd527abf" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auxil/ausarbeitung.aux" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/ausarbeitung.aux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auxil/ausarbeitung.bbl" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/ausarbeitung.bbl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auxil/ausarbeitung.log" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/ausarbeitung.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auxil/ausarbeitung.toc" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/ausarbeitung.toc" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/ausarbeitung.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/out/ausarbeitung.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/ausarbeitung.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/out/ausarbeitung.synctex.gz" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ausarbeitung.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/ausarbeitung.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/quellen.bib" beforeDir="false" afterPath="$PROJECT_DIR$/src/quellen.bib" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -104,6 +106,8 @@
       <workItem from="1574784024416" duration="19000" />
       <workItem from="1574866752275" duration="2921000" />
       <workItem from="1574932279266" duration="9524000" />
+      <workItem from="1575021799256" duration="4248000" />
+      <workItem from="1575112903092" duration="9477000" />
     </task>
     <servers />
   </component>

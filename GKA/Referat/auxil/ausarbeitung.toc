@@ -1,11 +1,21 @@
 \babel@toc {ngerman}{}
-\contentsline {section}{\numberline {1}Arbeitsplan}{3}% 
-\contentsline {subsection}{\numberline {1.1}Kontext}{3}% 
-\contentsline {subsubsection}{\numberline {1.1.1}Aufgabenstellung}{3}% 
-\contentsline {subsubsection}{\numberline {1.1.2}Recherche}{4}% 
-\contentsline {subsubsection}{\numberline {1.1.3}Erarbeitung der Algorithmen}{6}% 
-\contentsline {subsection}{\numberline {1.2}Ziele}{8}% 
-\contentsline {subsection}{\numberline {1.3}Diskussion}{8}% 
-\contentsline {section}{\numberline {2}Entwurf}{8}% 
-\contentsline {section}{\numberline {3}Quellen}{8}% 
-\contentsline {section}{\numberline {4}Erkl\"arung zur schriftlichen Ausarbeitung}{9}% 
+\contentsline {section}{\numberline {1}Einleitung}{3}% 
+\contentsline {subsection}{\numberline {1.1}Flu\ss {}probleme}{3}% 
+\contentsline {subsection}{\numberline {1.2}Laufzeitmessung}{3}% 
+\contentsline {section}{\numberline {2}Kontext}{3}% 
+\contentsline {subsection}{\numberline {2.1}Aufgabenstellung}{3}% 
+\contentsline {subsection}{\numberline {2.2}Recherche}{4}% 
+\contentsline {subsection}{\numberline {2.3}Komplexit\"at}{6}% 
+\contentsline {section}{\numberline {3}Entwurf}{7}% 
+\contentsline {subsection}{\numberline {3.1}Ford-Fulkerson}{7}% 
+\contentsline {subsubsection}{\numberline {3.1.1}Algorithmus}{7}% 
+\contentsline {subsubsection}{\numberline {3.1.2}Schnittstelle}{9}% 
+\contentsline {subsubsection}{\numberline {3.1.3}Datenstrukturen}{9}% 
+\contentsline {subsection}{\numberline {3.2}Edmonds-Karp}{9}% 
+\contentsline {subsubsection}{\numberline {3.2.1}Algorithmus}{9}% 
+\contentsline {subsubsection}{\numberline {3.2.2}Schnittstelle}{9}% 
+\contentsline {subsubsection}{\numberline {3.2.3}Datenstrukturen}{9}% 
+\contentsline {subsection}{\numberline {3.3}Laufzeitmessung}{9}% 
+\contentsline {section}{\numberline {4}Auswertung}{9}% 
+\contentsline {section}{\numberline {5}Quellen}{9}% 
+\contentsline {section}{\numberline {6}Erkl\"arung zur schriftlichen Ausarbeitung}{10}% 

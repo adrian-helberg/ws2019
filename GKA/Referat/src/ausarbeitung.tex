@@ -13,6 +13,31 @@
 \usepackage{graphicx}
 \usepackage{tocloft}
 \usepackage{url}
+\usepackage{xcolor}
+\usepackage{listings}
+\lstset{
+backgroundcolor=\color{white},
+basicstyle=\footnotesize,
+breakatwhitespace=false,
+breaklines=true,
+captionpos=b,
+commentstyle=\color{gray}\textit,
+frame=tb,
+keepspaces=true,
+keywordstyle=\color{blue}\bfseries,
+language=erlang,
+numberstyle=\tiny\color{gray},
+rulecolor=\color{black},
+showspaces=false,
+showstringspaces=false,
+showtabs=false,
+stepnumber=1,
+stringstyle=\color{violet},
+tabsize=2,
+title=\lstname,
+columns=fixed
+}
+
 \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}} % ToC Dots
 %\setcounter{tocdepth}{2} % ToC Depth Counter
 
@@ -49,169 +74,230 @@ Abgegeben am \today
 
 % Document
 \begin{document}
-    \maketitle
-    \newpage
-    \tableofcontents
+\maketitle
+\newpage
+\tableofcontents
 
-    \newpage
+\newpage
 
-    %%%%%%%%%%%%%%%%%%%
-    %%% Einleitung %%%%
-    %%%%%%%%%%%%%%%%%%%
-    \section{Einleitung}
+%%%%%%%%%%%%%%%%%%%
+%%% Einleitung %%%%
+%%%%%%%%%%%%%%%%%%%
+\section{Einleitung}
 
-    \subsection{Flu\ss{}probleme}
-    \textit{\"Ahnlich wie beim Problem des k\"urzesten Weges oder bei den elektrischen Netzwerken handelt es sich hier um eine der urspr\"unglichsten Aufgabenstellungen f\"ur Graphen, wo eben die Kanten als Verbindungen mit gewissen festen Eigenschaften wie L\"angen, Widerstand, etc. interpretiert werden.} \cite{alggra} (Seite 79, Kapitel 10)\\~\\
-    Offensichtlich steht bei der genannten Problematik der Transport im Vordergrund, wobei die Durchflussmenge durch einen konstanten Wert begrenzt wird. Klassische Beispiele sind Verkehrs-Netze, Gleichstrom-Netzwerke und Abwassersysteme.
+\subsection{Flu\ss{}probleme}
+\textit{\"Ahnlich wie beim Problem des k\"urzesten Weges oder bei den elektrischen Netzwerken handelt es sich hier um eine der urspr\"unglichsten Aufgabenstellungen f\"ur Graphen, wo eben die Kanten als Verbindungen mit gewissen festen Eigenschaften wie L\"angen, Widerstand, etc. interpretiert werden.} \cite{alggra} (Seite 79, Kapitel 10)\\~\\
+Offensichtlich steht bei der genannten Problematik der Transport im Vordergrund, wobei die Durchflussmenge durch einen konstanten Wert begrenzt wird. Klassische Beispiele sind Verkehrs-Netze, Gleichstrom-Netzwerke und Abwassersysteme.
 
-    \subsection{Laufzeitmessung}
-    Ein Teil der Aufgabenstellung beinhaltet das Messen von Laufzeiten zur Analyse implementierter Algorithmen. Hierzu sind Testszenarien mit einem erwarteten Ergebnis zu erstellen und diese nachzuweisen. Weiter werden die sich ergebenen Laufzeiten nicht in Zeiteinheiten angegeben, sondern in der \textit{Landau-Notation} angegeben.
+\subsection{Laufzeitmessung}
+Ein Teil der Aufgabenstellung beinhaltet das Messen von Laufzeiten zur Analyse implementierter Algorithmen. Hierzu sind Testszenarien mit einem erwarteten Ergebnis zu erstellen und diese nachzuweisen. Weiter werden die sich ergebenen Laufzeiten nicht in Zeiteinheiten angegeben, sondern in der \textit{Landau-Notation} angegeben.
 
-    %%%%%%%%%%%%%%%%
-    %%% Kontext %%%%
-    %%%%%%%%%%%%%%%%
-    \section{Kontext}
-    Hier ist die wissenschaftliche Vorarbeit zu einer gegebenen Aufgabenstellung gemeint. Hierzu geh\"ort die Recherche und Erarbeitung ben\"otigter Algorithmen und Thematiken.
+%%%%%%%%%%%%%%%%
+%%% Kontext %%%%
+%%%%%%%%%%%%%%%%
+\section{Kontext}
+Hier ist die wissenschaftliche Vorarbeit zu einer gegebenen Aufgabenstellung gemeint. Hierzu geh\"ort die Recherche und Erarbeitung ben\"otigter Algorithmen und Thematiken.
 
-    \subsection{Aufgabenstellung}\\
-    Ziel der Aufgaben ist sowohl eine Implementierung zweier Algorithmen zum Finden des maximalen Durchsatzes (Flusses), als auch deren Vergleich.\\~\\
-    Folgende Algorithmen werden bearbeitet:
-    \begin{itemize}
-        \item[I.] Der Algorithmus von \textbf{Ford und Fulkerson} \footnote[1]{" `Ford-Fulkerson"', 1956, L.R.Ford \& D.R.Fulkerson}
-        \item[II.] Der Algorithmus von \textbf{Edmonds und Karp} \footnote[2]{"`Edmonds-Karp"', 1970, Yefim Dinitz, 1972, J.Edmonds \& R.Karp}
-    \end{itemize}\\~\\
-    \underline{Zusatz}: Es soll nicht mittels Residualnetzwerks gearbeitet werden\\~\\
-    Weitere Vorgaben:
-    \begin{itemize}
-        \item Ergebnisse sind nachvollziehbar: Ausgaben in Dateien
-        \item Berechneter Fluss ist als Attribut an Kanten zu speichern
-        \item Schnittstellen:
-        \begin{itemize}
-            \item fordfulkerson:fordfulkerson($<Filename>$,$<Quelle>$,$<Senke>$):\\ \indet [$<$Liste der im letzten Lauf inspizierten Ecken$>$]
-            \item fordfulkerson:fordfulkersonT($<Graph>$,$<Quelle>$,$<Senke>$):\\ \indet [$<$Liste der im letzten Lauf inspizierten Ecken$>$]
-            \item edmondskarp:edmondskarp($<Filename>$,$<Quelle>$,$<Senke>$):\\ \indet [$<$Liste der im letzten Lauf inspizierten Ecken$>$]
-            \item edmondskarp:edmondskarpT($<Graph>$,$<Quelle>$,$<Senke>$):\\ \indet [$<$Liste der im letzten Lauf inspizierten Ecken$>$]
-        \end{itemize}
-        \item Erweiterung des abstrakten Datentyps "`adtgraph"' um eine Funktion \newline $printGFF(<Graph>,<Filename>)$ zur Erstellung von $*.dot$-Dateien aus gegebenen Graphen
-        \item Nachweis der erwarteten Komplexit\"at durch Laufzeitmessung
-        \item Gegebene Graphen sind zum Test der Korrektheit anzuwenden
-        \item Logdateien zur Zeitmessung der Algorithmen sind anzulegen
-        \item Bildschirmausgabe des Tests der Datei aufg3test.beam ist zu protokollieren
-    \end{itemize}
+\subsection{Aufgabenstellung}\\
+Ziel der Aufgaben~\cite{gkapub} ist sowohl eine Implementierung zweier Algorithmen zum Finden des maximalen Durchsatzes (Flusses), als auch deren Vergleich.\\~\\
+Folgende Algorithmen werden bearbeitet:
+\begin{itemize}
+\item[I.] Der Algorithmus von \textbf{Ford und Fulkerson} \footnote[1]{" `Ford-Fulkerson"', 1956, L.R.Ford \& D.R.Fulkerson}
+\item[II.] Der Algorithmus von \textbf{Edmonds und Karp} \footnote[2]{"`Edmonds-Karp"', 1970, Yefim Dinitz, 1972, J.Edmonds \& R.Karp}
+\end{itemize}\\~\\
+\underline{Zusatz}: Es soll nicht mittels Residualnetzwerks gearbeitet werden\\~\\
+Weitere Vorgaben:
+\begin{itemize}
+\item Ergebnisse sind nachvollziehbar: Ausgaben in Dateien
+\item Berechneter Fluss ist als Attribut an Kanten zu speichern
+\item Schnittstellen:
+\begin{itemize}
+\item fordfulkerson:fordfulkerson($<Filename>$,$<Quelle>$,$<Senke>$):\\ \indet [$<$Liste der im letzten Lauf inspizierten Ecken$>$]
+\item fordfulkerson:fordfulkersonT($<Graph>$,$<Quelle>$,$<Senke>$):\\ \indet [$<$Liste der im letzten Lauf inspizierten Ecken$>$]
+\item edmondskarp:edmondskarp($<Filename>$,$<Quelle>$,$<Senke>$):\\ \indet [$<$Liste der im letzten Lauf inspizierten Ecken$>$]
+\item edmondskarp:edmondskarpT($<Graph>$,$<Quelle>$,$<Senke>$):\\ \indet [$<$Liste der im letzten Lauf inspizierten Ecken$>$]
+\end{itemize}
+\item Erweiterung des abstrakten Datentyps "`adtgraph"' um eine Funktion \newline $printGFF(<Graph>,<Filename>)$ zur Erstellung von $*.dot$-Dateien aus gegebenen Graphen
+\item Nachweis der erwarteten Komplexit\"at durch Laufzeitmessung
+\item Gegebene Graphen sind zum Test der Korrektheit anzuwenden
+\item Logdateien zur Zeitmessung der Algorithmen sind anzulegen
+\item Bildschirmausgabe des Tests der Datei aufg3test.beam ist zu protokollieren
+\end{itemize}
 
-    \subsection{Recherche}
-    Graphen werden hier durch $G(V,E)$ mit $|V|$ Ecken und $|E|$ Kanten beschrieben.\\~\\
-    Im Folgenden wird auf das Kapitel "`Flussprobleme"' aus dem Buch zur Vorlesung eingegangen~\cite{grbuch} (ab Seite 95).\\~\\
-    $[\ldots]$ \textit{grunds\"atzlich mit schwach zusammenh\"angenden, schlichten gerichteten Graphen} $[\ldots]$\\~\\
-    Ein Graph hei\ss{}t
-    \begin{itemize}
-        \item \textbf{zusammenh\"angend}, wenn die Knoten paarweise durch eine Kantenfolge verbunden sind
-        \item \textbf{schwach zusammenh\"angend}, wenn der Graph, der entsteht, wenn man jede gerichtete Kante duch eine ungerichtete Kante ersetzt, zusammenh\"angend ist
-        \item \textbf{schlicht}, wenn er ungerichtet ist und weder Mehrfachkanten, noch Schleifen besitzt
-    \end{itemize}\\~\\
-    $[\ldots]$ \textit{jede Kante gibt die Kapazit\"at $c(e\textsubscript{ij})=c\textsubscript{ij}$ der Kante an $[\ldots]$. Aus praktischen Gr\"unden nehmen wir dabei an, dass alle $c\textsubscript{ij}$ rationale Zahlen sind.}\\~\\
-    In dieser Arbeit wird im Weiteren der Begriff \textbf{Netzwerk} verwendet, sollten Graphen die genannten Eigenschaften aufweisen.\\~\\
-    \textbf{Definition 4.1} $[\ldots]$ \textit{Eine Kapazit\"at ist eine Funktion c, die jeder Kante $e\textsubscript{ij} \in E$  eine positive rationale Zahl ($> 0$) als Kapazi\"at zuordnet. Ein Fluss in $G$ von der Quelle $q = v\textsubscript{1}$ zu der Senke $s = v\textsubscript{n}$ ist eine Funktion $f$, die jeder Kante $e\textsubscript{ij} \in E$ eine nicht negative rationale Zahl zuordnet} $[\ldots]$\\~\\
-    \underline{Notiz:} In einer Implementierung der Algorithmen kann $c$ als Kapazit\"at und $f$ als Fluss f\"ur Namen des jeweile Kantenattributs gesetzt werden.\\~\\
-    Weiter gilt die
-    \begin{itemize}
-        \item \textbf{Kapazit\"atsbeschr\"ankung} ($e\textsubscript{ij}: f(e\textsubscript{ij} \leq c(e\textsubscript{ij})$) und
-        \item die \textbf{Flusserhaltung} \\ ($\forall \textsubscript{j} \in \{1,\ldots n\}: \[ \sum_{e\textsubscript{ij} \in O(v\textsubscript{i}, e\textsubscript{ji} \in I(v\textsubscript{i}))} \] f(e\textsubscript{1j}) = \[ \sum_{} \] (f(e\textsubscript{ij}) - f(e\textsubscript{ji})) = 0$)
-    \end{itemize}
-    In dieser Arbeit wird im Weiteren der Begriff \textbf{Flussnetzwerk} verwendet, sollten Graphen diese Eigenschaften aufweisen $(V, E, f, c)$.\\
-    Der Wert des \textbf{Flusses} $f$ mit $d = \[ \sum_{e\textsubscript{1j} \in O(q)} \] f(e\textsubscript{1j}) = \[ \sum_{e\textsubscript{in} \in I(s)} \] f(e\textsubscript{in})$ betr\"agt in den Ecken $q$ (Quelle) und $s$ (Senke) 0 [Null] (\textbf{Flusserhaltung}). Die maximale Menge, die von der Quelle zur Senke transportiert werden kann ist ein Fluss maximaler St\"arke.\\~\\
-    \textbf{Definition 4.2} \textit{Ein Schnitt ist die Menge von Kanten $A(X,\bar X)$, wobei $q \in C$ und $s \in \bar X$.}\\~\\
-    \textbf{Definition 4.3} \textit{Ein Fluss, dessen Wert} $min\{c(X,\bar X) \| A(X,\bar X)$ ist ein beliebiger Schnitt$\}$ \textit{entspricht hei\ss{}t ein \textbf{maximaler Fluss}.}\\~\\
-    \textbf{Definition 4.4} \textit{Ein ungerichteter Weg von der Quelle q zur Senke s hei\ss{}t ein vergr\"u\ss{}ernder Weg, wenn gilt:}
-    \begin{itemize}
-        \item F\"ur jede Kante $e\textsubscript{ij}$ , die auf dem Weg entsprechend ihrer Richtung durchlaufen
-        wird (sie wird als \textbf{Vorw\"artskante} bezeichnet), ist $f(e\textsubscript{ij}) < c(e\textsubscript{ij})$.
-        \item F\"ur jede Kante $e\textsubscript{ij}$ , die auf dem Weg entgegen ihrer Richtung durchlaufen
-        wird (sie wird als \textbf{R\"uckw\"artskante} bezeichnet), ist $f(e\textsubscript{ij}) > 0)$.
-    \end{itemize}\\~\\
-    \textbf{Satz 4.2} \textit{Wenn in einem Graphen G ein Fluss der St\"arke $d$ von der Quelle $q$ zur Senke $s$ flie\ss{}t, gilt genau eine der beiden Aussagen:}
-    \begin{itemize}
-        \item[1.] \textit{Es gibt einen vergr\"o\ss{}ernden Weg.}
-        \item[2.] \textit{Es gibt einen Schnitt} $A(X,\bar X)$ \textit{mit} $c(X,\bar X) = d$.
-    \end{itemize}\\~\\
-    \underline{Notiz:} \textit{1.} kann bei einer Implementierung eine Rekursion ausl\"sen ("`Ein maximaler Fluss ist noch nicht gefunden"' - Erweiterbarkeit ist gegeben), wobei \textit{2.} die Abbruchbedingung beschreibt ("`Ein maximaler Fluss ist gefunden"' - Erweiterbarkeit nicht gegeben).\\~\\
-    \textbf{Satz 4.3 (Max-flow-min-cut Theorem von Ford und Fulkerson)} \textit{In einem schwach zusammenh\"angendem schlichten Digraphen $G$ mit genau
-    einer Quelle $q$ und genau einer Senke $s$ sowie der Kapazit\"atsfunktion $c$ und
-    dem Fluss $f$ ist das Minimum der Kapazit\at eines $q$ und $s$ trennenden Schnitts
-    gleich der St\"arke eines maximalen Flusses von $q$ nach $s$.}
+\subsection{Recherche}
+Graphen werden hier durch $G(V,E)$ mit $|V|$ Ecken und $|E|$ Kanten beschrieben.\\~\\
+Im Folgenden wird auf das Kapitel "`Flussprobleme"' aus dem Buch zur Vorlesung eingegangen~\cite{grbuch} (ab Seite 95).\\~\\
+$[\ldots]$ \textit{grunds\"atzlich mit schwach zusammenh\"angenden, schlichten gerichteten Graphen} $[\ldots]$\\~\\
+Ein Graph hei\ss{}t
+\begin{itemize}
+\item \textbf{zusammenh\"angend}, wenn die Knoten paarweise durch eine Kantenfolge verbunden sind
+\item \textbf{schwach zusammenh\"angend}, wenn der Graph, der entsteht, wenn man jede gerichtete Kante duch eine ungerichtete Kante ersetzt, zusammenh\"angend ist
+\item \textbf{schlicht}, wenn er ungerichtet ist und weder Mehrfachkanten, noch Schleifen besitzt
+\end{itemize}\\~\\
+$[\ldots]$ \textit{jede Kante gibt die Kapazit\"at $c(e\textsubscript{ij})=c\textsubscript{ij}$ der Kante an $[\ldots]$. Aus praktischen Gr\"unden nehmen wir dabei an, dass alle $c\textsubscript{ij}$ rationale Zahlen sind.}\\~\\
+In dieser Arbeit wird im Weiteren der Begriff \textbf{Netzwerk} verwendet, sollten Graphen die genannten Eigenschaften aufweisen.\\~\\
+\textbf{Definition 4.1} $[\ldots]$ \textit{Eine Kapazit\"at ist eine Funktion c, die jeder Kante $e\textsubscript{ij} \in E$  eine positive rationale Zahl ($> 0$) als Kapazi\"at zuordnet. Ein Fluss in $G$ von der Quelle $q = v\textsubscript{1}$ zu der Senke $s = v\textsubscript{n}$ ist eine Funktion $f$, die jeder Kante $e\textsubscript{ij} \in E$ eine nicht negative rationale Zahl zuordnet} $[\ldots]$\\~\\
+\underline{Notiz:} In einer Implementierung der Algorithmen kann $c$ als Kapazit\"at und $f$ als Fluss f\"ur Namen des jeweile Kantenattributs gesetzt werden.\\~\\
+Weiter gilt die
+\begin{itemize}
+\item \textbf{Kapazit\"atsbeschr\"ankung} ($e\textsubscript{ij}: f(e\textsubscript{ij} \leq c(e\textsubscript{ij})$) und
+\item die \textbf{Flusserhaltung} \\ ($\forall \textsubscript{j} \in \{1,\ldots n\}: \[ \sum_{e\textsubscript{ij} \in O(v\textsubscript{i}, e\textsubscript{ji} \in I(v\textsubscript{i}))} \] f(e\textsubscript{1j}) = \[ \sum_{} \] (f(e\textsubscript{ij}) - f(e\textsubscript{ji})) = 0$)
+\end{itemize}
+In dieser Arbeit wird im Weiteren der Begriff \textbf{Flussnetzwerk} verwendet, sollten Graphen diese Eigenschaften aufweisen $(V, E, f, c)$.\\
+Der Wert des \textbf{Flusses} $f$ mit $d = \[ \sum_{e\textsubscript{1j} \in O(q)} \] f(e\textsubscript{1j}) = \[ \sum_{e\textsubscript{in} \in I(s)} \] f(e\textsubscript{in})$ betr\"agt in den Ecken $q$ (Quelle) und $s$ (Senke) 0 [Null] (\textbf{Flusserhaltung}). Die maximale Menge, die von der Quelle zur Senke transportiert werden kann ist ein Fluss maximaler St\"arke.\\~\\
+\textbf{Definition 4.2} \textit{Ein Schnitt ist die Menge von Kanten $A(X,\bar X)$, wobei $q \in C$ und $s \in \bar X$.}\\~\\
+\textbf{Definition 4.3} \textit{Ein Fluss, dessen Wert} $min\{c(X,\bar X) \| A(X,\bar X)$ ist ein beliebiger Schnitt$\}$ \textit{entspricht hei\ss{}t ein \textbf{maximaler Fluss}.}\\~\\
+\textbf{Definition 4.4} \textit{Ein ungerichteter Weg von der Quelle q zur Senke s hei\ss{}t ein vergr\"u\ss{}ernder Weg, wenn gilt:}
+\begin{itemize}
+\item F\"ur jede Kante $e\textsubscript{ij}$ , die auf dem Weg entsprechend ihrer Richtung durchlaufen
+wird (sie wird als \textbf{Vorw\"artskante} bezeichnet), ist $f(e\textsubscript{ij}) < c(e\textsubscript{ij})$.
+\item F\"ur jede Kante $e\textsubscript{ij}$ , die auf dem Weg entgegen ihrer Richtung durchlaufen
+wird (sie wird als \textbf{R\"uckw\"artskante} bezeichnet), ist $f(e\textsubscript{ij}) > 0)$.
+\end{itemize}\\~\\
+\textbf{Satz 4.2} \textit{Wenn in einem Graphen G ein Fluss der St\"arke $d$ von der Quelle $q$ zur Senke $s$ flie\ss{}t, gilt genau eine der beiden Aussagen:}
+\begin{itemize}
+\item[1.] \textit{Es gibt einen vergr\"o\ss{}ernden Weg.}
+\item[2.] \textit{Es gibt einen Schnitt} $A(X,\bar X)$ \textit{mit} $c(X,\bar X) = d$.
+\end{itemize}\\~\\
+\underline{Notiz:} \textit{1.} kann bei einer Implementierung eine Rekursion ausl\"sen ("`Ein maximaler Fluss ist noch nicht gefunden"' - Erweiterbarkeit ist gegeben), wobei \textit{2.} die Abbruchbedingung beschreibt ("`Ein maximaler Fluss ist gefunden"' - Erweiterbarkeit nicht gegeben).\\~\\
+\textbf{Satz 4.3 (Max-flow-min-cut Theorem von Ford und Fulkerson)} \textit{In einem schwach zusammenh\"angendem schlichten Digraphen $G$ mit genau
+einer Quelle $q$ und genau einer Senke $s$ sowie der Kapazit\"atsfunktion $c$ und
+dem Fluss $f$ ist das Minimum der Kapazit\at eines $q$ und $s$ trennenden Schnitts
+gleich der St\"arke eines maximalen Flusses von $q$ nach $s$.}
 
-    \subsection{Komplexit\"at}
-    Die Komplexit\"at des \textbf{Ford-Fulkerson} Algorithmus wird mit $O(|E| * d\textsubscript{max})$, mit $d\textsubscript{max}$ als Maximalwert von $d$, angegeben. Jede Kante muss maximal zweimal inspiziert\footnote{siehe 3.1} werden (in jede Richtung einmal). Die Inspektion ben\"otigt hier eine konstante Anzahl von Arbeitsschritten. Ein neuer verg. Weg ist also nach jeweils $O(|E|)$ Schritten gefunden (wenn es einen gibt). Da maximal $d\textsubscript{max}$ vergr. Wege gefunden werden m\"ussen, ergibt sich eine Komplexit\"at von $O(|E| * d\textsubscript{max})$~\cite{grbuch} (Seite 105).\\~\\
-    Weiter l\"asst sich der Speicherplatzbedarf der Eingabe durch $O(|V|\textsuperscript{2} * log(c\textsubscript{max}))$, mit $c\textsubscript{max}$ als Maximalwert der Kapazit\"aten aller Eckenpaare, absch\"atzen~\cite{grbuch} (Seite 105).\\~\\
-    Der Algorithmus ist nicht polynomial, da der Arbeitsaufwand mit zunehmender Eingabe exponentiell ansteigt, weil $c\textsubscript{max} \leq d\textsubscript{max}$ verausgesetzt werden kann ($O(c\textsubscript{max}) = O(e\textsuperscript{log(c\textsubscript{max})})$)~\cite{grbuch} (Seite 106).\\~\\
-    \textbf{Satz 4.4} \textit{Wenn jede Vergr\"o\ss{}erung der Flussst\"arke $d$ durch einen vergr. Weg minimaler Kantenanzahl erfolgt, dann sind h\"ochstens $O(|E| * |V|)$ vergr. Wege zu berechnen, bis $d$ seinen Maximalwert erreicht hat.}~\cite{grbuch} (Seite 106).\\~\\
-    Satz 4.4 \"Andert den Algorithmus ab, damit die Problemgr\"o\ss{}e in Polynomialzeit anw\"achst.
+\subsection{Komplexit\"at}
+Die Komplexit\"at des \textbf{Ford-Fulkerson} Algorithmus wird mit $O(|E| * d\textsubscript{max})$, mit $d\textsubscript{max}$ als Maximalwert von $d$, angegeben. Jede Kante muss maximal zweimal inspiziert\footnote{siehe 3.1} werden (in jede Richtung einmal). Die Inspektion ben\"otigt hier eine konstante Anzahl von Arbeitsschritten. Ein neuer verg. Weg ist also nach jeweils $O(|E|)$ Schritten gefunden (wenn es einen gibt). Da maximal $d\textsubscript{max}$ vergr. Wege gefunden werden m\"ussen, ergibt sich eine Komplexit\"at von $O(|E| * d\textsubscript{max})$~\cite{grbuch} (Seite 105).\\~\\
+Weiter l\"asst sich der Speicherplatzbedarf der Eingabe durch $O(|V|\textsuperscript{2} * log(c\textsubscript{max}))$, mit $c\textsubscript{max}$ als Maximalwert der Kapazit\"aten aller Eckenpaare, absch\"atzen~\cite{grbuch} (Seite 105).\\~\\
+Der Algorithmus ist nicht polynomial, da der Arbeitsaufwand mit zunehmender Eingabe exponentiell ansteigt, weil $c\textsubscript{max} \leq d\textsubscript{max}$ verausgesetzt werden kann ($O(c\textsubscript{max}) = O(e\textsuperscript{log(c\textsubscript{max})})$)~\cite{grbuch} (Seite 106).\\~\\
+\textbf{Satz 4.4} \textit{Wenn jede Vergr\"o\ss{}erung der Flussst\"arke $d$ durch einen vergr. Weg minimaler Kantenanzahl erfolgt, dann sind h\"ochstens $O(|E| * |V|)$ vergr. Wege zu berechnen, bis $d$ seinen Maximalwert erreicht hat.}~\cite{grbuch} (Seite 106).\\~\\
+Satz 4.4 \"Andert den Algorithmus ab, damit die Problemgr\"o\ss{}e in Polynomialzeit anw\"achst.
 
-    %%%%%%%%%%%%%%%%
-    %%% Entwurf %%%%
-    %%%%%%%%%%%%%%%%
-    \section{Entwurf}
-    Der Entwurf dient der allgemeinen Beschreibung der Vorg\"ange und der technischen Umsetzung als alleinige Vorlage, sodass eine Implementierung in beliebigen Programmiersparachen m\"oglich ist, ohne weitere Dokumente zu ben\"otigen. Sowohl die zu implementierenden Algorithmen als auch gewisse Datenstrukturen sind hier zu finden. So ist es m\"oglich auf bestimmte St\"arken und Schw\"achen von Programmiersprachen in diesem Kontext einzugehen, um so effiziente Softwarel\"osungen zu erstellen.
+%%%%%%%%%%%%%%%%
+%%% Entwurf %%%%
+%%%%%%%%%%%%%%%%
+\section{Entwurf}
+Der Entwurf dient der allgemeinen Beschreibung der Vorg\"ange und der technischen Umsetzung als alleinige Vorlage, sodass eine Implementierung in beliebigen Programmiersparachen m\"oglich ist, ohne weitere Dokumente zu ben\"otigen. Sowohl die zu implementierenden Algorithmen als auch gewisse Datenstrukturen sind hier zu finden. So ist es m\"oglich auf bestimmte St\"arken und Schw\"achen von Programmiersprachen in diesem Kontext einzugehen, um so effiziente Softwarel\"osungen zu erstellen.\\~\\
+Beschreibungen von Schnittstellen sind hier jeweils f\"ur den fettgedruckten Teil gegeben und Beispiele f\"ur eine m\"ogliche Implementierung und Datenstrukturen sind f\"ur die funktionale und pr\"adikative Programmiersprache \textbf{Erlang}~\cite{erlwikipedia} verfasst, da sich die Aufgabenstellung auf eine Implementierung in \textbf{Erlang} bezieht.
 
-    \subsection{Ford-Fulkerson}
-    \textit{Der Algorithmus beruht auf der Idee, einen Weg von der Quelle zur Senke zu finden, entlang dessen der Fluss weiter vergr\"o\ss{}ert werden kann, ohne die Kapazit\"atsbeschr\"ankungen der Kanten zu verletzen.}~\cite{ffwikipedia} (Wrikungsprinzip)\\~\\
-    Dieser Algorithmus baut im wesentlichen auf dem Beweis des Satzes 4.3 auf.
+\subsection{Ford-Fulkerson}
+\textit{Der Algorithmus beruht auf der Idee, einen Weg von der Quelle zur Senke zu finden, entlang dessen der Fluss weiter vergr\"o\ss{}ert werden kann, ohne die Kapazit\"atsbeschr\"ankungen der Kanten zu verletzen.}~\cite{ffwikipedia} (Wrikungsprinzip)\\~\\
+Dieser Algorithmus baut im wesentlichen auf dem Beweis des Satzes 4.3 auf.
 
-    \subsubsection{Algorithmus}
-    Ecken des Graphen werden w\"ahrend der Suche nach einem vergr\"o\ss{}ernden (vergr.) Weg mit $(Vorg\textsubscript{i},\delta\textsubscript{i})$ markiert.
-    \begin{itemize}
-        \item $Vorg\textsubscript{i}$ beschreibt den Vorg\"anger von $v\textsubscript{i}$ auf einem vergr. Weg
-        \item $\delta\textsubscript{i}$ gibt die bisher auf dem vergr. Weg maximal m\"ogliche \"Anderung der Flussst\"arke an
-        \item $Vorg\textsubscript{i}$ wird mit einem Vorzeichen versehen, das angibt, ob eine Kante entsprechend ($+$) oder entgegen ($-$) ihrer Richtung durchlaufen wird
-    \end{itemize}
-    \newpage
-    \underline{Algorithmus}:
-    \begin{itemize}
-        \item[1.] \textit{(Initialisierung) \\ Weise allen Kanten $f(e\textsubscript{ij})$ als einen (initialen) Wert zu, der die Nebenbedingungen erf\"ullt. Markiere $q$ mit $(undefiniert, \infty)$.}
-        \item[2.] \textit{(Inpektion und Markierung)}
-        \begin{itemize}
-            \item[(a)] \textit{Falls alle markierten Ecken inspiziert wurden, gehe nach 4.}
-            \item[(b)] \textit{W\"ahle eine beliebige markierte, aber noch nicht inspizierte Ecke v\textsubscript{i} und inspiziere sie wie folg (Berechnung des Inkrements)}
-            \begin{itemize}
-                \item[$\bullet$] \textit{(Vorw\"artskante) F\"ur jede Kante $e\textsubscript{ij} \in O(v\textsubscript{i})$ mit unmarkierter Ecke $v\textsubscript{j}$ und $f(e\textsubscript{ij}) < c(e\textsubscript{ij})$ markiere $v\textsubscript{j}$ mit $(+v\textsubscript{i},\delta\textsubscript{j})$, wobei $\delta\textsubscript{j}$ die kleinere der beiden Zahlen $c(e\textsubscript{ij}) - f(e\textsubscript{ij})$ und $\delta\textsubscript{i}$ ist.}
-                \item[$\bullet$] \textit{(R\"uckw\"artskante) F\"ur jede Kante $e\textsubscript{ji} \in I(v\textsubscript{i})$ mit unmarkierter Ecke $v\textsubscript{j}$ und $f(e\textsubscript{ji}) > 0$ markiere $v\textsubscript{j}$ mit $(\−v\textsubscript{i}, \delta\textsubscript{j})$, wobei $\delta\textsubscript{j}$ die kleinere der beiden Zahlen $f(e\textsubscript{ji})$ und $\delta\textsubscript{i}$ ist.}
-            \end{itemize}
-            \item[(c)] \textit{Falls $s$ markiert ist, gehe zu 3., sonst zu 2.(a)}.
-        \end{itemize}
-        \item[3.] \textit{(Vergr\"o\ss{}erung der Flussst\"arke) \\ Bei $s$ beginnend l\"asst sich anhand der Markierungen der gefundene verg. Weg bis zur Ecke $q$ r\"uckw\"arts durchlaufen. F\"ur jede Verw\"artskante wird $f(e\textsubscript{ij})$ um $\delta\textsubscript{s}$ erh\"oht, und f\"ur jede R\"uckw\"artskante wird $f(e\textsubscript{ji})$ um $\delta\textsubscript{s}$ vermindert. Anschlie\ss{}end werden bei allen Ecken mit Ausnahme von $q$ die Markierungen entfernt. Gehe zu 2.}
-        \item[4.] \textit{Es gibt keinen verg. Weg. Der jetzige Wert von $d$ ist optimal. Ein Schnitt $A(X,\bar X)$ mit $c(X,\bar X) = d$ wird gebildet von genau denjenigen Kanten, bei denen entweder die Anfangsecke oder die Endecke inspiziert ist.}
-    \end{itemize}
-    \underline{Notiz:} In Schritt \textit{1.} wird i.allg. $f(e\textsubscript{ij}) := 0$ f\"ur alle $i$ und $j$ gew\"ahlt.\\~\\
-    Das Buch zur Vorlesung~\cite{grbuch}, aus dem die Arbeitsweise der Algorithmen entnommen wird, zeigt, wie der \textbf{Ford-Fulkerson} Algorithmus mithilfe einer Tabelle verarbeitet wird. Diese beschreibt zwei Zellen "`gekennzeichnete Ecke"' und "`Kennzeichnung"'. Erstere beinhaltet markierte Ecken, die mit "`*"' versehen werden sollten diese inspiziert werden, und die zweite Zelle zeigt die Markierung der Ecke.\\~\\
-    \underline{Notiz:} Es bietet sich an f\"ur eine Implementierung eine \"ahnliche Datenstruktur zu w\"ahlen (z.B. Tupel). Das Inspizieren kann \"uber Attribute an Kanten gesetzt werden.
-    \subsubsection{Schnittstelle}
-    \subsubsection{Datenstrukturen}
+\subsubsection{Algorithmus}
+Ecken des Graphen werden w\"ahrend der Suche nach einem vergr\"o\ss{}ernden (vergr.) Weg mit $(Vorg\textsubscript{i},\delta\textsubscript{i})$ markiert.
+\begin{itemize}
+\item $Vorg\textsubscript{i}$ beschreibt den Vorg\"anger von $v\textsubscript{i}$ auf einem vergr. Weg
+\item $\delta\textsubscript{i}$ gibt die bisher auf dem vergr. Weg maximal m\"ogliche \"Anderung der Flussst\"arke an
+\item $Vorg\textsubscript{i}$ wird mit einem Vorzeichen versehen, das angibt, ob eine Kante entsprechend ($+$) oder entgegen ($-$) ihrer Richtung durchlaufen wird
+\end{itemize}
+\newpage
+\underline{Algorithmus}:
+\begin{itemize}
+\item[1.] \textit{(Initialisierung) \\ Weise allen Kanten $f(e\textsubscript{ij})$ als einen (initialen) Wert zu, der die Nebenbedingungen erf\"ullt. Markiere $q$ mit $(undefiniert, \infty)$.}
+\item[2.] \textit{(Inpektion und Markierung)}
+\begin{itemize}
+\item[(a)] \textit{Falls alle markierten Ecken inspiziert wurden, gehe nach 4.}
+\item[(b)] \textit{W\"ahle eine beliebige markierte, aber noch nicht inspizierte Ecke v\textsubscript{i} und inspiziere sie wie folg (Berechnung des Inkrements)}
+\begin{itemize}
+\item[$\bullet$] \textit{(Vorw\"artskante) F\"ur jede Kante $e\textsubscript{ij} \in O(v\textsubscript{i})$ mit unmarkierter Ecke $v\textsubscript{j}$ und $f(e\textsubscript{ij}) < c(e\textsubscript{ij})$ markiere $v\textsubscript{j}$ mit $(+v\textsubscript{i},\delta\textsubscript{j})$, wobei $\delta\textsubscript{j}$ die kleinere der beiden Zahlen $c(e\textsubscript{ij}) - f(e\textsubscript{ij})$ und $\delta\textsubscript{i}$ ist.}
+\item[$\bullet$] \textit{(R\"uckw\"artskante) F\"ur jede Kante $e\textsubscript{ji} \in I(v\textsubscript{i})$ mit unmarkierter Ecke $v\textsubscript{j}$ und $f(e\textsubscript{ji}) > 0$ markiere $v\textsubscript{j}$ mit $(\−v\textsubscript{i}, \delta\textsubscript{j})$, wobei $\delta\textsubscript{j}$ die kleinere der beiden Zahlen $f(e\textsubscript{ji})$ und $\delta\textsubscript{i}$ ist.}
+\end{itemize}
+\item[(c)] \textit{Falls $s$ markiert ist, gehe zu 3., sonst zu 2.(a)}.
+\end{itemize}
+\item[3.] \textit{(Vergr\"o\ss{}erung der Flussst\"arke) \\ Bei $s$ beginnend l\"asst sich anhand der Markierungen der gefundene verg. Weg bis zur Ecke $q$ r\"uckw\"arts durchlaufen. F\"ur jede Verw\"artskante wird $f(e\textsubscript{ij})$ um $\delta\textsubscript{s}$ erh\"oht, und f\"ur jede R\"uckw\"artskante wird $f(e\textsubscript{ji})$ um $\delta\textsubscript{s}$ vermindert. Anschlie\ss{}end werden bei allen Ecken mit Ausnahme von $q$ die Markierungen entfernt. Gehe zu 2.}
+\item[4.] \textit{Es gibt keinen verg. Weg. Der jetzige Wert von $d$ ist optimal. Ein Schnitt $A(X,\bar X)$ mit $c(X,\bar X) = d$ wird gebildet von genau denjenigen Kanten, bei denen entweder die Anfangsecke oder die Endecke inspiziert ist.}
+\end{itemize}
+\underline{Notiz:} In Schritt \textit{1.} wird i.allg. $f(e\textsubscript{ij}) := 0$ f\"ur alle $i$ und $j$ gew\"ahlt.\\~\\
+Das Buch zur Vorlesung~\cite{grbuch}, aus dem die Arbeitsweise der Algorithmen entnommen wird, zeigt, wie der \textbf{Ford-Fulkerson} Algorithmus mithilfe einer Tabelle verarbeitet wird. Diese beschreibt zwei Zellen "`gekennzeichnete Ecke"' und "`Kennzeichnung"'. Erstere beinhaltet markierte Ecken, die mit "`*"' versehen werden sollten diese inspiziert werden, und die zweite Zelle zeigt die Markierung der Ecke.\\~\\
+\underline{Notiz:} Es bietet sich an f\"ur eine Implementierung eine \"ahnliche Datenstruktur zu w\"ahlen (z.B. Tupel). Das Inspizieren kann \"uber Attribute an Kanten gesetzt werden.
+\subsubsection{Schnittstelle}
+\textbf{fordfulkerson}:fordfulkerson($<Filename>$,$<Quelle>$,$<Senke>$):\\ \indet [$<$Liste der im letzten Lauf inspizierten Ecken$>$]
+\begin{itemize}
+\item \underline{Beschreibung}: Der \textbf{Ford-Fulkerson} Algorithmus ist in einem Arbeitspaket\\ "`fordfulkerson"' zu implementieren
+\item \underline{Beispiel}: Erlang-Modul
+\end{itemize}
+\begin{lstlisting}
+% The erlang file containing this code is named fordfulkerson.erl
+-module(fordfulkerson). % module attribute
+% ...
+\end{lstlisting}
+fordfulkerson:\textbf{fordfulkerson}($<Filename>$,$<Quelle>$,$<Senke>$):\\ \indet [$<$Liste der im letzten Lauf inspizierten Ecken$>$]
+\begin{itemize}
+\item \underline{Beschreibung}: Der Name in der Funktionssignatur ist fordfulkerson
+\item \underline{Beispiel}: Erlang-Funktion
+\end{itemize}
+\begin{lstlisting}
+% ...
+fordfulkerson(...) -> ... .
+% ...
+\end{lstlisting}
+fordfulkerson:fordfulkerson($<$\textbf{Filename}$>$,$<Quelle>$,$<Senke>$):\\ \indet [$<$Liste der im letzten Lauf inspizierten Ecken$>$]
+\begin{itemize}
+\item \underline{Beschreibung}: Filename steht hier f\"ur den Namen der Datei, in der ein Graph gespeichert ist. Die Datei liegt im selben Verzeichnis, wie das Modul \textbf{fordfulkerson}
+\item \underline{Beispiel}: Dateiname als Erlang-Atom
+\end{itemize}
+\begin{lstlisting}
+% ...
+fordfulkerson('graph01.graph', ...) -> ... .
+% ...
+\end{lstlisting}
+fordfulkerson:fordfulkerson($<Filename>$,$<$\textbf{Quelle}$>$,$<$\textbf{Senke}$>$):\\ \indet [$<$Liste der im letzten Lauf inspizierten Ecken$>$]
+\begin{itemize}
+\item \underline{Beschreibung}: Quelle und Senke geben an, wo die Fl\"usse berechnet werden. Fl\"usse flie\ss{}en von der Quelle bis zur Senke
+\item \underline{Beispiel}: Ganzzahlige Quelle und Senke
+\end{itemize}
+\begin{lstlisting}
+% ...
+fordfulkerson(..., 1, 10) -> ... .
+% ...
+\end{lstlisting}
+fordfulkerson:fordfulkerson($<Filename>$,$<Quelle>$,$<Senke>$):\\ \indet [$<$\textbf{Liste der im letzten Lauf inspizierten Ecken}$>$]
+\begin{itemize}
+\item \underline{Beschreibung}: R\"uckbage sind die letzten inspizierten Ecken des Algorithmus
+\item \underline{Beispiel}: Liste mit ganzzahligen Ecken
+\end{itemize}
+\begin{lstlisting}
+% ...
+fordfulkerson(...) ->
+    Ecken = [1, 2, ...],
+    Ecken.
+% ...
+\end{lstlisting}
 
-    \subsection{Edmonds-Karp}
-    \subsubsection{Algorithmus}
-    \subsubsection{Schnittstelle}
-    \subsubsection{Datenstrukturen}
+\subsubsection{Datenstrukturen}
+Um \"Uberlegungen f\"ur die Datenstrukturen anzustellen, muss klar sein, wie auf Daten zugegriffen wird. Dazu  wird der Algorithmus aus \textbf{3.1.1} untersucht.\\~\\
+aus 1. \textit{(Initialisierung)}: Setzen von Werten aller Kanten
+\begin{itemize}
+    \item Werte k\"onnen als Kantenattribut im ADT\footnote{abstrakter Datentyp} "`adtgraph.beam"' gesetzt werden. Die Funktionalit\"at ist bereits gegeben und in der Datei definiert.
+    \item Um Werte \textit{aller} Kanten setzen zu k\"onnen, wird eine Funktionalit\"at gebraucht, die Kanten sucht.
+\end{itemize}
+aus 2. \textit{(Inspektion und Markierung)}:
 
-    \subsection{Laufzeitmessung}
+\subsection{Edmonds-Karp}
+\subsubsection{Algorithmus}
+\subsubsection{Schnittstelle}
+\subsubsection{Datenstrukturen}
 
-    %%%%%%%%%%%%%%%%%%%%
-    %%% Auswerttung %%%%
-    %%%%%%%%%%%%%%%%%%%%
-    \section{Auswertung}
+\subsection{Laufzeitmessung}
 
-    %%%%%%%%%%%%%%%%
-    %%% Quellen %%%%
-    %%%%%%%%%%%%%%%%
-    \section{Quellen}
-    \bibliographystyle{plain}
-    \bibliography{quellen}
-    \newpage
+%%%%%%%%%%%%%%%%%%%%
+%%% Auswerttung %%%%
+%%%%%%%%%%%%%%%%%%%%
+\section{Auswertung}
 
-    %%%%%%%%%%%%%%%%%%
-    %%% Erklärung %%%%
-    %%%%%%%%%%%%%%%%%%
-    \section{Erkl\"arung zur schriftlichen Ausarbeitung}
+%%%%%%%%%%%%%%%%
+%%% Quellen %%%%
+%%%%%%%%%%%%%%%%
+\section{Quellen}
+\bibliographystyle{plain}
+\bibliography{quellen}
+\newpage
 
-    Hiermit erkl\"are ich, dass ich diese schriftliche Ausarbeitung meines Referates selbstst\"andig und ohne fremde Hilfe verfasst habe und keine anderen als die angegebenen Quellen und Hilfsmittel benutzt habe sowie die aus fremden Quellen (dazu z\"ahlen auch Internetquellen) direkt oder indirekt \"ubernommenen Gedanken oder Wortlaute als solche kenntlich gemacht habe. Zudem erkl\"are ich, dass der zugeh\"orige Programmcode von mir selbst\"andig implementiert wurde ohne diesen oder Teile davon von Dritten im Wortlaut oder dem Sinn nach \"ubernommen zu haben. Die Arbeit habe ich bisher keinem anderen Pr\"ufungsamt in gleicher oder vergleichbarer Form vorgelegt. Sie wurde bisher nicht ver\"offentlicht.\\ \\ \\ \\
-    Hamburg, den \today \indent\rule{8.5cm}{0.4pt}
+%%%%%%%%%%%%%%%%%%
+%%% Erklärung %%%%
+%%%%%%%%%%%%%%%%%%
+\section{Erkl\"arung zur schriftlichen Ausarbeitung}
+
+Hiermit erkl\"are ich, dass ich diese schriftliche Ausarbeitung meines Referates selbstst\"andig und ohne fremde Hilfe verfasst habe und keine anderen als die angegebenen Quellen und Hilfsmittel benutzt habe sowie die aus fremden Quellen (dazu z\"ahlen auch Internetquellen) direkt oder indirekt \"ubernommenen Gedanken oder Wortlaute als solche kenntlich gemacht habe. Zudem erkl\"are ich, dass der zugeh\"orige Programmcode von mir selbst\"andig implementiert wurde ohne diesen oder Teile davon von Dritten im Wortlaut oder dem Sinn nach \"ubernommen zu haben. Die Arbeit habe ich bisher keinem anderen Pr\"ufungsamt in gleicher oder vergleichbarer Form vorgelegt. Sie wurde bisher nicht ver\"offentlicht.\\ \\ \\ \\
+Hamburg, den \today \indent\rule{8.5cm}{0.4pt}
 \end{document}

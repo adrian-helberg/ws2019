@@ -1,5 +1,11 @@
 \begin{thebibliography}{1}
 
+\bibitem{gkapub}
+Prof. Dr.~C. Klauck.
+\newblock Aufgabe 3: Flußprobleme, 2019.
+\newblock
+  \\\url{https://users.informatik.haw-hamburg.de/~klauck/GKA/aufg3.html}.
+
 \bibitem{alggra}
 Peter Läuchli.
 \newblock {\em Algorithmische Graphentheorie}.
@@ -16,5 +22,10 @@ Carsten Milkau.
 \newblock Algorithmus von ford und fulkerson, Juni 2019.
 \newblock Revision 21.06.2019
   \url{https://de.wikipedia.org/wiki/Algorithmus_von_Ford_und_Fulkerson}.
+
+\bibitem{erlwikipedia}
+Marc van Woerkom.
+\newblock Erlang (programmiersprache), November 2019.
+\newblock \\\url{https://de.wikipedia.org/wiki/Erlang_(Programmiersprache)}.
 
 \end{thebibliography}

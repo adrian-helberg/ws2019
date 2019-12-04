@@ -5,10 +5,15 @@
 -module(test).
 -author("Main").
 -include_lib("eunit/include/eunit.hrl").
+-compile(export_all).
 
--export([test/0]).
+graphToDot(Filename) ->
+  G = adtgraph:importG(Filename, d),
+  adtgraph:printGFF(G, 'graph_01').
+
+dotToPNG(Filename) ->  os:cmd(lists:concat(["dot -Tpng ", Filename , ".dot > ", Filename, ".png"])).
 
 test() ->
-  fordfulkerson:graphToDot('graph_01'),
+  graphToDot('graph_01'),
   timer:sleep(1000),
-  fordfulkerson:dotToPNG('graph_01').
+  dotToPNG('graph_01').

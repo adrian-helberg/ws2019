@@ -9,5 +9,11 @@
 -export([test/0]).
 
 test() ->
-  0.
+  L = [{'Marke', {'X'}},{'Marke', {'Y'}},{'Marke', {'Z'}}, {'Test', {'T'}}],
+  r(L, true).
 
+r([], T) -> T;
+r(_, false) -> false;
+r([H|T], _) ->
+  {Name, _} = H,
+  r(T, Name == 'Marke').

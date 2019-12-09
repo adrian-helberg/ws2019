@@ -18,47 +18,32 @@ fordfulkerson(Filename, Q, S) ->
   G_qMarked = mark(G_initialized, Q, 'Marke', {undefined, 'Infinity'}),
   %%% 2. INSPEKTION UND MARKIERUNG %%%
   % (a) Falls alle markierten Ecken inspiziert wurden, gehe nach 4.
-  Nodes = adtgraph:getVertices(G_qMarked),
-  G_ = markAll(G, Nodes, 'Marke', 'X'),
-%%  AllNodesAreMarked = areAllNodesMarked(G_, Nodes, true),
-  erlang:display(G_),
-  areAllNodesMarked(G_, Nodes, true).
-
-%%  case AllNodesAreMarked of
-%%    true ->
-%%      % Ein Schnitt A(X,X') mit c(X,X') = d wird gebildet
-%%      makeCut(G_qMarked, Q);
-%%    false ->
-%%  end,
-%%  % (b) Wähle eine beliebige markierte, aber noch nicht inspizierte Ecke und inspiziere sie
-%%  inspectMarkedNotInspectedNode().
+  AllNodesMarked = areAllNodesMarked(G_qMarked, adtgraph:getVertices(G_qMarked), true),
+% TODO: TEST
+  Result = if
+    % 4. Es gibt keinen vergrößernden Weg
+    AllNodesMarked -> makeCut(G_qMarked, Q);
+    % (b) Wähle eine beliebige7 markierte, aber noch nicht inspizierte Ecke vi und inspiziere sie
+    true -> getMarkedNotInspectedNode(G_qMarked, adtgraph:getVertices(G_qMarked))
+  end,
+  G_qInspected = inspect(G_qMarked, Result),
+  ForwardEdges = getFowardEdges(Q, adtgraph:getIncident(G_qInspected, Q), []).
 
 initialize(G, [], _, _) -> G;
 initialize(G, [H1, H2|T], Name, Value) ->
   G_ = adtgraph:setAtE(G, H1, H2, Name, Value),
   initialize(G_, T, Name, Value).
 
-markAll(G, [], _, _) -> G;
-markAll(G, [H|T], Name, Value) ->
-  G_ = adtgraph:setAtV(G, H, Name, Value),
-  markAll(G_, T, Name, Value).
-
 mark(G, V, Name, Value) -> adtgraph:setAtV(G, V, Name, Value).
 
 areAllNodesMarked(_, [], Marked) -> Marked;
 areAllNodesMarked(_, _, false) -> false;
 areAllNodesMarked(G, [H|T], _) ->
-  Attr = adtgraph:getValV(G, H, 'Marke'),
-  erlang:display(Attr),
-  if
-    Attr == nil -> IsMarked = false;
-    true -> Name = Attr,
-      if
-        Attr == 'Marke' -> IsMarked = true;
-        true -> IsMarked = false
-      end
-  end,
-  areAllNodesMarked(G, T, IsMarked).
+  Value = adtgraph:getValV(G, H, 'Marke'),
+  areAllNodesMarked(G, T, checkValue(Value)).
+
+checkValue(nil) -> false;
+checkValue({_, Value}) -> Value > 0.
 
 makeCut(G, Q) ->
   % Alle herausgehenden Kanten aus Q für den Schnitt nutzen
@@ -70,15 +55,24 @@ getFowardEdges(_, [], Nodes) -> Nodes;
 getFowardEdges(Q, [Q, V|T], Nodes) -> getFowardEdges(Q, T, lists:append(Nodes, [Q, V]));
 getFowardEdges(Q, [_, _|T], Nodes) -> getFowardEdges(Q, T, Nodes).
 
-inspectMarkedNotInspectedNode() ->
-  inspectForwards(),
-  inspectBackwards().
+getMarkedNotInspectedNode(_, []) -> {getMarkedNotInspectedNode, notok};
+getMarkedNotInspectedNode(G, [H|T]) ->
+  Mark = adtgraph:getValV(G, H, 'Marke'),
+  MarkedNotInspected = if
+    % Node ist nicht markiert
+    Mark == nil -> getMarkedNotInspectedNode(G, T);
+    % Node is markiert
+    true -> Inspection = adtgraph:getValV(G, H, '*'),
+      if
+        % Node ist nicht inspiziert
+        Inspection == nil -> H;
+        % Node ist inspiziert
+        true -> getMarkedNotInspectedNode(G, T)
+      end
+  end,
+  MarkedNotInspected.
 
-inspectForwards() ->
-  0.
-
-inspectBackwards() ->
-  0.
+inspect(G, V) -> G_ = adtgraph:setAtV(G, V, '*', true).
 
 %%% HELPER %%%
 graphToDot(G, Filename) ->
@@ -91,10 +85,3 @@ dotToPNG(Filename, Sleep) ->
   % Warte bis die dot-Datei geschrieben wurde
   timer:sleep(Sleep),
   os:cmd(lists:concat(["dot -Tpng ", Filename , ".dot > ", Filename, ".png"])).
-
-%%fileToDot(Filename) ->
-%%  G = adtgraph:importG(Filename, d),
-%%  adtgraph:printGFF(G, 'graph_01').
-%%
-%%decompile(BeamFileName) ->
-%%  file:write_file("./decompile", io_lib:fwrite("~p.\\n", [beam_disasm:file(BeamFileName)])).

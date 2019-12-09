@@ -9,11 +9,16 @@
 -export([test/0]).
 
 test() ->
-  L = [{'Marke', {'X'}},{'Marke', {'Y'}},{'Marke', {'Z'}}, {'Test', {'T'}}],
-  r(L, true).
+  X = 5,
+  Result = if
+    X == 5 -> X;
+    true -> nil
+  end,
+  Result.
 
 r([], T) -> T;
 r(_, false) -> false;
 r([H|T], _) ->
   {Name, _} = H,
   r(T, Name == 'Marke').
+

@@ -72,7 +72,7 @@ getMarkedNotInspectedNode(G, [H|T]) ->
   end,
   MarkedNotInspected.
 
-inspect(G, V) -> G_ = adtgraph:setAtV(G, V, '*', true).
+inspect(G, V) -> G_ = adtgraph:setAtV(G, V, '*', nil).
 
 %%% HELPER %%%
 graphToDot(G, Filename) ->

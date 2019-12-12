@@ -1,0 +1,11 @@
+digraph gerichtet
+{
+0 -> 1 [label = "(c:2,f:2)"];
+0 -> 2 [label = "(c:1,f:1)"];
+0 -> 3 [label = "(c:3,f:3)"];
+1 -> 5 [label = "(c:4,f:2)"];
+2 -> 3 [label = "(c:6,f:0)"];
+2 -> 5 [label = "(c:5,f:1)"];
+3 -> 4 [label = "(c:8,f:3)"];
+4 -> 5 [label = "(c:4,f:3)"];
+}

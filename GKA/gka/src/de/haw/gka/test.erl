@@ -1,24 +1,19 @@
-%%%-------------------------------------------------------------------
-%%% @author Adrian Helberg
-%%% @copyright (C) 2019, <HAW Hamburg>
-%%%-------------------------------------------------------------------
 -module(test).
 -author("Main").
--include_lib("eunit/include/eunit.hrl").
-
--export([test/0]).
+-compile(export_all).
 
 test() ->
-  X = 5,
-  Result = if
-    X == 5 -> X;
-    true -> nil
-  end,
-  Result.
+  G = adtgraph:importG('graph_01', d),
+  G_ = skizze:mark(G, 23569, 10),
+  skizze:getUnMarked(G_, [18119,12099,18119,23569]).
 
-r([], T) -> T;
-r(_, false) -> false;
-r([H|T], _) ->
-  {Name, _} = H,
-  r(T, Name == 'Marke').
+graphToDot(G, Filename) ->
+  File = lists:concat([Filename, '.dot']),
+  % Existierende Datei löschen, da printGFF Dateien nicht überschreibt
+  file:delete(File),
+  adtgraph:printGFF(G, Filename).
 
+dotToPNG(Filename, Sleep) ->
+  % Warte bis die dot-Datei geschrieben wurde
+  timer:sleep(Sleep),
+  os:cmd(lists:concat(["dot -Tpng ", Filename , ".dot > ", Filename, ".png"])).

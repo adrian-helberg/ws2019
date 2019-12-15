@@ -83,20 +83,6 @@ columns=fixed
         \tableofcontents
     \end{frame}
 
-    \section{Einleitung}
-    \begin{frame}{Einleitung - Selbstorganisation}
-        \begin{center}
-            \begin{tabular}{l | r}
-                Arbeitspaket & Zeitabsch\"atzung (in Stunden) \\
-                \hline
-                Recherche & 2-3\\
-                Algorithmen verstehen & 4-5\\
-                Entwurf & 16\\
-                Implementierung & 16
-            \end{tabular}
-        \end{center}
-    \end{frame}
-
     \section{Kontext}
     \begin{frame}{Kontext - Aufgabenstellung}
         \begin{block}{Aufgabenstellung}
@@ -230,13 +216,12 @@ columns=fixed
     \begin{frame}{Laufzeitmessung}
         \begin{block}{Idee}
             \begin{itemize}
-                \item[I.] Erfassen der Laufzeitkomplexit\"at durch skalierende Eingebedaten
-                \item[II.] Vergleich beiden Algorithmen
-                \item[III.] Herausarbeiten der Unterschiede beider Algorithmen
+                \item[I.] Untersuchung bei steigender maximaler Kapazit\"at
+                \item[II.] Untersuchung bei steigender Anzahl an Knoten und Kanten
             \end{itemize}
         \end{block}
 
-        \begin{block}{Idee}
+        \begin{block}{Zusatz}
             \begin{itemize}
                 \item Nutzen von \textbf{gengraph} zur Erstellung randomisierter Graphen f\"ur Laufzeitexperimente
             \end{itemize}
@@ -244,100 +229,125 @@ columns=fixed
     \end{frame}
 
     \begin{frame}{Laufzeitmessung - Versuchsaufbau}
-        \begin{block}{zu I.}
-            \begin{center}
-                \begin{tabular}{c|c|c}
-                    \textbf{Edmonds-Karp} & \textbf{Ford-Fulkerson} & Anzahl Ecken (Kanten)\\
-                    \hline
-                    & & 10 (45)\\
-                    & & 20 (190)\\
-                    & & 30 (434)\\
-                    & & 40 (780)\\
-                    & & 50 (1225)\\
-                    & & 60 (1770)\\
-                    & & 70 (2415)\\
-                    & & 80 (3160)\\
-                    & & 90 (4005)\\
-                    & & 100 (4950)\\
-                \end{tabular}
-            \end{center}
+        \begin{block}{Parameter}
+            \begin{itemize}
+                \item Anzahl Ecken
+                \item minimaler Grad
+                \item maximaler Grad
+                \item Mindestgewicht
+                \item Maximalgewicht
+            \end{itemize}
         \end{block}
     \end{frame}
 
-    \begin{frame}{Laufzeitmessung - Versuchsdurchf\"uhrung}
-        \begin{block}{zu I.}
-            \begin{center}
-                \begin{tabular}{c|c|c}
-                    \textbf{Edmonds-Karp} & \textbf{Ford-Fulkerson} & Anzahl Ecken (Kanten)\\
-                    \hline
-                    5 & 7 & 10 (45)\\
-                    22 & 25 & 20 (190)\\
-                    79 & 93 & 30 (434)\\
-                    217 & 232 & 40 (780)\\
-                    443 & 503 & 50 (1225)\\
-                    886 & 1001 & 60 (1770)\\
-                    1662 & 1896 & 70 (2415)\\
-                    2729 & 3072 & 80 (3160)\\
-                    5003 & 5144 & 90 (4005)\\
-                    8111 & 8785 & 100 (4950)\\
-                \end{tabular}
-            \end{center}
+    \begin{frame}{Laufzeitmessung - Versuch 1}
+        \begin{block}{Maximale Kapazit\"at}
+            \begin{itemize}
+                \item Schrittweise Erh\"ohung der maximalen Kapazit\"at
+                \item Konstante Restparameter
+            \end{itemize}
+        \end{block}
+
+        \begin{block}{Erwartung}
+            \begin{itemize}
+                \item Ausrei\ss{}er in der Laufzeit beim \textbf{Ford-Fulkerson}
+                \item Konstanter \textbf{Edmonds-Karp}
+            \end{itemize}
         \end{block}
     \end{frame}
 
-    \begin{frame}{Laufzeitmessung - Versuchsdurchf\"uhrung}
-        \begin{block}{zu II.}
-            \begin{center}
-                \begin{tabular}{c|c|c}
-                    \textbf{Edmonds-Karp} & \textbf{Ford-Fulkerson} & $\delta$\\
-                    \hline
-                    5 & 7 &\\
-                    22 & 25 &\\
-                    79 & 93 &\\
-                    217 & 232 &\\
-                    443 & 503 &\\
-                    886 & 1001 &\\
-                    1662 & 1896 &\\
-                    2729 & 3072 &\\
-                    5003 & 5144 &\\
-                    8111 & 8785 &\\
-                \end{tabular}
-            \end{center}
+    \begin{frame}{Laufzeitmessung - Versuch 1}
+        \begin{center}
+            \begin{tabular}{c|c|c|c}
+                Messung & \textbf{Edmonds-Karp} & \textbf{Ford-Fulkerson} & Maximale Kapazit\"at\\
+                \hline
+%                942 & 753 & 10\\
+%                989 & 930 & 20\\
+%                1056 & 1054 & 30\\
+%                1054 & 839 & 40\\
+%                1061 & 1080 & 50\\
+%                1064 & 826 & 60\\
+%                1034 & 974 & 70\\
+%                1062 & 1140 & 80\\
+%                1077 & 878 & 90\\
+%                1028 & 879 & 100\\
+                1. & 942 & 753 & 10\\
+                2. & 989 & 930 & 20\\
+                3. & 1056 & 1054 & 30\\
+                4. & 1054 & 839 & 40\\
+                5. & 1061 & 1080 & 50\\
+                6. & 1064 & 826 & 60\\
+                7. & 1034 & 974 & 70\\
+                8. & 1062 & 1140 & 80\\
+                9. & 1077 & 878 & 90\\
+                10. & 1028 & 879 & 100\\
+            \end{tabular}
+        \end{center}
+    \end{frame}
+
+    \begin{frame}{Laufzeitmessung - Versuch 1}
+        \begin{center}
+            \includegraphics[width=10cm]{../max-capacity-graph.PNG}
+        \end{center}
+    \end{frame}
+
+    \begin{frame}{Laufzeitmessung - Versuch 1}
+        \begin{block}{Auswertung}
+            \begin{itemize}
+                \item Erwartete Laufzeit
+            \end{itemize}
         \end{block}
     \end{frame}
 
-    \begin{frame}{Laufzeitmessung - Versuchsdurchf\"uhrung}
-        \begin{block}{zu II.}
-            \begin{center}
-                \begin{tabular}{c|c|c}
-                    \textbf{Edmonds-Karp} & \textbf{Ford-Fulkerson} & $\delta$\\
-                    \hline
-                    5 & 7 & 2\\
-                    22 & 25 & 3\\
-                    79 & 93 & 14\\
-                    217 & 232 & 15\\
-                    443 & 503 & 60\\
-                    886 & 1001 & 115\\
-                    1662 & 1896 & 234\\
-                    2729 & 3072 & 343\\
-                    5003 & 5144 & 141\\
-                    8111 & 8785 & 674\\
-                \end{tabular}
-            \end{center}
+    \begin{frame}{Laufzeitmessung - Versuch 2}
+        \begin{block}{Anzahl Ecken und Kanten}
+            \begin{itemize}
+                \item Schrittweise Erh\"ohung der Anzahl Ecken und Kanten
+                \item Konstante Restparameter
+                \item maximale Kapazit\"at von 1
+            \end{itemize}
+        \end{block}
+
+        \begin{block}{Erwartung}
+            \begin{itemize}
+                \item Laufzeit von \textit{O(E*V)} bei beiden Algorithmen
+            \end{itemize}
         \end{block}
     \end{frame}
 
-    \begin{frame}{Laufzeitmessung - Versuchsauswertung}
-        \begin{block}{zu III.}
-            \begin{center}
-                \includegraphics[width=7.8cm]{../auswertung.PNG}
-            \end{center}
-        \end{block}
+    \begin{frame}{Laufzeitmessung - Versuch 2}
+        \begin{center}
+            \begin{tabular}{c|c|c|c}
+                Messung & \textbf{Edmonds-Karp} & \textbf{Ford-Fulkerson} & Anzahl Ecken (Kanten)\\
+                \hline
+                1. & 6311 & 8201 & 105 (5460)\\
+                2. & 7744 & 9850 & 110 (5995)\\
+                3. & 9113 & 11732 & 115 (6555)\\
+                4. & 10960 & 13925 & 120 (7140)\\
+                5. & 13108 & 16321 & 125 (7750)\\
+                6. & 15135 & 18698 & 130 (8385)\\
+                7. & 17626 & 21771 & 135 (9045)\\
+                8. & 20338 & 25076 & 140 (9730)\\
+                9. & 23257 & 28715 & 145 (10440)\\
+                10. & 26562 & 32950 & 150 (11175)\\
+            \end{tabular}
+        \end{center}
     \end{frame}
 
-    \section{Fazit}
-    \begin{frame}{Fazit}
+    \begin{frame}{Laufzeitmessung - Versuch 2}
+        \begin{center}
+            \includegraphics[width=10cm]{../anzahl-kanten-graph.PNG}
+        \end{center}
+    \end{frame}
 
+    \begin{frame}{Laufzeitmessung - Versuch 1}
+        \begin{block}{Auswertung}
+            \begin{itemize}
+                \item Der \textit{Edmonds-Karp} Algorithmus l\"auft effizienter
+                \item Nicht die erwartete Laufzeit
+                \item Liegt vermutlich an der Initialisierungzeit der Algorithmen
+            \end{itemize}
+        \end{block}
     \end{frame}
 
     \begin{frame}{Ende}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.2.5)  15 DEC 2019 13:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.2.5)  15 DEC 2019 19:05
 entering extended mode
 **./ausarbeitung.tex
 (ausarbeitung.tex
@@ -823,33 +823,74 @@ Underfull \hbox (badness 10000) in paragraph at lines 465--467
  []
 
 [18]
-<../auswertung.PNG, id=84, 596.2275pt x 464.4853pt>
-File: ../auswertung.PNG Graphic file (type png)
-<use ../auswertung.PNG>
-Package pdftex.def Info: ../auswertung.PNG  used on input line 504.
-(pdftex.def)             Requested size: 292.19041pt x 227.62204pt.
- [19] (D:/git\ws2019\GKA\Referat\auxil\ausarbeitung.bbl) [20 <../auswertung.PNG
->]
-Underfull \hbox (badness 10000) in paragraph at lines 521--523
+
+ausarbeitung.tex:505: Package keyval Error: weight undefined.
+
+See the keyval package documentation for explanation.
+Type  H <return>  for immediate help
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<../max-capacity-graph.PNG, id=84, 453.94594pt x 244.66406pt>
+File: ../max-capacity-graph.PNG Graphic file (type png)
+<use ../max-capacity-graph.PNG>
+Package pdftex.def Info: ../max-capacity-graph.PNG  used on input line 505.
+(pdftex.def)             Requested size: 453.94482pt x 244.66345pt.
+
+Overfull \hbox (23.9402pt too wide) in paragraph at lines 505--506
+ [] 
+ []
+
+[19]
+Underfull \hbox (badness 10000) in paragraph at lines 508--510
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 521--523
+ausarbeitung.tex:532: Package keyval Error: weight undefined.
+
+See the keyval package documentation for explanation.
+Type  H <return>  for immediate help
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+<../anzahl-kanten-graph.PNG, id=89, 462.97969pt x 257.46187pt>
+File: ../anzahl-kanten-graph.PNG Graphic file (type png)
+<use ../anzahl-kanten-graph.PNG>
+Package pdftex.def Info: ../anzahl-kanten-graph.PNG  used on input line 532.
+(pdftex.def)             Requested size: 462.97855pt x 257.46123pt.
+
+Overfull \hbox (32.97392pt too wide) in paragraph at lines 532--533
+ [] 
+ []
+
+[20 <../max-capacity-graph.PNG>]
+Underfull \hbox (badness 10000) in paragraph at lines 535--537
+
+ []
+
+[21 <../anzahl-kanten-graph.PNG>]
+(D:/git\ws2019\GKA\Referat\auxil\ausarbeitung.bbl) [22]
+Underfull \hbox (badness 10000) in paragraph at lines 553--555
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 521--523
+Underfull \hbox (badness 10000) in paragraph at lines 553--555
 
  []
 
-[21] (D:/git\ws2019\GKA\Referat\auxil\ausarbeitung.aux) ) 
+
+Underfull \hbox (badness 10000) in paragraph at lines 553--555
+
+ []
+
+[23] (D:/git\ws2019\GKA\Referat\auxil\ausarbeitung.aux) ) 
 Here is how much of TeX's memory you used:
- 5175 strings out of 492946
- 70777 string characters out of 3135531
+ 5181 strings out of 492946
+ 70976 string characters out of 3135531
  215069 words of memory out of 3000000
- 8981 multiletter control sequences out of 15000+200000
+ 8986 multiletter control sequences out of 15000+200000
  12182 words of font info for 42 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,8n,40p,752b,1332s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -874,10 +915,10 @@ ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti8.pfb><C:/Program Files/MiKTe
 X 2.9/fonts/type1/public/amsfonts/cm/cmti9.pfb><C:/Program Files/MiKTeX 2.9/fon
 ts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on D:/git\ws2019\GKA\Referat\out\ausarbeitung.pdf (21 pages, 368
-215 bytes).
+Output written on D:/git\ws2019\GKA\Referat\out\ausarbeitung.pdf (23 pages, 373
+156 bytes).
 PDF statistics:
- 165 PDF objects out of 1000 (max. 8388607)
+ 173 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

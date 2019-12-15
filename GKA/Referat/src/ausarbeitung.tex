@@ -479,31 +479,63 @@ gengraph:gengraph(<Anzahl Ecken>,<minimaler Grad>,<Maximaler Grad>,<Min.Gewicht>
         \item Mindestgewicht
         \item Maximalgewicht
     \end{itemize}
+    Der minimale und maximale Grad der Knoten wird in den Versuchen vernachl\"assigt, da diese nicht wesentlich zur L\"osung der Aufgabenstellung beitragen. Wie oben gennant, wird immer mit einem vollvermaschten Flussnetzwerk gearbeitet, also\\ $minimaler Grad = maximaler Grad = |V| - 1$
 
-    %%%%%%%%%%%%%%%%%%%%
-    %%% Auswerttung %%%%
-    %%%%%%%%%%%%%%%%%%%%
-    \section{Auswertung}
+    \subsubsection{Versuch - Maximale Kapazit\"at}
+    Bei schrittweiser Erh\"ohung der maximalen Kapazit\"at bei konstant bleibenden Restparametern wird erwartet, dass der \textbf{Ford-Fulkerson} Algorithmus Ausrei\ss{}er in der Laufzeit aufweist, w\"ahrend der \textbf{Edmonds-Karp} Algorithmus konstant bleibt, da dieser unabh\"ahngig zur maximalen Kapazit\"at abl\"auft. Die Anzahl der Kanten in diesem Versuch bel\"auft sich auf 60, die minimale Kapazit\"at auf 1.
+
     \begin{center}
         \begin{tabular}{c|c|c|c}
-            \textbf{Edmonds-Karp} & \textbf{Ford-Fulkerson} & Anzahl Ecken & Anzahl Kanten\\
+            Messung & \textbf{Edmonds-Karp} & \textbf{Ford-Fulkerson} & Maximale Kapazit\"at\\
             \hline
-            5 & 7 & 10 & 45\\
-            22 & 25 & 20 & 190\\
-            79 & 93 & 30 & 434\\
-            217 & 232 & 40 & 780\\
-            443 & 503 & 50 & 1225\\
-            886 & 1001 & 60 & 1770\\
-            1662 & 1896 & 70 & 2415\\
-            2729 & 3072 & 80 & 3160\\
-            5003 & 5144 & 90 & 4005\\
-            8111 & 8785 & 100 & 4950\\
+            1. & 942 & 753 & 10\\
+            2. & 989 & 930 & 20\\
+            3. & 1056 & 1054 & 30\\
+            4. & 1054 & 839 & 40\\
+            5. & 1061 & 1080 & 50\\
+            6. & 1064 & 826 & 60\\
+            7. & 1034 & 974 & 70\\
+            8. & 1062 & 1140 & 80\\
+            9. & 1077 & 878 & 90\\
+            10. & 1028 & 879 & 100\\
         \end{tabular}
     \end{center}
+
     \begin{center}
-        \includegraphics[height=8cm]{../auswertung.PNG}
+        \includegraphics[weight=10cm]{../max-capacity-graph.PNG}
     \end{center}
-    Die Tabelle und der Graph zeigen, dass sich beide Algorithmen \"ahnlich verhalten bei linear steigender Anzahl Ecken, aber entgegen der Erwarteten Laufzeitkomplexit\"at exponentiell in der Laufzeit steigen.
+
+    \underline{Auswertung}:\\~\\
+    Im Diagramm ist die erwartete Laufzeit beider Algorithmen zu beobachten.
+
+    \subsubsection{Versuch - Anzahl Ecken}
+    Bei schrittweiser Erh\"ohung der Anzahl der Ecken bei konstant bleibenden Restparametern wird erwartet, dass beide Algorithmen ein Laufzeitverhalten von $O(|E|*|V|)$ aufweisen, wenn man die maximale Kapazit\"at auf 1 setzt und jeder Knoten nur eine eingehende Kante besitzt, da die Anzahl vergr. Wege $|V|-1$ betr\"agt
+
+    \begin{center}
+        \begin{tabular}{c|c|c|c}
+            Messung & \textbf{Edmonds-Karp} & \textbf{Ford-Fulkerson} & Anzahl Ecken (Kanten)\\
+            \hline
+            1. & 6311 & 8201 & 105 (5460)\\
+            2. & 7744 & 9850 & 110 (5995)\\
+            3. & 9113 & 11732 & 115 (6555)\\
+            4. & 10960 & 13925 & 120 (7140)\\
+            5. & 13108 & 16321 & 125 (7750)\\
+            6. & 15135 & 18698 & 130 (8385)\\
+            7. & 17626 & 21771 & 135 (9045)\\
+            8. & 20338 & 25076 & 140 (9730)\\
+            9. & 23257 & 28715 & 145 (10440)\\
+            10. & 26562 & 32950 & 150 (11175)\\
+        \end{tabular}
+    \end{center}
+
+    \begin{center}
+        \includegraphics[weight=10cm]{../anzahl-kanten-graph.PNG}
+    \end{center}
+
+    \underline{Auswertung}:\\~\\
+    Im Diagramm ist zu beobachten, dass der \textbf{Edmonds-Karp} Algorithmus effizienter l\"auft, aber entgegen der Erwartung laufen beide Algorithmen nicht mit einer Laufzeit von\\ $O(|E|*|V|)$. Dies l\"asst sich nur damit erkl\"aren, dass die Initialisierung in die Zeitmessung mit eingeflossen ist. Um bessere Messergebnisse zu liefern, muss die Messung nach der Initialisierung erfolgen.
+
+    \newpage
 
     %%%%%%%%%%%%%%%%
     %%% Quellen %%%%

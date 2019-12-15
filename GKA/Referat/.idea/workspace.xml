@@ -2,94 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19ffdd42-8312-49b4-ad48-9772bd527abf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Mappe1.xlsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/algorithmus.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auswertung.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auxil/presentation.aux" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auxil/presentation.bcf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auxil/presentation.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auxil/presentation.nav" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auxil/presentation.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auxil/presentation.run.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auxil/presentation.snm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/auxil/presentation.toc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/max-flow-min-cut.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/presentation.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/presentation.synctex.gz" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/presentation.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/quellen.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/presentation.tex" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wirkungsprinzip.PNG" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gka/src/de/haw/gka/aufg3test.beam" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gka/src/de/haw/gka/bsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gka/src/de/haw/gka/bsp.dot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gka/src/de/haw/gka/bsp.graph" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gka/src/de/haw/gka/bsp.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gka/src/de/haw/gka/edmondskarp.beam" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gka/src/de/haw/gka/fordfulkerson.beam" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gka/src/de/haw/gka/gengraph.beam" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gka/src/de/haw/gka/graph-1.dot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gka/src/de/haw/gka/graph-1.graph" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gka/src/de/haw/gka/graph-1.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gka/src/de/haw/gka/graph_01.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gka/src/de/haw/gka/graph_02.dot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gka/src/de/haw/gka/graph_02.graph" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gka/src/de/haw/gka/graph_02.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gka/src/de/haw/gka/graph_03.dot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gka/src/de/haw/gka/graph_03.graph" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gka/src/de/haw/gka/graph_03.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gka/src/de/haw/gka/graph_04.dot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gka/src/de/haw/gka/graph_04.graph" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gka/src/de/haw/gka/graph_04.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gka/src/de/haw/gka/graph_06.dot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gka/src/de/haw/gka/graph_06.graph" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gka/src/de/haw/gka/graph_06.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gka/src/de/haw/gka/graph_de.dot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gka/src/de/haw/gka/graph_de.graph" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gka/src/de/haw/gka/graph_de.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gka/src/de/haw/gka/results976755.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gka/src/de/haw/gka/test.graph" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gka/src/de/haw/gka/test3GRAPH.beam" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gka/src/de/haw/gka/test3GRAPH.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gka/src/de/haw/gka/testaufg3.graph" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gka/src/de/haw/gka/versuch1.beam" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gka/src/de/haw/gka/versuch1.erl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gka/src/de/haw/gka/zeit3m.beam" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/erwartete_kompl.PNG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auxil/ausarbeitung.aux" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/ausarbeitung.aux" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auxil/ausarbeitung.log" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/ausarbeitung.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/auxil/ausarbeitung.toc" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/ausarbeitung.toc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/ausarbeitung.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/out/ausarbeitung.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/ausarbeitung.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/out/ausarbeitung.synctex.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ausarbeitung.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/ausarbeitung.tex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gka/out/production/gka/edmondskarp.beam" beforeDir="false" afterPath="$PROJECT_DIR$/../gka/out/production/gka/edmondskarp.beam" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gka/out/production/gka/fordfulkerson.beam" beforeDir="false" afterPath="$PROJECT_DIR$/../gka/out/production/gka/fordfulkerson.beam" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gka/out/production/gka/test.beam" beforeDir="false" afterPath="$PROJECT_DIR$/../gka/out/production/gka/test.beam" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gka/out/test/gka/edmondskarp.beam" beforeDir="false" afterPath="$PROJECT_DIR$/../gka/out/test/gka/edmondskarp.beam" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gka/out/test/gka/fordfulkerson.beam" beforeDir="false" afterPath="$PROJECT_DIR$/../gka/out/test/gka/fordfulkerson.beam" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gka/out/test/gka/test.beam" beforeDir="false" afterPath="$PROJECT_DIR$/../gka/out/test/gka/test.beam" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gka/src/de/haw/gka/VerGrWege.log" beforeDir="false" afterPath="$PROJECT_DIR$/../gka/src/de/haw/gka/VerGrWege.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gka/src/de/haw/gka/aufg1zeit.beam" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gka/src/de/haw/gka/buch.dot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gka/src/de/haw/gka/buch.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gka/src/de/haw/gka/edmondskarp.erl" beforeDir="false" afterPath="$PROJECT_DIR$/../gka/src/de/haw/gka/edmondskarp.erl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gka/src/de/haw/gka/fordfulkerson.dot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gka/src/de/haw/gka/fordfulkerson.erl" beforeDir="false" afterPath="$PROJECT_DIR$/../gka/src/de/haw/gka/fordfulkerson.erl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gka/src/de/haw/gka/fordfulkerson.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gka/src/de/haw/gka/result.dot" beforeDir="false" afterPath="$PROJECT_DIR$/../gka/src/de/haw/gka/result.dot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gka/src/de/haw/gka/result.svg" beforeDir="false" afterPath="$PROJECT_DIR$/../gka/src/de/haw/gka/result.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gka/src/de/haw/gka/skizze.beam" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gka/src/de/haw/gka/skizze.erl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gka/src/de/haw/gka/test.beam" beforeDir="false" afterPath="$PROJECT_DIR$/../gka/src/de/haw/gka/test.beam" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gka/src/de/haw/gka/test.dot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gka/src/de/haw/gka/test.erl" beforeDir="false" afterPath="$PROJECT_DIR$/../gka/src/de/haw/gka/test.erl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gka/src/de/haw/gka/test.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gka/src/de/haw/gka/web_01.dot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gka/src/de/haw/gka/web_01.graph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gka/src/de/haw/gka/web_01.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gka/src/de/haw/gka/web_02.dot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gka/src/de/haw/gka/web_02.graph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gka/src/de/haw/gka/web_02.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/auxil/presentation.aux" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/presentation.aux" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auxil/presentation.log" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/presentation.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auxil/presentation.nav" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/presentation.nav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auxil/presentation.toc" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/presentation.toc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/presentation.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/out/presentation.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/presentation.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/out/presentation.synctex.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presentation.tex" beforeDir="false" afterPath="$PROJECT_DIR$/src/presentation.tex" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,7 +138,7 @@
       <workItem from="1575021799256" duration="4248000" />
       <workItem from="1575112903092" duration="9477000" />
       <workItem from="1575197775129" duration="6937000" />
-      <workItem from="1576317115770" duration="41533000" />
+      <workItem from="1576317115770" duration="44202000" />
     </task>
     <servers />
   </component>
@@ -241,22 +162,22 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="900" height="270" key="GridCell.Tab.0.bottom" timestamp="1576420731314">
+    <state width="900" height="270" key="GridCell.Tab.0.bottom" timestamp="1576424631706">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="900" height="270" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576420731314" />
-    <state width="900" height="270" key="GridCell.Tab.0.center" timestamp="1576420731313">
+    <state width="900" height="270" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576424631706" />
+    <state width="900" height="270" key="GridCell.Tab.0.center" timestamp="1576424631706">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="900" height="270" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576420731313" />
-    <state width="900" height="270" key="GridCell.Tab.0.left" timestamp="1576420731313">
+    <state width="900" height="270" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576424631706" />
+    <state width="900" height="270" key="GridCell.Tab.0.left" timestamp="1576424631706">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="900" height="270" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576420731313" />
-    <state width="900" height="270" key="GridCell.Tab.0.right" timestamp="1576420731314">
+    <state width="900" height="270" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576424631706" />
+    <state width="900" height="270" key="GridCell.Tab.0.right" timestamp="1576424631706">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="900" height="270" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576420731314" />
+    <state width="900" height="270" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576424631706" />
     <state x="-960" y="0" width="960" height="1080" key="dock-window-1" timestamp="1576322009436">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>

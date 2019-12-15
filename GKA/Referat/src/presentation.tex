@@ -133,12 +133,10 @@ columns=fixed
                 \item Der Algorithmus von \textbf{Ford und Fulkerson} \footnote{" `Ford-Fulkerson"', 1956, L.R.Ford \& D.R.Fulkerson}
                 \item Der Algorithmus von \textbf{Edmonds und Karp} \footnote{"`Edmonds-Karp"', 1970, Yefim Dinitz, 1972, J.Edmonds \& R.Karp}
                 \item Algorithmen \textit{ohne} Residualnetzwerk
-                \item Nachvollziehbare Ergebnisse
-                \item Generierung von Graphen als SVG mit Angabe des Flusses
+                \item Nachvollziehbare Ergebnisse (Erstellen von Log-Dateien, Generierung von SVG-Dateien, etc.)
                 \item \textit{printGFF}
-                \item Nachweise der erwarteten Komplexit\"at
+                \item Nachweise einer erwarteten Komplexit\"at
                 \item Laufzeitmessungen
-                \item Erstellen von Log-Dateien
             \end{itemize}
         \end{block}
     \end{frame}
@@ -156,7 +154,7 @@ columns=fixed
 
     \begin{frame}{Kontext - Algorithmen}
         \begin{center}
-            \includegraphics[height=7cm]{../algorithmus.PNG}
+            \includegraphics[height=6.8cm]{../algorithmus.PNG}
         \end{center}
     \end{frame}
 
@@ -205,6 +203,13 @@ columns=fixed
                 \item Inzidente Kanten abfragen: \textit{O(1)}
             \end{itemize}
         \end{block}
+
+        \begin{block}{Erwartete Komplexit\"at}
+            \begin{itemize}
+                \item \textit{O(Anzahl Kanten x Maximale Anzahl an vergr. Wegen)}
+                \item \textit{O(Anzahl Knoten x Anzahl Kanten x Anzahl Kanten)}
+            \end{itemize}
+        \end{block}
     \end{frame}
 
     \section{Entwurf}
@@ -234,6 +239,9 @@ columns=fixed
     \end{frame}
 
     \begin{frame}{Entwurf - Datenstrukturen}
+        \begin{block}{Allgemein}
+            Effiziente Organisation von Daten mit Listen und Tupeln
+        \end{block}
         \begin{block}{aus 1. \textit{(Initialisierung)}}
             \begin{itemize}
                 \item Setzen eines initialen Flusses durch rekursives Durchlaufen aller Kanten
@@ -250,14 +258,14 @@ columns=fixed
     \begin{frame}{Entwurf - Datenstrukturen}
         \begin{block}{aus 2. (b)}
             \begin{itemize}
-                \item Ermitteln einer beliebigen Ecke
+                \item Ermitteln einer beliebigen Ecke / Holen einer Ecke aus der Queue
                 \item Holen der Inzidenten Kanten der Ecke
             \end{itemize}
         \end{block}
 
         \begin{block}{aus 2. \textit{(Vergr\"o\ss{}erung der Flussst\"arke)}}
             \begin{itemize}
-                \item Knoten der L\"aufe von Vergr\"o\ss{}erung sind zu halten
+                \item Knoten der L\"aufe von Vergr\"o\ss{}erung sind zu halten (R\"uckgabewert)
             \end{itemize}
         \end{block}
     \end{frame}
@@ -348,11 +356,6 @@ columns=fixed
         \end{block}
     \end{frame}
 
-    \section{Fazit}
-    \begin{frame}{Fazit}
-
-    \end{frame}
-
     \begin{frame}{Laufzeitmessung - Versuchsdurchf\"uhrung}
         \begin{block}{zu II.}
             \begin{center}
@@ -377,9 +380,14 @@ columns=fixed
     \begin{frame}{Laufzeitmessung - Versuchsauswertung}
         \begin{block}{zu III.}
             \begin{center}
-                \includegraphics[width=8cm]{../auswertung.PNG}
+                \includegraphics[width=7.8cm]{../auswertung.PNG}
             \end{center}
         \end{block}
+    \end{frame}
+
+    \section{Fazit}
+    \begin{frame}{Fazit}
+
     \end{frame}
 
     \begin{frame}{Ende}

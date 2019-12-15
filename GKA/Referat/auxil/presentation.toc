@@ -3,4 +3,4 @@
 \beamer@sectionintoc {2}{Kontext}{6}{0}{2}
 \beamer@sectionintoc {3}{Entwurf}{13}{0}{3}
 \beamer@sectionintoc {4}{Laufzeitmessung}{18}{0}{4}
-\beamer@sectionintoc {5}{Fazit}{22}{0}{5}
+\beamer@sectionintoc {5}{Fazit}{24}{0}{5}

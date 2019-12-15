@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19ffdd42-8312-49b4-ad48-9772bd527abf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/erwartete_kompl.PNG" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auxil/presentation.aux" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/presentation.aux" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/auxil/presentation.log" beforeDir="false" afterPath="$PROJECT_DIR$/auxil/presentation.log" afterDir="false" />
@@ -138,7 +137,7 @@
       <workItem from="1575021799256" duration="4248000" />
       <workItem from="1575112903092" duration="9477000" />
       <workItem from="1575197775129" duration="6937000" />
-      <workItem from="1576317115770" duration="44202000" />
+      <workItem from="1576317115770" duration="45031000" />
     </task>
     <servers />
   </component>
@@ -162,22 +161,22 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="900" height="270" key="GridCell.Tab.0.bottom" timestamp="1576424631706">
+    <state width="900" height="270" key="GridCell.Tab.0.bottom" timestamp="1576426229888">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="900" height="270" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576424631706" />
-    <state width="900" height="270" key="GridCell.Tab.0.center" timestamp="1576424631706">
+    <state width="900" height="270" key="GridCell.Tab.0.bottom/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576426229888" />
+    <state width="900" height="270" key="GridCell.Tab.0.center" timestamp="1576426229888">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="900" height="270" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576424631706" />
-    <state width="900" height="270" key="GridCell.Tab.0.left" timestamp="1576424631706">
+    <state width="900" height="270" key="GridCell.Tab.0.center/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576426229888" />
+    <state width="900" height="270" key="GridCell.Tab.0.left" timestamp="1576426229888">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="900" height="270" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576424631706" />
-    <state width="900" height="270" key="GridCell.Tab.0.right" timestamp="1576424631706">
+    <state width="900" height="270" key="GridCell.Tab.0.left/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576426229888" />
+    <state width="900" height="270" key="GridCell.Tab.0.right" timestamp="1576426229888">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="900" height="270" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576424631706" />
+    <state width="900" height="270" key="GridCell.Tab.0.right/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1576426229888" />
     <state x="-960" y="0" width="960" height="1080" key="dock-window-1" timestamp="1576322009436">
       <screen x="-1920" y="0" width="1920" height="1040" />
     </state>

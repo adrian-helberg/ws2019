@@ -1,0 +1,11 @@
+Folie <Einleitung>
+Block <Regularien> Was dieser Präsentation zugrunde liegt, zwei große Blöcke
+Block <Überlegungen> Wie an die Aufgaben herangehen? Arbeitspakete
+
+Folie <Einleitung - Arbeitspakete>
+Algorithmen verstehen: Beispiele mit "Papier und Stift" (Haptik), Applets
+Entwurf: Kapselung zur Implementierung (Schwierigkeit)
+Implementierung: Erlang verstehen
+Block <Vorbereitung>: Quellen vorstellen
+
+Folie <Quellen>

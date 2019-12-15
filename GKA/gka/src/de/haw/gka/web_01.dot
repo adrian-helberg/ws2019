@@ -1,9 +1,0 @@
-digraph gerichtet
-{
-0 -> 1 [label = "(c:10,f:7)"];
-1 -> 2 [label = "(c:10,f:7)"];
-2 -> 4 [label = "(c:7,f:7)"];
-3 -> 1 [label = "(c:5,f:0)"];
-4 -> 3 [label = "(c:5,f:0)"];
-4 -> 5 [label = "(c:15,f:7)"];
-}

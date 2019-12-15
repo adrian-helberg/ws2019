@@ -1,19 +1,19 @@
 -module(test).
--author("Main").
--compile(export_all).
 
-test() ->
-  G = adtgraph:importG('graph_01', d),
-  G_ = skizze:mark(G, 23569, 10),
-  skizze:getUnMarked(G_, [18119,12099,18119,23569]).
+-export([test/1]).
+
+test(Filename) ->
+  graphToDot(adtgraph:importG(Filename, d), Filename),
+  dotToSVG(Filename, 500).
 
 graphToDot(G, Filename) ->
   File = lists:concat([Filename, '.dot']),
-  % Existierende Datei löschen, da printGFF Dateien nicht überschreibt
+  % Delete existing file because printGFF won't override correctly
   file:delete(File),
   adtgraph:printGFF(G, Filename).
 
-dotToPNG(Filename, Sleep) ->
-  % Warte bis die dot-Datei geschrieben wurde
+dotToSVG(Filename, Sleep) ->
+  % Wait for the dot file to be written
   timer:sleep(Sleep),
-  os:cmd(lists:concat(["dot -Tpng ", Filename , ".dot > ", Filename, ".png"])).
+  os:cmd(lists:concat(["dot -Tsvg ", Filename, ".dot > ", Filename, ".svg"])),
+  erlang:display('SVG-Datei erstellt').

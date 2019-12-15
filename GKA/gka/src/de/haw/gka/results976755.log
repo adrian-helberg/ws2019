@@ -1,0 +1,9 @@
+ fordfulkerson: 41528ms, im Durchschnitt: 3775.272727ms
+	 Minimaler Schnitt A [876,480,146,53,52,3,2,250,542,541,540,539,538,537,536,535,604,875,832,831,
+ 830,810,775,746,1];
+ edmondskarp: 7957ms, im Durchschnitt: 723.363636ms
+	 Minimaler Schnitt A [876,347,212,178,266,267,268,269,270,318,317,316,315,310,309,308,307,306,251,
+ 250,2,1];
+ Gesamtzeit über alle Tests: 49486ms
+	 fordfulkerson Minimaler Schnitt B [88,64,41,61,44,22];
+	 edmondskarp Minimaler Schnitt B [88,64,41,22];

@@ -1,0 +1,55 @@
+%! Suppress = Unicode
+%! Author = Adrian Helberg
+%! Script = 18.02.2020
+%! Presentation = 21.02.2020
+
+%%% Preamble
+\documentclass[11pt]{article}
+
+%%% Packages
+\usepackage{ngerman}
+\usepackage{color} % Colored font
+\usepackage{graphicx} % Images
+\usepackage{titling} % Title formatting
+\usepackage[utf8]{inputenc} % UTF-8
+
+%%% Commands
+% ToC title
+\renewcommand{\contentsname}{
+\begin{center}
+    \LARGE Inhalt
+\end{center}
+}
+
+%%% Title
+\pretitle{
+\begin{center}
+    \includegraphics[width=8cm]{../../resources/Haw_logo.png}
+\end{center}
+}
+\title{
+\begin{center}
+    \Huge \textbf{Intelligente Systeme}\\
+    {\color{blue}- Skript -}\\~\\
+    \Large Prüfungsform: Referat
+\end{center}
+}
+\author{Adrian Helberg\\ Matr.Nr. 2309051}
+\date{Abgabe: 18.02.2020}
+
+%%% Document
+\begin{document}
+
+    \maketitle
+
+    \tableofcontents
+
+    \section{Suchen}
+    \section{Lernen}
+    \section{Sequenzen}
+    \section{Ethik}
+    \section{Quellen}
+    \bibliographystyle{plain}
+    \bibliography{main}
+
+\end{document}

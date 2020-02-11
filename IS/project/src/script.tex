@@ -1,0 +1,132 @@
+%! Suppress = Unicode
+%! Author = Adrian Helberg
+%! Script = 18.02.2020
+%! Presentation = 21.02.2020
+
+%%% Preamble
+\documentclass[11pt]{article}
+
+%%% Packages
+\usepackage{ngerman}
+\usepackage{color} % Colored font
+\usepackage{graphicx} % Images
+\usepackage{titling} % Title formatting
+\usepackage[utf8]{inputenc} % UTF-8
+\usepackage {tikz} % Graphs
+
+%%% Commands
+% ToC title
+\renewcommand{\contentsname}{
+    \begin{center}
+        \LARGE Inhalt
+    \end{center}
+}
+
+%%% Title
+\pretitle{
+    \begin{center}
+        \includegraphics[width=8cm]{../../resources/Haw_logo.png}
+    \end{center}
+}
+\title{
+    \begin{center}
+        \Huge \textbf{Intelligente Systeme}\\
+        {\color{blue}- Skript -}\\~\\
+        \Large Prüfungsform: Referat
+    \end{center}
+}
+\author{Adrian Helberg\\ Matr.Nr. 2309051}
+\date{Abgabe: 18.02.2020}
+
+%%% Document
+\begin{document}
+
+    \maketitle
+
+    \begin{abstract}
+        Diese Arbeit beschäftigt sich mit Konzepten der vier Kernbereiche aus \textit{intelligenten
+        Systemen}: \textbf{Suchen}, \textbf{Lernen}, \textbf{Verarbeitung von Sequenzen} und
+        \textbf{Ethik}. Zum einen werden Problemstellungen aufgezeigt, zum anderen auf
+        Implementationen verwiesen, die in der zugehörigen Präsentation vorgestellt werden.\\ Eine
+        Lösungsstrategie für das \textit{Problem des Handlungsreisenden (Traveling Salesman
+        Problem)} wird im Kapitel \textbf{Suchen} beschrieben. \textit{Selbstorganisierte Karten
+            (Selforganizing Maps)} zeigen eine Strategie des \textbf{Lernen}s, ein \textit{Deep
+        Learning}- Ansatz zur Datenanalyse von Sensordaten mobiler Endgeräte gibt Einblicke in
+        die \textbf{Sequenzverarbeitung} und eine Diskussion zum \textit{Trolley Problem} lädt
+        zur Diskussion über die \textbf{Ethik} in Verbindung mit \textit{intelligenten Systemen}
+        ein.
+    \end{abstract}
+
+    \tableofcontents
+    \newpage
+
+    \section{Suchen}
+
+    Dieses Kapitel beschäftigt sich mit der Umsetzungen einer Lösungsstrategie für das
+    \textit{Problem des Handlungsreisenden (Traveling Salesman Problem)} mithilfe einer
+    informierten Suche. Im speziellen eine Umsetzung mit einem genetischen Algorithmus.
+
+    \subsection{Problem des Handlungsreisenden}
+    Das Problem des Handlungsreisenden ist ein kombinatorisches Optimierungsproblem der
+    theoretischen Informatik. Dabei muss ein Handlungsreisender eine Menge von Städten besuchen.
+    Er beginnt bei einer bestimmten Stadt und muss, nachdem jede andere Stadt besucht wurde, zu
+    dieser zurückkehren. Das Optimierungsproblem besteht bei der Festlegung der Reihenfolge der zu
+    besuchenden Städte, sodass die gesamte Distanz der Reise minimal ist. Das Problem ist als
+    NP-vollständig klassifiziert.
+
+    \subsection{Genetischer Algorithmus}
+    Evolutionäre Algorithmen sind eine Klasse von stochastischen, heuristischen
+    Optimierungsverfahren. Der Name lässt sich von der Evolution natürlicher Lebewesen ableiten.
+    Ziel von genetischen Algorithmen ist es optimierte Lösungen zu Aufgabenstellungen zu finden,
+    bei denen ein Auffinden einer akzeptablen Lösung aus Gründen der kombinatorischen Komplexität
+    misslingt. So gibt es beim Problem des Handlungsreisenden mit 10 Orten z.B. bereits
+    $10!=3628800$ Lösungen. Kern eines genetischen Ansatzes ist die Veränderung von Mengen an
+    Problemlösungen, sodass gute Lösungen mit einer großen Wahrscheinlichkeit und schlechte
+    Lösungen mit geringen Wahrscheinlichkeit erhalten bleiben. Das Zusammenführen von Teilen guter
+    Lösungen kann noch bessere Ergebnisse liefern. So kann verhindert werden, dass ein
+    Algorithmus zur Optimierung an einem lokalen Optimum "hängenbleibt".
+
+    \newpage
+
+    \subsection{Allgemeiner Ablauf}
+    \\~~\\
+    \begin{center}
+        \begin{tikzpicture}[semithick , state/.style ={ rectangle ,top color =white , bottom color = processblue!20 ,
+        draw,processblue , text=blue , minimum width =1 cm}]
+            \node[state] (A) at (0,0) {Start};
+            \node[state] (B) at (0,-1.2) {Erzeugung einer zufälliger Population};
+            \node[state] (C) at (0,-2.4) {Wiederhole bis Abbruchbedungung erfüllt};
+            \node[state] (D) at (0,-3.6) {Berechne Fitness};
+            \node[state] (E) at (0,-4.8) {Selektion};
+            \node[state] (F) at (0,-6) {Crossover};
+            \node[state] (G) at (0,-7.2) {Mutation};
+            \node[state] (H) at (0,-8.4) {Austausch};
+            \node[state] (I) at (0,-9.6) {Teste Abbruchbedingung};
+            \node[state] (J) at (0,-10.8) {Ende};
+
+            \draw[->, very thick] (A) to (B);
+            \draw[->, very thick] (B) to (C);
+            \draw[->, very thick] (C) to (D);
+            \draw[->, very thick] (D) to (E);
+            \draw[->, very thick] (E) to (F);
+            \draw[->, very thick] (F) to (G);
+            \draw[->, very thick] (G) to (H);
+            \draw[->, very thick] (H) to (I);
+            \draw[->, very thick] (I) to (J);
+        \end{tikzpicture}
+    \end{center}
+
+    \subsection{Realisierung mit Java}
+
+    \section{Lernen}
+
+
+    \section{Sequenzen}
+
+
+    \section{Ethik}
+
+
+    \section{Quellen}
+
+\end{document}

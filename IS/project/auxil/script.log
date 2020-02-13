@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.11.4)  11 FEB 2020 16:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.11.4)  13 FEB 2020 14:42
 entering extended mode
 **./script.tex
 (script.tex
@@ -827,25 +827,48 @@ l.105             \node[state]
                                (J) at (0,-10.8) {Ende};
 (That was another \errmessage.)
 
-[4] (C:/git\ws2019\IS\project\auxil\script.aux) ) 
+script.tex:124: Missing $ inserted.
+<inserted text> 
+                $
+l.124     \left
+               \{
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+script.tex:129: Missing $ inserted.
+<inserted text> 
+                $
+l.129 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+[4]
+Overfull \hbox (0.16423pt too wide) in paragraph at lines 145--152
+\OT1/cmr/m/n/10.95 Ein zuf[]alli-ger Kreu-zungs-punkt in-ner-halb des Vek-tors 
+ei-nes se-lek-tier-ten Chro-
+ []
+
+[5] [6] (C:/git\ws2019\IS\project\auxil\script.aux) ) 
 Here is how much of TeX's memory you used:
  12206 strings out of 492453
  250525 string characters out of 3129787
- 287313 words of memory out of 3000000
+ 289313 words of memory out of 3000000
  16330 multiletter control sequences out of 15000+200000
  10425 words of font info for 36 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,6n,60p,390b,770s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/f
-onts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr1
-7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on C:/git\ws2019\IS\project\out\script.pdf (4 pages, 109740 byte
+ 60i,8n,60p,390b,770s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
+ublic/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
+sfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
+/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pf
+b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on C:/git\ws2019\IS\project\out\script.pdf (6 pages, 123343 byte
 s).
 PDF statistics:
- 45 PDF objects out of 1000 (max. 8388607)
+ 55 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  24 words of extra memory for PDF output out of 10000 (max. 10000000)
 

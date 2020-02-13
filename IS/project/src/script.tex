@@ -116,7 +116,53 @@
         \end{tikzpicture}
     \end{center}
 
-    \subsection{Realisierung mit Java}
+    \subsection{Chromosomen}
+    Eine Rundreise des \textit{Handlungsreisenden} wird duch ein Chromosom repräsentiert. Er
+    bereist hierzu alle Städte und endet in der Stadt, in der begonnen hat. Die Population
+    besteht aus der Anzahl solcher Rundreisen, die durch Vektoren modelliert werden.\\
+    Eine mögliche Rundreise wäre also:
+    \left\{
+    \begin{array}{c}
+        3\\6\\5\\2\\8
+    \end{array}
+    \right\}
+
+    \subsection{Fitness}
+    Eine Berechnung der Fitness in Abhängigkeit von der Gesamtdistanz einer Rundreise bietet sich
+    für das \textit{Problem des Handlungsreisenden} an. Allerding soll der Fitness-Wert
+    proportional zur Eignung (antiproportional zu den Kosten) eines Chromosoms sein. Für die
+    Kosten wird die Gesamtdistanz eines Chromosoms, für die Fitness der inverse Kostenwert
+    verwendet.
+
+    \subsection{Selektion}
+    Die Auswahl eines Chromosomenpaars aus der Population soll wahrscheinlicher werden, wenn der
+    Fitness-Wert steigt. Dies kann mittels einer Summe über alle Fitness-Werte gleichverteilte
+    Zufallszahl realisiert werden. Der Wertebereich der Zufallszahl wird in Abschnitte
+    unterteilt, deren Größe genau den Fitnesswerten der einzelnen Chromosomen entsprechen. Der
+    Abschnitt, in den die Zufallszahl fällt, bestimmt die Selektion des zugehörigen Chromosoms.
+
+    \subsection{Kreuzung}
+    Ein zufälliger Kreuzungspunkt innerhalb des Vektors eines selektierten Chromosoms wird bestimmt.
+    Der neue Vektor ist bis zum Kreuzpunkt identisch mit dem ursprünglichen. Der restliche Teil
+    des neuen Vektors wird wie folgt bestimmt. Gehe den zweiten ausgewählten Vektor vom Anfang
+    bis zum Ende durch und füge die erste Zahl, die noch nicht im neu zu bildenden Chromosoms
+    steht, an die nächste freie Stelle ein. An der letzten Stelle des neuen Chromosomes muss die
+    gleiche Zahl stehen wie an seiner ersten Stelle. Dieser Prozess wird für beide ausgewählten
+    Chromosomen durchgeführt.
+
+    \subsection{Mutation}
+    Mit einer kleinen Wahrscheinlichkeit findet in der Kreuzung eine Mutation statt. Diese wird
+    wie folgt implementiert. Ein zufälliges Paar von Indizes mit Werten zwischen 1 und der Anzahl
+    der Städte wird erzeugt. Die Werte, die den Indizes entsprechenm werden im Chromosom getauscht.
+    Dabei darf die Eigenschaft, dass Start- und Zielwert identisch sind, nicht verletzt werden.
+
+    \subsection{Austausch}
+    In jeder Iteration werden in der Population die beiden schlechtesten Chromosomen, d.h.
+    diejenigen mit den geringsten Fitness-Werten, durch die beiden neuen Chromosomen ersetzt, falls
+    letztere bessere Fitness-Werte haben. Es wird gewährleistet, dass in der Population alle
+    Chromosomen verschieden sind.
+
+    \subsection{Relisierung mit Java}
 
     \section{Lernen}
 

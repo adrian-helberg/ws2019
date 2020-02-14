@@ -88,8 +88,7 @@
 
     \newpage
 
-    \subsection{Allgemeiner Ablauf}
-    \\~~\\
+    \subsubsection{Allgemeiner Ablauf}
     \begin{center}
         \begin{tikzpicture}[semithick , state/.style ={ rectangle ,top color =white , bottom color = processblue!20 ,
         draw,processblue , text=blue , minimum width =1 cm}]
@@ -123,7 +122,7 @@
     Eine mögliche Rundreise wäre also:
     \left\{
     \begin{array}{c}
-        3\\6\\5\\2\\8
+        3\\5\\1\\2\\4\\3
     \end{array}
     \right\}
 
@@ -162,10 +161,137 @@
     letztere bessere Fitness-Werte haben. Es wird gewährleistet, dass in der Population alle
     Chromosomen verschieden sind.
 
-    \subsection{Relisierung mit Java}
+    \subsection{Realisierung mit Java}
+
+    \subsubsection{Eigenschaften}
+    \begin{center}
+        \includegraphics[width=10cm]{../../resources/properties_algorithm.png}
+        \\~\\
+        \includegraphics[width=10cm]{../../resources/properties_results.png}
+    \end{center}
+
+    \subsubsection{Visualisierung}
+
+    \begin{center}
+        \includegraphics[width=10cm]{../../resources/tsp_cities.png}
+        \\~\\
+        \includegraphics[width=10cm]{../../resources/tsp_cities_connected.png}
+    \end{center}
+
+    \newpage
 
     \section{Lernen}
 
+    Dieses Kapitel beschreibt ein unüberwachtes Lernverfahren der Neuroinformatik: Die
+    \textit{Selbstorganisierenden Karten}, \textit{Kohonen-Karten}, oder \textit{Kohonen Feature
+    Maps}. Also maschinelles Lernen ohne oder vorher bekannte Ergebniswerte.
+
+    \subsection{Motivation}
+    Das Funktionsprinzip von \textit{SOM}s (\textit{Self-organizing maps}) beruht auf der
+    Erkenntnis, dass viele Strukturen im Gehirn eine lineare oder planare Topologie aufweisen.
+    Eingehende Signale, wie z.B. visuelle Reize, sind jedoch multidimensional. Abbildung 1 zeigt
+    eine Skizze der topologischen Ansicht des sensorischen Kotex, der die sensorischen Eingaben
+    des Körpers auswertet. Es entsteht eine Klassifizierung, da ähnliche Ausgaben in direkter
+    Umgebung angesiedelt werden. Beispielsweise sind Signale an die Finger in unmittelbarer
+    Nachbarschaft zueinander. Solch eine Nachbarschaftsbeziehung zwischen Neuronen ist ein
+    grundlegendes Merkmal von \textit{SOM}s
+
+    \begin{figure}[ht!]
+        \centering
+        \includegraphics[width=8cm]{../../resources/gehirn.png}
+        \caption{Topologische Abbildung des sensorischen Kortex}
+    \end{figure}
+    \newpage
+
+    Eine topologieerhaltende Abbildung auf weniger Dimensionen (siehe Kapitel
+    \textbf{Motivation}), hier eine Fläche, wird als Karte bezeichnet. Diese Karten im Gehirn
+    kommen bei allen Säugetieren vor und sind dynamisch. Dies wird an folgendem Beispiel deutlich.
+    Beim Verlust von Körperteilen wird der Platz des entsprechenden Feldes mit der Zeit von
+    anderen Feldern eingenommen (da die eingehenden Signale wegfallen, Abbildung 2).
+
+    \begin{figure}[ht!]
+        \centering
+        \includegraphics[width=12cm]{../../resources/aufbau.png}
+        \caption{a) Schema einer Affenhand b) Bereich des Kortex der Hand c) 2 Monate nach
+        Amputation von Finger D3}
+    \end{figure}
+
+    \subsection{Aufbau}
+    \textit{SOM}s verwenden ein sehr einfaches Neuronenmodell ohne Aktivierungsfunktion
+    (Abbildung 3)
+
+    \begin{figure}[ht!]
+        \centering
+        \includegraphics[width=12cm]{../../resources/neuron.png}
+        \caption{Neuron einer \textit{SOM}}
+    \end{figure}
+
+    \subsection{Netz}
+    Organisiert man Neuronen als Eingabe- und Ausgabeneuronen in jeweils einer
+    Schicht, entsteht ein neuronales Netz, in dem die Eingabeneuronen über die Gewichtsvektoren
+    komplett mit den Ausgabeneuronen verbunden sind (Abbildung 4).
+
+    \begin{figure}[ht!]
+        \centering
+        \includegraphics[width=12cm]{../../resources/netz.png}
+        \caption{\textit{Kohonen}-Netz}
+    \end{figure}
+
+    \subsection{Lernverfahren}
+    \textit{SOM}s lernen durch Auswahl eines Neurons anhand deren "`Eignung"'. Die Eignung wird
+    über die euklidische Norm berechnet. Hierbei wird der Abstand zwischen Eingabevektor und
+    Gewichtsvektor bestimmt. Besitzen Neuronen die gleiche euklidische Norm, wird über das
+    Zufallsprinzip entschieden, welches Neuron ausgewählt wird. Das Besondere an \textit{SOM}s
+    ist, dass nicht nur der Gewichtsvektor des ausgewählten Neurons (Siegerneuron) verändert
+    wird, sondern auch die der Neuronen in der Umgebung des Siegerneurons.
+    \newpage
+
+    \subsection{Distanzfunktion}
+    Anstelle der euklidischen Norm werden in der Praxis auch andere bewährte Distanzfunktionen
+    verwendet. Einige Beispiele sind die gaussche Glockenfunktion, die Zylinderfunktion und der
+    "`Mexican-Hat"' (Abbildung 5).
+
+    \begin{figure}[ht!]
+        \centering
+        \includegraphics[width=12cm]{../../resources/distanzfunktionen.png}
+        \caption{Gaussche Glockenfunktion, Zylinderfunktion und Mexican-Hat}
+    \end{figure}
+
+
+    \subsection{Siegerneuron anpassen}
+    $W_c = W_c + \Delta W_c$ und $\Delta W_c = \eta * (x-W_c)$, mit $c$ als Siegerneuron, $W_c$ als
+    Gewichtungsvektor und Eingabevektor $x$. Es gilt $0 < \eta < 1$.
+
+
+    \subsection{Nachbarneuron des Siegerneurons anpassen}
+    Nachbarn des Siegerneurons lernen umso stärker, je näher sie sich am Siegerneuron befinden:\\~\\
+    $\Delta W_j = \eta * h_c_j * (x - W_j)$
+    \newpage
+
+    \subsection{Visualisierung}
+    \begin{figure}[ht!]
+        \centering
+        \includegraphics[width=15cm]{../../resources/zoo_table.png}
+        \caption{Beispiel "`Zoo"'}
+    \end{figure}
+
+    \begin{figure}[ht!]
+        \centering
+        \includegraphics[width=12cm]{../../resources/zoo.png}
+        \caption{Beispiel "`Zoo"'}
+    \end{figure}
+    Reduktion von mehreren Dimension auf 2 (Karte). Sind ähnliche Tiere eines Zoos benachbart?
+    (Abbildung 6+7)
+
+    \subsection{Anwendungsgebiete}
+    \begin{itemize}
+        \item Dimensionsreduktion
+        \item Optimierung
+        \item Data Mining- Cluster
+        \item Data Mining - Regeln
+        \item Überwachenung und Anomaliedetektion
+        \item Kontextkarten
+    \end{itemize}
 
     \section{Sequenzen}
 

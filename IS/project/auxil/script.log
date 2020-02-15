@@ -1,12 +1,12 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.7200 64-bit) (preloaded format=pdflatex 2019.11.4)  14 FEB 2020 16:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.2.5)  15 FEB 2020 16:38
 entering extended mode
 **./script.tex
 (script.tex
-LaTeX2e <2019-10-01> patch level 1
+LaTeX2e <2018-12-01>
 ("C:\Program Files\MiKTeX 2.9\tex/latex/base\article.cls"
-Document Class: article 2019/08/27 v1.4j Standard LaTeX document class
+Document Class: article 2018/09/03 v1.4i Standard LaTeX document class
 ("C:\Program Files\MiKTeX 2.9\tex/latex/base\size11.clo"
-File: size11.clo 2019/08/27 v1.4j Standard LaTeX file (size option)
+File: size11.clo 2018/09/03 v1.4i Standard LaTeX file (size option)
 )
 \c@part=\count80
 \c@section=\count81
@@ -20,13 +20,11 @@ File: size11.clo 2019/08/27 v1.4j Standard LaTeX file (size option)
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
 )
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/generic/german\ngerma
-n.sty v2.5e 1998-07-08
+("C:\Program Files\MiKTeX 2.9\tex/generic/german\ngerman.sty" v2.5e 1998-07-08
 Package: ngerman 1998/07/08 v2.5e Support for writing german texts (br)
 \grmnU@D=\dimen103
-ngerman -- \language number for naustrian undefined, default 50 used.
-)
-("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\color.sty"
+ngerman -- \language number for naustrian undefined, default 45 used.
+) ("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\color.sty"
 Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-cfg\color.cfg"
@@ -45,7 +43,7 @@ Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
 \KV@toks@=\toks14
 )
 ("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\graphics.sty"
-Package: graphics 2019/10/08 v1.3c Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/graphics\trig.sty"
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
@@ -53,66 +51,58 @@ Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
 ("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-cfg\graphics.cfg"
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 105.
+Package graphics Info: Driver file: pdftex.def on input line 99.
 )
 \Gin@req@height=\dimen104
 \Gin@req@width=\dimen105
 )
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/latex/titling\titling
-.sty
+("C:\Program Files\MiKTeX 2.9\tex/latex/titling\titling.sty"
 Package: titling 2009/09/04 v2.1d maketitle typesetting
 \thanksmarkwidth=\skip43
 \thanksmargin=\skip44
 \droptitle=\skip45
-) ("C:\Program Files\MiKTeX 2.9\tex/latex/base\inputenc.sty"
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/base\inputenc.sty"
 Package: inputenc 2018/08/11 v1.3c Input encoding file
 \inpenc@prehook=\toks15
 \inpenc@posthook=\toks16
 )
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/frontendlay
-er\tikz.sty
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/basiclayer\
-pgf.sty
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/utilities\p
-gfrcs.sty
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities
-\pgfutil-common.tex
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/frontendlayer\tikz.sty
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/basiclayer\pgf.sty
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/utilities\pgfrcs.sty
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities\pgfutil-com
+mon.tex
 \pgfutil@everybye=\toks17
 \pgfutil@tempdima=\dimen106
 \pgfutil@tempdimb=\dimen107
 
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities
-\pgfutil-common-lists.tex))
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities
-\pgfutil-latex.def
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities\pgfutil-com
+mon-lists.tex))
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities\pgfutil-lat
+ex.def
 \pgfutil@abb=\box27
-
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/latex/ms\everyshi.sty
+ (C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/latex/ms\everyshi.sty
 Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
 ))
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities
-\pgfrcs.code.tex
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf\pgf.revis
-ion.tex)
-Package: pgfrcs 2019/08/03 v3.1.4b (3.1.4b)
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities\pgfrcs.code
+.tex
+Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
 ))
-Package: pgf 2019/08/03 v3.1.4b (3.1.4b)
+Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
 
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/basiclayer\
-pgfcore.sty
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/systemlayer
-\pgfsys.sty
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/systemlay
-er\pgfsys.code.tex
-Package: pgfsys 2019/08/03 v3.1.4b (3.1.4b)
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/basiclayer\pgfcore.sty
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/systemlayer\pgfsys.sty
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/systemlayer\pgfsys.co
+de.tex
+Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities
-\pgfkeys.code.tex
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities\pgfkeys.cod
+e.tex
 \pgfkeys@pathtoks=\toks18
 \pgfkeys@temptoks=\toks19
 
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities
-\pgfkeysfiltered.code.tex
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities\pgfkeysfilt
+ered.code.tex
 \pgfkeys@tmptoks=\toks20
 ))
 \pgf@x=\dimen108
@@ -123,8 +113,6 @@ Package: pgfsys 2019/08/03 v3.1.4b (3.1.4b)
 \pgf@yb=\dimen113
 \pgf@xc=\dimen114
 \pgf@yc=\dimen115
-\pgf@xd=\dimen116
-\pgf@yd=\dimen117
 \w@pgf@writea=\write3
 \r@pgf@reada=\read1
 \c@pgf@counta=\count88
@@ -134,36 +122,34 @@ Package: pgfsys 2019/08/03 v3.1.4b (3.1.4b)
 \t@pgf@toka=\toks21
 \t@pgf@tokb=\toks22
 \t@pgf@tokc=\toks23
-\pgf@sys@id@count=\count92
 
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/systemlay
-er\pgf.cfg
-File: pgf.cfg 2019/08/03 v3.1.4b (3.1.4b)
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/systemlayer\pgf.cfg
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
 )
 Driver file for pgf: pgfsys-pdftex.def
 
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/systemlay
-er\pgfsys-pdftex.def
-File: pgfsys-pdftex.def 2019/08/03 v3.1.4b (3.1.4b)
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/systemlayer\pgfsys-pd
+ftex.def
+File: pgfsys-pdftex.def 2014/10/11  (rcs-revision 1.35)
 
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/systemlay
-er\pgfsys-common-pdf.def
-File: pgfsys-common-pdf.def 2019/08/03 v3.1.4b (3.1.4b)
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/systemlayer\pgfsys-co
+mmon-pdf.def
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 )))
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/systemlay
-er\pgfsyssoftpath.code.tex
-File: pgfsyssoftpath.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\pgfsyssoftpath@smallbuffer@items=\count93
-\pgfsyssoftpath@bigbuffer@items=\count94
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/systemlayer\pgfsyssof
+tpath.code.tex
+File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
+\pgfsyssoftpath@smallbuffer@items=\count92
+\pgfsyssoftpath@bigbuffer@items=\count93
 )
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/systemlay
-er\pgfsysprotocol.code.tex
-File: pgfsysprotocol.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/systemlayer\pgfsyspro
+tocol.code.tex
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
 ))
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/latex/xcolor\xcolor.s
-ty
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/latex/xcolor\xcolor.sty
 Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
- ("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-cfg\color.cfg"
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/graphics-cfg\color.cfg"
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package xcolor Info: Driver file: pdftex.def on input line 225.
@@ -178,258 +164,318 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
 )
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclaye
-r\pgfcore.code.tex
-Package: pgfcore 2019/08/03 v3.1.4b (3.1.4b)
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcore.co
+de.tex
+Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfm
-ath.code.tex
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfm
-athcalc.code.tex
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfm
-athutil.code.tex)
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfm
-athparser.code.tex
-\pgfmath@dimen=\dimen118
-\pgfmath@count=\count95
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmath.code.tex
+
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathcalc.code
+.tex
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathutil.code
+.tex)
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathparser.co
+de.tex
+\pgfmath@dimen=\dimen116
+\pgfmath@count=\count94
 \pgfmath@box=\box28
 \pgfmath@toks=\toks24
 \pgfmath@stack@operand=\toks25
 \pgfmath@stack@operation=\toks26
 )
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfm
-athfunctions.code.tex
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfm
-athfunctions.basic.code.tex)
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfm
-athfunctions.trigonometric.code.tex)
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfm
-athfunctions.random.code.tex)
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfm
-athfunctions.comparison.code.tex)
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfm
-athfunctions.base.code.tex)
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfm
-athfunctions.round.code.tex)
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfm
-athfunctions.misc.code.tex)
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfm
-athfunctions.integerarithmetics.code.tex)))
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfm
-athfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count96
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathfunctions
+.code.tex
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathfunctions
+.basic.code.tex)
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathfunctions
+.trigonometric.code.tex)
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathfunctions
+.random.code.tex)
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathfunctions
+.comparison.code.tex)
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathfunctions
+.base.code.tex)
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathfunctions
+.round.code.tex)
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathfunctions
+.misc.code.tex)
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathfunctions
+.integerarithmetics.code.tex)))
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmathfloat.cod
+e.tex
+\c@pgfmathroundto@lastzeros=\count95
 ))
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfi
-nt.code.tex)
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclaye
-r\pgfcorepoints.code.tex
-File: pgfcorepoints.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\pgf@picminx=\dimen119
-\pgf@picmaxx=\dimen120
-\pgf@picminy=\dimen121
-\pgf@picmaxy=\dimen122
-\pgf@pathminx=\dimen123
-\pgf@pathmaxx=\dimen124
-\pgf@pathminy=\dimen125
-\pgf@pathmaxy=\dimen126
-\pgf@xx=\dimen127
-\pgf@xy=\dimen128
-\pgf@yx=\dimen129
-\pgf@yy=\dimen130
-\pgf@zx=\dimen131
-\pgf@zy=\dimen132
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcorepoi
+nts.code.tex
+File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
+\pgf@picminx=\dimen117
+\pgf@picmaxx=\dimen118
+\pgf@picminy=\dimen119
+\pgf@picmaxy=\dimen120
+\pgf@pathminx=\dimen121
+\pgf@pathmaxx=\dimen122
+\pgf@pathminy=\dimen123
+\pgf@pathmaxy=\dimen124
+\pgf@xx=\dimen125
+\pgf@xy=\dimen126
+\pgf@yx=\dimen127
+\pgf@yy=\dimen128
+\pgf@zx=\dimen129
+\pgf@zy=\dimen130
 )
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclaye
-r\pgfcorepathconstruct.code.tex
-File: pgfcorepathconstruct.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\pgf@path@lastx=\dimen133
-\pgf@path@lasty=\dimen134
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcorepat
+hconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
+\pgf@path@lastx=\dimen131
+\pgf@path@lasty=\dimen132
 )
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclaye
-r\pgfcorepathusage.code.tex
-File: pgfcorepathusage.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\pgf@shorten@end@additional=\dimen135
-\pgf@shorten@start@additional=\dimen136
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcorepat
+husage.code.tex
+File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
+\pgf@shorten@end@additional=\dimen133
+\pgf@shorten@start@additional=\dimen134
 )
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclaye
-r\pgfcorescopes.code.tex
-File: pgfcorescopes.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcoresco
+pes.code.tex
+File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
 \pgfpic=\box29
 \pgf@hbox=\box30
 \pgf@layerbox@main=\box31
-\pgf@picture@serial@count=\count97
+\pgf@picture@serial@count=\count96
 )
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclaye
-r\pgfcoregraphicstate.code.tex
-File: pgfcoregraphicstate.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\pgflinewidth=\dimen137
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcoregra
+phicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
+\pgflinewidth=\dimen135
 )
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclaye
-r\pgfcoretransformations.code.tex
-File: pgfcoretransformations.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\pgf@pt@x=\dimen138
-\pgf@pt@y=\dimen139
-\pgf@pt@temp=\dimen140
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcoretra
+nsformations.code.tex
+File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
+\pgf@pt@x=\dimen136
+\pgf@pt@y=\dimen137
+\pgf@pt@temp=\dimen138
 )
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclaye
-r\pgfcorequick.code.tex
-File: pgfcorequick.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcorequi
+ck.code.tex
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
 )
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclaye
-r\pgfcoreobjects.code.tex
-File: pgfcoreobjects.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcoreobj
+ects.code.tex
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
 )
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclaye
-r\pgfcorepathprocessing.code.tex
-File: pgfcorepathprocessing.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcorepat
+hprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 )
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclaye
-r\pgfcorearrows.code.tex
-File: pgfcorearrows.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\pgfarrowsep=\dimen141
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcorearr
+ows.code.tex
+File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
+\pgfarrowsep=\dimen139
 )
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclaye
-r\pgfcoreshade.code.tex
-File: pgfcoreshade.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\pgf@max=\dimen142
-\pgf@sys@shading@range@num=\count98
-\pgf@shadingcount=\count99
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcoresha
+de.code.tex
+File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
+\pgf@max=\dimen140
+\pgf@sys@shading@range@num=\count97
 )
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclaye
-r\pgfcoreimage.code.tex
-File: pgfcoreimage.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcoreima
+ge.code.tex
+File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
 
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclaye
-r\pgfcoreexternal.code.tex
-File: pgfcoreexternal.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcoreext
+ernal.code.tex
+File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
 \pgfexternal@startupbox=\box32
 ))
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclaye
-r\pgfcorelayers.code.tex
-File: pgfcorelayers.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcorelay
+ers.code.tex
+File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
 )
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclaye
-r\pgfcoretransparency.code.tex
-File: pgfcoretransparency.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcoretra
+nsparency.code.tex
+File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
 )
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclaye
-r\pgfcorepatterns.code.tex
-File: pgfcorepatterns.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-)
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclaye
-r\pgfcorerdf.code.tex
-File: pgfcorerdf.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/basiclayer\pgfcorepat
+terns.code.tex
+File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
 )))
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/modules\p
-gfmoduleshapes.code.tex
-File: pgfmoduleshapes.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/modules\pgfmoduleshap
+es.code.tex
+File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
 \pgfnodeparttextbox=\box33
 )
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/modules\p
-gfmoduleplot.code.tex
-File: pgfmoduleplot.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/modules\pgfmoduleplot
+.code.tex
+File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
 )
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/compatibili
-ty\pgfcomp-version-0-65.sty
-Package: pgfcomp-version-0-65 2019/08/03 v3.1.4b (3.1.4b)
-\pgf@nodesepstart=\dimen143
-\pgf@nodesepend=\dimen144
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/compatibility\pgfcomp-v
+ersion-0-65.sty
+Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen141
+\pgf@nodesepend=\dimen142
 )
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/compatibili
-ty\pgfcomp-version-1-18.sty
-Package: pgfcomp-version-1-18 2019/08/03 v3.1.4b (3.1.4b)
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/compatibility\pgfcomp-v
+ersion-1-18.sty
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
 ))
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/utilities\p
-gffor.sty
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/utilities\p
-gfkeys.sty
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities
-\pgfkeys.code.tex))
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/math\pgfmat
-h.sty
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfm
-ath.code.tex))
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities
-\pgffor.code.tex
-Package: pgffor 2019/08/03 v3.1.4b (3.1.4b)
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/utilities\pgffor.sty
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/utilities\pgfkeys.sty
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities\pgfkeys.cod
+e.tex))
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/latex/pgf/math\pgfmath.sty
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmath.code.tex
+))
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/utilities\pgffor.code
+.tex
+Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
 
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfm
-ath.code.tex)
-\pgffor@iter=\dimen145
-\pgffor@skip=\dimen146
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/math\pgfmath.code.tex
+)
+\pgffor@iter=\dimen143
+\pgffor@skip=\dimen144
 \pgffor@stack=\toks27
 \pgffor@toks=\toks28
 ))
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/frontendl
-ayer/tikz\tikz.code.tex
-Package: tikz 2019/08/03 v3.1.4b (3.1.4b)
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/frontendlayer/tikz\ti
+kz.code.tex
+Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/libraries
-\pgflibraryplothandlers.code.tex
-File: pgflibraryplothandlers.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\pgf@plot@mark@count=\count100
-\pgfplotmarksize=\dimen147
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/libraries\pgflibraryp
+lothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
+\pgf@plot@mark@count=\count98
+\pgfplotmarksize=\dimen145
 )
-\tikz@lastx=\dimen148
-\tikz@lasty=\dimen149
-\tikz@lastxsaved=\dimen150
-\tikz@lastysaved=\dimen151
-\tikz@lastmovetox=\dimen152
-\tikz@lastmovetoy=\dimen153
-\tikzleveldistance=\dimen154
-\tikzsiblingdistance=\dimen155
+\tikz@lastx=\dimen146
+\tikz@lasty=\dimen147
+\tikz@lastxsaved=\dimen148
+\tikz@lastysaved=\dimen149
+\tikzleveldistance=\dimen150
+\tikzsiblingdistance=\dimen151
 \tikz@figbox=\box34
 \tikz@figbox@bg=\box35
 \tikz@tempbox=\box36
 \tikz@tempbox@bg=\box37
-\tikztreelevel=\count101
-\tikznumberofchildren=\count102
-\tikznumberofcurrentchild=\count103
-\tikz@fig@count=\count104
+\tikztreelevel=\count99
+\tikznumberofchildren=\count100
+\tikznumberofcurrentchild=\count101
+\tikz@fig@count=\count102
 
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/modules\p
-gfmodulematrix.code.tex
-File: pgfmodulematrix.code.tex 2019/08/03 v3.1.4b (3.1.4b)
-\pgfmatrixcurrentrow=\count105
-\pgfmatrixcurrentcolumn=\count106
-\pgf@matrix@numberofcolumns=\count107
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/modules\pgfmodulematr
+ix.code.tex
+File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
+\pgfmatrixcurrentrow=\count103
+\pgfmatrixcurrentcolumn=\count104
+\pgf@matrix@numberofcolumns=\count105
 )
-\tikz@expandcount=\count108
+\tikz@expandcount=\count106
 
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/frontendl
-ayer/tikz/libraries\tikzlibrarytopaths.code.tex
-File: tikzlibrarytopaths.code.tex 2019/08/03 v3.1.4b (3.1.4b)
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/generic/pgf/frontendlayer/tikz/li
+braries\tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
 )))
-(C:/git\ws2019\IS\project\auxil\script.aux)
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsmath.sty"
+Package: amsmath 2018/12/01 v2.17b AMS math features
+\@mathmargin=\skip46
+
+For additional information on amsmath, use the `?' option.
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amstext.sty"
+Package: amstext 2000/06/29 v2.01 AMS text
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsgen.sty"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks29
+\ex@=\dimen152
+))
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsbsy.sty"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen153
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/amsmath\amsopn.sty"
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count107
+LaTeX Info: Redefining \frac on input line 223.
+\uproot@=\count108
+\leftroot@=\count109
+LaTeX Info: Redefining \overline on input line 385.
+\classnum@=\count110
+\DOTSCASE@=\count111
+LaTeX Info: Redefining \ldots on input line 482.
+LaTeX Info: Redefining \dots on input line 485.
+LaTeX Info: Redefining \cdots on input line 606.
+\Mathstrutbox@=\box38
+\strutbox@=\box39
+\big@size=\dimen154
+LaTeX Font Info:    Redeclaring font encoding OML on input line 729.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
+\macc@depth=\count112
+\c@MaxMatrixCols=\count113
+\dotsspace@=\muskip10
+\c@parentequation=\count114
+\dspbrk@lvl=\count115
+\tag@help=\toks30
+\row@=\count116
+\column@=\count117
+\maxfields@=\count118
+\andhelp@=\toks31
+\eqnshift@=\dimen155
+\alignsep@=\dimen156
+\tagshift@=\dimen157
+\tagwidth@=\dimen158
+\totwidth@=\dimen159
+\lineht@=\dimen160
+\@envbody=\toks32
+\multlinegap=\skip47
+\multlinetaggap=\skip48
+\mathdisplay@stack=\toks33
+LaTeX Info: Redefining \[ on input line 2844.
+LaTeX Info: Redefining \] on input line 2845.
+)
+script.tex:38: Argument of \reserved@a has an extra }
+I've run across a `}' that doesn't seem to match anything.
+For example, `\def\a#1{...}' and `\a}' would produce
+this error. If you simply proceed now, the `\par' that
+I've just inserted will cause me to report a runaway
+argument that might be the root of the problem. But if
+your `}' was spurious, just type `2' and it will go away.
+
+Runaway argument?
+{\def \@currenvir {center}\edef \@currenvline {\on@line }\csname cent\ETC.
+script.tex:38: Paragraph ended before \reserved@a was complete
+I suspect you've forgotten a `}', causing me to apply this
+control sequence to too much text. How can we recover?
+My plan is to forget the whole thing and hope for the best.
+
+(D:/git\ws2019\IS\project\auxil\script.aux)
 \openout1 = `script.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
 
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/context/base/mkii\sup
-p-pdf.mkii
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/context/base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count109
-\scratchdimen=\dimen156
-\scratchbox=\box38
-\nofMPsegments=\count110
-\nofMParguments=\count111
-\everyMPshowfont=\toks29
-\MPscratchCnt=\count112
-\MPscratchDim=\dimen157
-\MPnumerator=\count113
-\makeMPintoPDFobject=\count114
-\everyMPtoPDFconversion=\toks30
+\scratchcounter=\count119
+\scratchdimen=\dimen161
+\scratchbox=\box40
+\nofMPsegments=\count120
+\nofMParguments=\count121
+\everyMPshowfont=\toks34
+\MPscratchCnt=\count122
+\MPscratchDim=\dimen162
+\MPnumerator=\count123
+\makeMPintoPDFobject=\count124
+\everyMPtoPDFconversion=\toks35
 ) ("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -454,20 +500,16 @@ Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
 ("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\etexcmds.sty"
 Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
 
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/generic/iftex\ifluate
-x.sty
-Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
-
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/generic/iftex\iftex.s
-ty
-Package: iftex 2019/10/24 v1.0a TeX engine tests
-))))) ("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\pdftexcmds.sty"
-Package: pdftexcmds 2019/07/25 v0.30 Utility functions of pdfTeX for LuaTeX (HO
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\ifluatex.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+))))
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\pdftexcmds.sty"
+Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(C:\Users\AdrianBostelmann\AppData\Roaming\MiKTeX\2.9\tex/generic/iftex\ifpdf.s
-ty
-Package: ifpdf 2019/10/25 v3.4 ifpdf legacy package. Use iftex instead.
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\ifpdf.sty"
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -480,127 +522,64 @@ Package grfext Info: Graphics extension search list:
 (grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
-) ABD: EveryShipout initializing macros
+)
+ABD: EveryShipout initializing macros
 <../../resources/Haw_logo.png, id=4, 301.125pt x 110.4125pt>
 File: ../../resources/Haw_logo.png Graphic file (type png)
 <use ../../resources/Haw_logo.png>
-Package pdftex.def Info: ../../resources/Haw_logo.png  used on input line 44.
+Package pdftex.def Info: ../../resources/Haw_logo.png  used on input line 45.
 (pdftex.def)             Requested size: 227.62204pt x 83.46452pt.
 
 
-script.tex:44: LaTeX Error: \begin{document} ended by \end{center}.
+script.tex:45: LaTeX Error: \begin{document} ended by \end{center}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.44     \maketitle
-                   
+Type  H <return>  for immediate help
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-script.tex:44: Missing } inserted.
-<inserted text> 
-                }
-l.44     \maketitle
-                   
+script.tex:45: Missing } inserted
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-script.tex:44: Too many }'s.
-<recently read> }
-                 
-l.44     \maketitle
-                   
+script.tex:45: Too many }'s
 You've closed more groups than you opened.
 Such booboos are generally harmless, so keep going.
 
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 44.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 44.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 44.
-script.tex:44: Extra \endgroup.
-\maketitle ...pagestyle {plain}\@thanks \endgroup 
-                                                  \@bscontmark 
-l.44     \maketitle
-                   
+script.tex:45: Extra \endgroup
 Things are pretty mixed up, but I think the worst is over.
 
-(C:/git\ws2019\IS\project\auxil\script.toc [1
+(D:/git\ws2019\IS\project\auxil\script.toc [1
 
-{C:/Users/AdrianBostelmann/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <
-../../resources/Haw_logo.png (PNG copy)>]
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 2.
-)
+{C:/Users/Main/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <../../resour
+ces/Haw_logo.png (PNG copy)>]
+[2])
 \tf@toc=\write4
 \openout4 = `script.toc'.
 
- [2]
-script.tex:87: ngerman: The command "h is undefined.
-\grmn@dq@error ...and \dq \string #1 is undefined}
-                                                  
-l.87 ...ur Optimierung an einem lokalen Optimum "h
-                                                  ängenbleibt".
+ [3]
+script.tex:88: ngerman: The command "h is undefined
 Use `` for a simple double quote character.
 
-script.tex:87: ngerman: The command ". is undefined.
-\grmn@dq@error ...and \dq \string #1 is undefined}
-                                                  
-l.87 ... an einem lokalen Optimum "hängenbleibt".
-                                                  
+script.tex:88: ngerman: The command ". is undefined
 Use `` for a simple double quote character.
 
 
-Overfull \hbox (5.06126pt too wide) in paragraph at lines 78--88
+Overfull \hbox (5.06126pt too wide) in paragraph at lines 79--89
 \OT1/cmr/m/n/10.95 Le-be-we-sen ab-lei-ten. Ziel von ge-ne-ti-schen Al-go-rith-
 men ist es op-ti-mier-te L[]osun-
  []
 
-[3]
-
-script.tex:95: Package xcolor Error: Undefined color `processblue'.
-
-See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.95             \node[state]
-                              (A) at (0,0) {Start};
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-script.tex:95: Package pgfkeys Error: I do not know the key '/tikz/processblue'
- and I am going to ignore it. Perhaps you misspelled it.
-
-See the pgfkeys package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.95             \node[state]
-                              (A) at (0,0) {Start};
-This error message was generated by an \errmessage
-command, so I can't give any explicit help.
-Pretend that you're Hercule Poirot: Examine all clues,
-and deduce the truth by order and method.
-
+[4]
 
 script.tex:96: Package xcolor Error: Undefined color `processblue'.
 
 See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.96             \node[state]
-                              (B) at (0,-1.2) {Erzeugung einer zufälliger P...
-
+Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -609,23 +588,17 @@ script.tex:96: Package pgfkeys Error: I do not know the key '/tikz/processblue'
  and I am going to ignore it. Perhaps you misspelled it.
 
 See the pgfkeys package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.96             \node[state]
-                              (B) at (0,-1.2) {Erzeugung einer zufälliger P...
-(That was another \errmessage.)
+Type  H <return>  for immediate help
+This error message was generated by an \errmessage
+command, so I can't give any explicit help.
+Pretend that you're Hercule Poirot: Examine all clues,
+and deduce the truth by order and method.
 
 
 script.tex:97: Package xcolor Error: Undefined color `processblue'.
 
 See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.97             \node[state]
-                              (C) at (0,-2.4) {Wiederhole bis Abbruchbedungu...
-
+Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -634,22 +607,14 @@ script.tex:97: Package pgfkeys Error: I do not know the key '/tikz/processblue'
  and I am going to ignore it. Perhaps you misspelled it.
 
 See the pgfkeys package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.97             \node[state]
-                              (C) at (0,-2.4) {Wiederhole bis Abbruchbedungu...
+Type  H <return>  for immediate help
 (That was another \errmessage.)
 
 
 script.tex:98: Package xcolor Error: Undefined color `processblue'.
 
 See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.98             \node[state]
-                              (D) at (0,-3.6) {Berechne Fitness};
+Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -658,22 +623,14 @@ script.tex:98: Package pgfkeys Error: I do not know the key '/tikz/processblue'
  and I am going to ignore it. Perhaps you misspelled it.
 
 See the pgfkeys package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.98             \node[state]
-                              (D) at (0,-3.6) {Berechne Fitness};
+Type  H <return>  for immediate help
 (That was another \errmessage.)
 
 
 script.tex:99: Package xcolor Error: Undefined color `processblue'.
 
 See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.99             \node[state]
-                              (E) at (0,-4.8) {Selektion};
+Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -682,22 +639,14 @@ script.tex:99: Package pgfkeys Error: I do not know the key '/tikz/processblue'
  and I am going to ignore it. Perhaps you misspelled it.
 
 See the pgfkeys package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.99             \node[state]
-                              (E) at (0,-4.8) {Selektion};
+Type  H <return>  for immediate help
 (That was another \errmessage.)
 
 
 script.tex:100: Package xcolor Error: Undefined color `processblue'.
 
 See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.100             \node[state]
-                               (F) at (0,-6) {Crossover};
+Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -706,22 +655,14 @@ script.tex:100: Package pgfkeys Error: I do not know the key '/tikz/processblue
 ' and I am going to ignore it. Perhaps you misspelled it.
 
 See the pgfkeys package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.100             \node[state]
-                               (F) at (0,-6) {Crossover};
+Type  H <return>  for immediate help
 (That was another \errmessage.)
 
 
 script.tex:101: Package xcolor Error: Undefined color `processblue'.
 
 See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.101             \node[state]
-                               (G) at (0,-7.2) {Mutation};
+Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -730,22 +671,14 @@ script.tex:101: Package pgfkeys Error: I do not know the key '/tikz/processblue
 ' and I am going to ignore it. Perhaps you misspelled it.
 
 See the pgfkeys package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.101             \node[state]
-                               (G) at (0,-7.2) {Mutation};
+Type  H <return>  for immediate help
 (That was another \errmessage.)
 
 
 script.tex:102: Package xcolor Error: Undefined color `processblue'.
 
 See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.102             \node[state]
-                               (H) at (0,-8.4) {Austausch};
+Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -754,22 +687,14 @@ script.tex:102: Package pgfkeys Error: I do not know the key '/tikz/processblue
 ' and I am going to ignore it. Perhaps you misspelled it.
 
 See the pgfkeys package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.102             \node[state]
-                               (H) at (0,-8.4) {Austausch};
+Type  H <return>  for immediate help
 (That was another \errmessage.)
 
 
 script.tex:103: Package xcolor Error: Undefined color `processblue'.
 
 See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.103             \node[state]
-                               (I) at (0,-9.6) {Teste Abbruchbedingung};
+Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -778,22 +703,14 @@ script.tex:103: Package pgfkeys Error: I do not know the key '/tikz/processblue
 ' and I am going to ignore it. Perhaps you misspelled it.
 
 See the pgfkeys package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.103             \node[state]
-                               (I) at (0,-9.6) {Teste Abbruchbedingung};
+Type  H <return>  for immediate help
 (That was another \errmessage.)
 
 
 script.tex:104: Package xcolor Error: Undefined color `processblue'.
 
 See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.104             \node[state]
-                               (J) at (0,-10.8) {Ende};
+Type  H <return>  for immediate help
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -802,152 +719,211 @@ script.tex:104: Package pgfkeys Error: I do not know the key '/tikz/processblue
 ' and I am going to ignore it. Perhaps you misspelled it.
 
 See the pgfkeys package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.104             \node[state]
-                               (J) at (0,-10.8) {Ende};
+Type  H <return>  for immediate help
 (That was another \errmessage.)
 
-script.tex:123: Missing $ inserted.
-<inserted text> 
-                $
-l.123     \left
-               \{
+
+script.tex:105: Package xcolor Error: Undefined color `processblue'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+script.tex:105: Package pgfkeys Error: I do not know the key '/tikz/processblue
+' and I am going to ignore it. Perhaps you misspelled it.
+
+See the pgfkeys package documentation for explanation.
+Type  H <return>  for immediate help
+(That was another \errmessage.)
+
+script.tex:124: Missing $ inserted
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-script.tex:128: Missing $ inserted.
-<inserted text> 
-                $
-l.128 
-      
+script.tex:129: Missing $ inserted
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-[4]
-Overfull \hbox (0.16423pt too wide) in paragraph at lines 144--151
+[5]
+Overfull \hbox (0.16423pt too wide) in paragraph at lines 145--152
 \OT1/cmr/m/n/10.95 Ein zuf[]alli-ger Kreu-zungs-punkt in-ner-halb des Vek-tors 
 ei-nes se-lek-tier-ten Chro-
  []
 
-[5]
-<../../resources/properties_algorithm.png, id=30, 488.57532pt x 321.45094pt>
+[6]
+<../../resources/properties_algorithm.png, id=33, 488.57532pt x 321.45094pt>
 File: ../../resources/properties_algorithm.png Graphic file (type png)
 <use ../../resources/properties_algorithm.png>
 Package pdftex.def Info: ../../resources/properties_algorithm.png  used on inpu
-t line 168.
+t line 169.
 (pdftex.def)             Requested size: 284.52756pt x 187.20193pt.
-<../../resources/properties_results.png, id=32, 486.31688pt x 189.70876pt>
+<../../resources/properties_results.png, id=35, 486.31688pt x 189.70876pt>
 File: ../../resources/properties_results.png Graphic file (type png)
 <use ../../resources/properties_results.png>
 Package pdftex.def Info: ../../resources/properties_results.png  used on input 
-line 170.
+line 171.
 (pdftex.def)             Requested size: 284.52756pt x 110.99219pt.
-<../../resources/tsp_cities.png, id=33, 469.755pt x 289.83281pt>
+<../../resources/tsp_cities.png, id=36, 469.755pt x 289.83281pt>
 File: ../../resources/tsp_cities.png Graphic file (type png)
 <use ../../resources/tsp_cities.png>
-Package pdftex.def Info: ../../resources/tsp_cities.png  used on input line 176
+Package pdftex.def Info: ../../resources/tsp_cities.png  used on input line 177
 .
 (pdftex.def)             Requested size: 284.52756pt x 175.5506pt.
- [6 <../../resources/properties_algorithm.png> <../../resources/properties_resu
+ [7 <../../resources/properties_algorithm.png> <../../resources/properties_resu
 lts.png>]
-<../../resources/tsp_cities_connected.png, id=39, 463.7325pt x 283.81032pt>
+<../../resources/tsp_cities_connected.png, id=43, 463.7325pt x 283.81032pt>
 File: ../../resources/tsp_cities_connected.png Graphic file (type png)
 <use ../../resources/tsp_cities_connected.png>
 Package pdftex.def Info: ../../resources/tsp_cities_connected.png  used on inpu
-t line 178.
+t line 179.
 (pdftex.def)             Requested size: 284.52756pt x 174.13739pt.
- [7 <../../resources/tsp_cities.png> <../../resources/tsp_cities_connected.png>
+ [8 <../../resources/tsp_cities.png> <../../resources/tsp_cities_connected.png>
 ]
-<../../resources/gehirn.png, id=46, 456.95718pt x 460.72125pt>
+<../../resources/gehirn.png, id=49, 456.95718pt x 460.72125pt>
 File: ../../resources/gehirn.png Graphic file (type png)
 <use ../../resources/gehirn.png>
-Package pdftex.def Info: ../../resources/gehirn.png  used on input line 201.
+Package pdftex.def Info: ../../resources/gehirn.png  used on input line 202.
 (pdftex.def)             Requested size: 227.62204pt x 229.49536pt.
- [8 <../../resources/gehirn.png>]
-<../../resources/aufbau.png, id=51, 555.57562pt x 191.9672pt>
+ [9 <../../resources/gehirn.png>]
+<../../resources/aufbau.png, id=54, 555.57562pt x 191.9672pt>
 File: ../../resources/aufbau.png Graphic file (type png)
 <use ../../resources/aufbau.png>
-Package pdftex.def Info: ../../resources/aufbau.png  used on input line 214.
+Package pdftex.def Info: ../../resources/aufbau.png  used on input line 215.
 (pdftex.def)             Requested size: 341.43306pt x 117.97563pt.
-<../../resources/neuron.png, id=52, 553.31718pt x 265.74281pt>
+<../../resources/neuron.png, id=55, 553.31718pt x 265.74281pt>
 File: ../../resources/neuron.png Graphic file (type png)
 <use ../../resources/neuron.png>
-Package pdftex.def Info: ../../resources/neuron.png  used on input line 225.
+Package pdftex.def Info: ../../resources/neuron.png  used on input line 226.
 (pdftex.def)             Requested size: 341.43306pt x 163.98029pt.
- [9 <../../resources/aufbau.png> <../../resources/neuron.png>]
-<../../resources/netz.png, id=58, 371.88937pt x 200.24812pt>
+ [10 <../../resources/aufbau.png> <../../resources/neuron.png>]
+<../../resources/netz.png, id=61, 371.88937pt x 200.24812pt>
 File: ../../resources/netz.png Graphic file (type png)
 <use ../../resources/netz.png>
-Package pdftex.def Info: ../../resources/netz.png  used on input line 236.
+Package pdftex.def Info: ../../resources/netz.png  used on input line 237.
 (pdftex.def)             Requested size: 341.43306pt x 183.85468pt.
- [10 <../../resources/netz.png>]
-<../../resources/distanzfunktionen.png, id=63, 420.06938pt x 110.66344pt>
+ [11 <../../resources/netz.png>]
+<../../resources/distanzfunktionen.png, id=66, 420.06938pt x 110.66344pt>
 File: ../../resources/distanzfunktionen.png Graphic file (type png)
 <use ../../resources/distanzfunktionen.png>
 Package pdftex.def Info: ../../resources/distanzfunktionen.png  used on input l
-ine 256.
+ine 257.
 (pdftex.def)             Requested size: 341.43306pt x 89.94757pt.
 
-script.tex:268: Double subscript.
-l.268     $\Delta W_j = \eta * h_c_
-                                   j * (x - W_j)$
+script.tex:273: Double subscript
 I treat `x_1_2' essentially like `x_1{}_2'.
 
+script.tex:275: Double subscript
+I treat `x_1_2' essentially like `x_1{}_2'.
 
-Underfull \hbox (badness 10000) in paragraph at lines 267--269
+script.tex:278: Double subscript
+I treat `x_1_2' essentially like `x_1{}_2'.
 
- []
-
-[11 <../../resources/distanzfunktionen.png>]
-<../../resources/zoo_table.png, id=71, 746.79pt x 453.94594pt>
+[12 <../../resources/distanzfunktionen.png>]
+<../../resources/zoo_table.png, id=74, 746.79pt x 453.94594pt>
 File: ../../resources/zoo_table.png Graphic file (type png)
 <use ../../resources/zoo_table.png>
-Package pdftex.def Info: ../../resources/zoo_table.png  used on input line 274.
+Package pdftex.def Info: ../../resources/zoo_table.png  used on input line 290.
 
 (pdftex.def)             Requested size: 426.79134pt x 259.43068pt.
 
-Overfull \hbox (66.79134pt too wide) in paragraph at lines 274--275
+Overfull \hbox (66.79134pt too wide) in paragraph at lines 290--291
  [][] 
  []
 
-<../../resources/zoo.png, id=72, 513.41812pt x 487.8225pt>
+<../../resources/zoo.png, id=75, 513.41812pt x 487.8225pt>
 File: ../../resources/zoo.png Graphic file (type png)
 <use ../../resources/zoo.png>
-Package pdftex.def Info: ../../resources/zoo.png  used on input line 280.
+Package pdftex.def Info: ../../resources/zoo.png  used on input line 296.
 (pdftex.def)             Requested size: 341.43306pt x 324.41277pt.
-LaTeX Font Info:    Trying to load font information for OMS+cmr on input line 2
-88.
+[13 <../../resources/zoo_table.png>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 305.
+
+
 ("C:\Program Files\MiKTeX 2.9\tex/latex/base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 288.
- [12 <../../resources/zoo_table.png>] [13 <../../resources/zoo.png>]
-(C:/git\ws2019\IS\project\auxil\script.aux) ) 
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 305.
+ [14 <../../resources/zoo.png>]
+Overfull \hbox (18.88956pt too wide) in paragraph at lines 329--332
+\OT1/cmr/m/n/10.95 W[]ahrend \OT1/cmr/m/it/10.95 De-ep Lear-ning \OT1/cmr/m/n/1
+0.95 bei Im-ple-men-ta-tio-nen, die Hochleistungs-Rechencluster
+ []
+
+[15]
+script.tex:349: Undefined control sequence
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<../../resources/prozess.png, id=88, 430.60875pt x 549.55313pt>
+File: ../../resources/prozess.png Graphic file (type png)
+<use ../../resources/prozess.png>
+Package pdftex.def Info: ../../resources/prozess.png  used on input line 350.
+(pdftex.def)             Requested size: 341.43306pt x 435.75223pt.
+[16 <../../resources/prozess.png>]
+Overfull \hbox (2.47586pt too wide) in paragraph at lines 368--374
+\OT1/cmr/m/n/10.95 ge-legt ist In-ten-sit[]ats-un-ter-schie-de in den Tr[]aghei
+ts-punk-ten des Spek-to-gramms
+ []
+
+script.tex:376: Undefined control sequence
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<../../resources/features.png, id=93, 856.70062pt x 489.32813pt>
+File: ../../resources/features.png Graphic file (type png)
+<use ../../resources/features.png>
+Package pdftex.def Info: ../../resources/features.png  used on input line 377.
+(pdftex.def)             Requested size: 335.7426pt x 191.77051pt.
+[17 <../../resources/features.png>]
+script.tex:402: Undefined control sequence
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+<../../resources/datasets.png, id=98, 749.80125pt x 140.02313pt>
+File: ../../resources/datasets.png Graphic file (type png)
+<use ../../resources/datasets.png>
+Package pdftex.def Info: ../../resources/datasets.png  used on input line 403.
+(pdftex.def)             Requested size: 455.24408pt x 85.01657pt.
+
+Overfull \hbox (95.24408pt too wide) in paragraph at lines 403--404
+[][] 
+ []
+
+[18 <../../resources/datasets.png>] (D:/git\ws2019\IS\project\auxil\script.aux)
+ ) 
 Here is how much of TeX's memory you used:
- 12301 strings out of 492453
- 253275 string characters out of 3129787
- 289313 words of memory out of 3000000
- 16411 multiletter control sequences out of 15000+200000
- 10425 words of font info for 36 fonts, out of 3000000 for 9000
+ 12405 strings out of 492946
+ 248321 string characters out of 3135531
+ 287886 words of memory out of 3000000
+ 16046 multiletter control sequences out of 15000+200000
+ 11323 words of font info for 40 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,8n,60p,390b,772s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/p
-ublic/amsfonts/cm/cmbx12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
-sfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/c
-m/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/P
-rogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on C:/git\ws2019\IS\project\out\script.pdf (13 pages, 2072093 by
+ 55i,8n,60p,419b,682s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
+les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
+1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
+amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10
+.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on D:/git\ws2019\IS\project\out\script.pdf (18 pages, 2565991 by
 tes).
 PDF statistics:
- 114 PDF objects out of 1000 (max. 8388607)
+ 135 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 79 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 94 words of extra memory for PDF output out of 10000 (max. 10000000)
 

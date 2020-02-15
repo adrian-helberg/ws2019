@@ -12,7 +12,8 @@
 \usepackage{graphicx} % Images
 \usepackage{titling} % Title formatting
 \usepackage[utf8]{inputenc} % UTF-8
-\usepackage {tikz} % Graphs
+\usepackage {tikz}
+\usepackage{amsmath} % Graphs
 
 %%% Commands
 % ToC title
@@ -44,8 +45,8 @@
     \maketitle
 
     \begin{abstract}
-        Diese Arbeit beschäftigt sich mit Konzepten der vier Kernbereiche aus \textit{intelligenten
-        Systemen}: \textbf{Suchen}, \textbf{Lernen}, \textbf{Verarbeitung von Sequenzen} und
+        Diese Arbeit beschäftigt sich mit Konzepten der vier Kernbereiche aus \textit{intelligente
+        Systeme}: \textbf{Suchen}, \textbf{Lernen}, \textbf{Verarbeitung von Sequenzen} und
         \textbf{Ethik}. Zum einen werden Problemstellungen aufgezeigt, zum anderen auf
         Implementationen verwiesen, die in der zugehörigen Präsentation vorgestellt werden.\\ Eine
         Lösungsstrategie für das \textit{Problem des Handlungsreisenden (Traveling Salesman
@@ -259,13 +260,28 @@
 
 
     \subsection{Siegerneuron anpassen}
-    $W_c = W_c + \Delta W_c$ und $\Delta W_c = \eta * (x-W_c)$, mit $c$ als Siegerneuron, $W_c$ als
-    Gewichtungsvektor und Eingabevektor $x$. Es gilt $0 < \eta < 1$.
+    \begin{center}
+        $W_c = W_c + \Delta W_c$ und $\Delta W_c = \eta * (x-W_c)$
+    \end{center}
+    Mit $c$ als Siegerneuron, $W_c$ als Gewichtungsvektor und Eingabevektor $x$.\\
+    Es gilt $0 < \eta < 1$.
 
 
-    \subsection{Nachbarneuron des Siegerneurons anpassen}
-    Nachbarn des Siegerneurons lernen umso stärker, je näher sie sich am Siegerneuron befinden:\\~\\
-    $\Delta W_j = \eta * h_c_j * (x - W_j)$
+    \subsection{Nachbarneuronen des Siegerneurons anpassen}
+    Nachbarn des Siegerneurons lernen umso stärker, je näher sie sich am Siegerneuron befinden:
+    \begin{center}
+        $\Delta W_j = \eta * h_c_j * (x - W_j)$
+    \end{center}
+    Mit $h_c_j$ als Nachbarschaftsfunktion (Wie stark lernt das Neuron $j$ mit bei Siegerneuron $c$)\\
+    Als Funktion des Abstandes $z$ der Neuronen wird in der Praxis oft eine Zylinderfunktion gewählt:
+    \begin{center}
+        $Zylinder: h_c_j(z) =
+        \begin{cases}
+            1 & falls \; z < d\\
+            0 & sonst.
+        \end{cases}$
+    \end{center}
+
     \newpage
 
     \subsection{Visualisierung}
@@ -282,6 +298,7 @@
     \end{figure}
     Reduktion von mehreren Dimension auf 2 (Karte). Sind ähnliche Tiere eines Zoos benachbart?
     (Abbildung 6+7)
+    \newpage
 
     \subsection{Anwendungsgebiete}
     \begin{itemize}
@@ -294,7 +311,98 @@
     \end{itemize}
 
     \section{Sequenzen}
+    Die Verarbeitung von Sensordaten mobiler Endgeräte (z.B. Smartphones) wird in diesem Kapitel
+    vorgestellt. Hierzu wird ein \textit{Deep Learning} Ansatz gewählt.
 
+    \subsection{Motivation}
+    Die zunehmende Beliebtheit tragbarer Endgeräte der letzten Jahre
+    gibt die Möglichkeit eine Vielzahl von physiologischen und funktionellen Daten kontinuierlich
+    zu erfassen. Diese können Anwendungen für Sport, Gesundheit und Wohlbefinden zur Verfügung
+    gestellt werden. Die Masse an Informationen erfordert effiziente Klassifizierungsmethoden und
+    sinnvolle Analyse, wobei ein \textit{Deep Learning} Ansatz eine vielversprechende Technik für
+    die Datenanalyse im großen Stil ist. Die \textit{Human Activity Recognition} (HAR) wertet
+    zeiliche Reihendaten von Trägheitssensoren aus, um eine Aktion  identifizieren
+    zu können, die ausgeführt wird. So kann sowohl einen Ausbruch von Krankheiten (z.B. Parkinson),
+    als auch die Wirksamkeit einer Behandlung erkannt werden.
+
+    \subsection{Problem}
+    Während \textit{Deep Learning} bei Implementationen, die Hochleistungs-Rechencluster nutzen,
+    bisher sehr erfolgreich war, ist der Einsatz auf mobilen Endgeräten durch geringe Ressourcen
+    beschränkt.
+
+    \subsection{Technik}
+    Eine der größten Herausforderungen beim Entwerfen einer Klassifizierungsmethode für eine
+    Zeitreihenanalyse ist die Auswahl von Merkmalen der Klassen. Oft kann durch den Einsatz
+    von \textit{Deep Believe Networks} (DBN), \textit{Restricted Boltzman Machines} (RBM) oder
+    \textit{Convolutional Neural Networks} (CNN) eine Menge von \textit{Features} (Markmale) der
+    Rohdaten herausgearbeitet werden. Um eine vollständige Hierarchie der Features herauszufinden,
+    die die Rohdaten sinnvoll klassifizieren kann, wird bei \textit{HAR} jedoch ein
+    \textit{Deep Learnung} Ansatz mit komplexen Designs und vielen Schichten benötigt, um Änderungen
+    in den verschiedenen Sensoren verarbeiten zu können.
+    \newpage
+
+    \subsection{"`Shallow Deep Learning"' Methode}
+    Im folgenden werden die einzelnen Schritte der vorgeschlagenen Methode gezeigt. Diese setzt
+    sich aus \textit{Deep Learning} (Prozess A) und \textit{Shallow Learning} (Prozess B) zusammen.
+
+    \begin{figure}[ht!]
+        \centerings
+        \includegraphics[width=12cm]{../../resources/prozess.png}
+        \caption{Schematischer Ablauf der Methode}
+    \end{figure}
+
+    \subsubsection{Input}
+    Um eingehende Daten (Input) zu generieren, wird auf verbaute Trägheitssensoren wie
+    Beschleunigungsmesser und Gyroskope zugegriffen. Das Nutzen von Zeitreihendaten von anderen
+    Sensoren, wie Elektrokardiographie (EKG) oder Elektromyographie (EMG), sind
+    ebenfalls möglich.
+
+    \subsubsection{Segmente extrahieren}
+    Nachdem die Rohdaten eingesammelt werden, können $n$ Segmente extrahiert werden, wobei $n$
+    von der Art der Applikation abhängt. Die Länge der Segmente wird bei \textit{HAR} auf
+    4 bis 10 Sekunden (\textit{sliding window}) gesetzt, um die Genauigkeit der Erkennung der
+    ausgeführten Aktivität zu maximieren, ohne die Grenzen zwischen verschiedenen Aktivitäten
+    zu verschleiern.
+
+    \subsubsection{Spektogramm und Deep Learning Modul}
+    Um nun \textit{Features} zu extrahieren, werden die Segmente als Spektogramm-Repräsentation
+    an ein \textit{Deep Learning} Modul weitergereicht, das darauf ausgelegt ist
+    Intensitätsunterschiede in den Trägheitspunkten des Spektogramms zu interpretieren. Die Zeit-
+    und Abtastrateninvarianz, die Amplituden und die Frequenz kann zur Untersuchung der Spektogramme
+    genutzt werden (z.B. durch \textit{Fourier}-Transformation).\\
+    Es ergeben sich beispielsweise folgende \textit{Features}: (Abbildung 9)
+
+    \begin{figure}[ht!]
+        \centerings
+        \includegraphics[width=11.8cm]{../../resources/features.png}
+        \caption{Spektogramme aus verschiedenen Aktivitäten}
+    \end{figure}
+
+    \subsubsection{Shallow Features}
+    Aus verschiedenen Berechnungen ("`flache"' Merkmale), die auf die Spektogramme angewendet werden
+    (z.B. Quadratischer Mittelwert, Standartabweichung, usw.), kann nun eine Vektorrepräsentation
+    jedes Segments erstellt werden.
+
+    \subsubsection{Klassifizierung}
+    Sobald sowohl flache (\textit{shallow learned}), als auch tiefe (\textit{deep learned})
+    Eigenschaften berechnet wurden, können diese zu einem eindeutigen Vektor zusammengeführt und
+    klassifiziert werden.
+
+    \subsubsection{Training}
+    Flache und tiefe Features werden zusammen in einem einheitlichen, neuronalem Netz trainiert. In
+    jeder Schicht des neuronalen Netzes werden Fehler (Errors) zwischen den Soll- und Istwerten in
+    einer \textit{Backwards Propagation} Routine genutzt, um die Gewichtungen in den
+    \textit{Hidden-Layers} anzupassen.
+
+    \subsection{Evaluation (Vorschlag)}
+    Das vorgeschlagene \textit{Shallow Deep Learning}-Verfahren könnte nun mit verschiedenen Datensätzen
+    (Abbildung 10) analysiert und evaluiert werden.
+
+    \begin{figure}[ht!]
+        \centerings
+        \includegraphics[width=16cm]{../../resources/datasets.png}
+        \caption{Datensätze für eine Evaluierung}
+    \end{figure}
 
     \section{Ethik}
 

@@ -1,0 +1,38 @@
+\BOOKMARK [1][-]{section.1}{Suchen}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Problem des Handlungsreisenden}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Genetischer Algorithmus}{section.1}% 3
+\BOOKMARK [3][-]{subsubsection.1.2.1}{Allgemeiner Ablauf}{subsection.1.2}% 4
+\BOOKMARK [2][-]{subsection.1.3}{Chromosomen}{section.1}% 5
+\BOOKMARK [2][-]{subsection.1.4}{Fitness}{section.1}% 6
+\BOOKMARK [2][-]{subsection.1.5}{Selektion}{section.1}% 7
+\BOOKMARK [2][-]{subsection.1.6}{Kreuzung}{section.1}% 8
+\BOOKMARK [2][-]{subsection.1.7}{Mutation}{section.1}% 9
+\BOOKMARK [2][-]{subsection.1.8}{Austausch}{section.1}% 10
+\BOOKMARK [2][-]{subsection.1.9}{Realisierung mit Java}{section.1}% 11
+\BOOKMARK [3][-]{subsubsection.1.9.1}{Eigenschaften}{subsection.1.9}% 12
+\BOOKMARK [3][-]{subsubsection.1.9.2}{Visualisierung}{subsection.1.9}% 13
+\BOOKMARK [1][-]{section.2}{Lernen}{}% 14
+\BOOKMARK [2][-]{subsection.2.1}{Motivation}{section.2}% 15
+\BOOKMARK [2][-]{subsection.2.2}{Aufbau}{section.2}% 16
+\BOOKMARK [2][-]{subsection.2.3}{Netz}{section.2}% 17
+\BOOKMARK [2][-]{subsection.2.4}{Lernverfahren}{section.2}% 18
+\BOOKMARK [2][-]{subsection.2.5}{Distanzfunktion}{section.2}% 19
+\BOOKMARK [2][-]{subsection.2.6}{Siegerneuron anpassen}{section.2}% 20
+\BOOKMARK [2][-]{subsection.2.7}{Nachbarneuronen des Siegerneurons anpassen}{section.2}% 21
+\BOOKMARK [2][-]{subsection.2.8}{Visualisierung}{section.2}% 22
+\BOOKMARK [2][-]{subsection.2.9}{Anwendungsgebiete}{section.2}% 23
+\BOOKMARK [1][-]{section.3}{Sequenzen}{}% 24
+\BOOKMARK [2][-]{subsection.3.1}{Motivation}{section.3}% 25
+\BOOKMARK [2][-]{subsection.3.2}{Problem}{section.3}% 26
+\BOOKMARK [2][-]{subsection.3.3}{Technik}{section.3}% 27
+\BOOKMARK [2][-]{subsection.3.4}{\214Shallow Deep Learning\215 Methode}{section.3}% 28
+\BOOKMARK [3][-]{subsubsection.3.4.1}{Input}{subsection.3.4}% 29
+\BOOKMARK [3][-]{subsubsection.3.4.2}{Segmente extrahieren}{subsection.3.4}% 30
+\BOOKMARK [3][-]{subsubsection.3.4.3}{Spektogramm und Deep Learning Modul}{subsection.3.4}% 31
+\BOOKMARK [3][-]{subsubsection.3.4.4}{Shallow Features}{subsection.3.4}% 32
+\BOOKMARK [3][-]{subsubsection.3.4.5}{Klassifizierung}{subsection.3.4}% 33
+\BOOKMARK [3][-]{subsubsection.3.4.6}{Training}{subsection.3.4}% 34
+\BOOKMARK [2][-]{subsection.3.5}{Evaluation \(Vorschlag\)}{section.3}% 35
+\BOOKMARK [1][-]{section.4}{Ethik}{}% 36
+\BOOKMARK [2][-]{subsection.4.1}{Thema}{section.4}% 37
+\BOOKMARK [2][-]{subsection.4.2}{Verantwortung als Informatiker}{section.4}% 38

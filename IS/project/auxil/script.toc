@@ -1,37 +1,38 @@
-\contentsline {section}{\numberline {1}Suchen}{4}% 
-\contentsline {subsection}{\numberline {1.1}Problem des Handlungsreisenden}{4}% 
-\contentsline {subsection}{\numberline {1.2}Genetischer Algorithmus}{4}% 
-\contentsline {subsubsection}{\numberline {1.2.1}Allgemeiner Ablauf}{5}% 
-\contentsline {subsection}{\numberline {1.3}Chromosomen}{5}% 
-\contentsline {subsection}{\numberline {1.4}Fitness}{6}% 
-\contentsline {subsection}{\numberline {1.5}Selektion}{6}% 
-\contentsline {subsection}{\numberline {1.6}Kreuzung}{6}% 
-\contentsline {subsection}{\numberline {1.7}Mutation}{6}% 
-\contentsline {subsection}{\numberline {1.8}Austausch}{6}% 
-\contentsline {subsection}{\numberline {1.9}Realisierung mit Java}{7}% 
-\contentsline {subsubsection}{\numberline {1.9.1}Eigenschaften}{7}% 
-\contentsline {subsubsection}{\numberline {1.9.2}Visualisierung}{8}% 
-\contentsline {section}{\numberline {2}Lernen}{9}% 
-\contentsline {subsection}{\numberline {2.1}Motivation}{9}% 
-\contentsline {subsection}{\numberline {2.2}Aufbau}{10}% 
-\contentsline {subsection}{\numberline {2.3}Netz}{11}% 
-\contentsline {subsection}{\numberline {2.4}Lernverfahren}{11}% 
-\contentsline {subsection}{\numberline {2.5}Distanzfunktion}{12}% 
-\contentsline {subsection}{\numberline {2.6}Siegerneuron anpassen}{12}% 
-\contentsline {subsection}{\numberline {2.7}Nachbarneuronen des Siegerneurons anpassen}{12}% 
-\contentsline {subsection}{\numberline {2.8}Visualisierung}{13}% 
-\contentsline {subsection}{\numberline {2.9}Anwendungsgebiete}{14}% 
-\contentsline {section}{\numberline {3}Sequenzen}{15}% 
-\contentsline {subsection}{\numberline {3.1}Motivation}{15}% 
-\contentsline {subsection}{\numberline {3.2}Problem}{15}% 
-\contentsline {subsection}{\numberline {3.3}Technik}{15}% 
-\contentsline {subsection}{\numberline {3.4}\active@dq \dq@prtct {`}Shallow Deep Learning\active@dq \dq@prtct {'} Methode}{16}% 
-\contentsline {subsubsection}{\numberline {3.4.1}Input}{17}% 
-\contentsline {subsubsection}{\numberline {3.4.2}Segmente extrahieren}{17}% 
-\contentsline {subsubsection}{\numberline {3.4.3}Spektogramm und Deep Learning Modul}{17}% 
-\contentsline {subsubsection}{\numberline {3.4.4}Shallow Features}{18}% 
-\contentsline {subsubsection}{\numberline {3.4.5}Klassifizierung}{18}% 
-\contentsline {subsubsection}{\numberline {3.4.6}Training}{18}% 
-\contentsline {subsection}{\numberline {3.5}Evaluation (Vorschlag)}{18}% 
-\contentsline {section}{\numberline {4}Ethik}{18}% 
-\contentsline {section}{\numberline {5}Quellen}{18}% 
+\contentsline {section}{\numberline {1}Suchen}{4}{section.1}% 
+\contentsline {subsection}{\numberline {1.1}Problem des Handlungsreisenden}{4}{subsection.1.1}% 
+\contentsline {subsection}{\numberline {1.2}Genetischer Algorithmus}{4}{subsection.1.2}% 
+\contentsline {subsubsection}{\numberline {1.2.1}Allgemeiner Ablauf}{5}{subsubsection.1.2.1}% 
+\contentsline {subsection}{\numberline {1.3}Chromosomen}{5}{subsection.1.3}% 
+\contentsline {subsection}{\numberline {1.4}Fitness}{6}{subsection.1.4}% 
+\contentsline {subsection}{\numberline {1.5}Selektion}{6}{subsection.1.5}% 
+\contentsline {subsection}{\numberline {1.6}Kreuzung}{6}{subsection.1.6}% 
+\contentsline {subsection}{\numberline {1.7}Mutation}{6}{subsection.1.7}% 
+\contentsline {subsection}{\numberline {1.8}Austausch}{6}{subsection.1.8}% 
+\contentsline {subsection}{\numberline {1.9}Realisierung mit Java}{7}{subsection.1.9}% 
+\contentsline {subsubsection}{\numberline {1.9.1}Eigenschaften}{7}{subsubsection.1.9.1}% 
+\contentsline {subsubsection}{\numberline {1.9.2}Visualisierung}{8}{subsubsection.1.9.2}% 
+\contentsline {section}{\numberline {2}Lernen}{9}{section.2}% 
+\contentsline {subsection}{\numberline {2.1}Motivation}{9}{subsection.2.1}% 
+\contentsline {subsection}{\numberline {2.2}Aufbau}{10}{subsection.2.2}% 
+\contentsline {subsection}{\numberline {2.3}Netz}{11}{subsection.2.3}% 
+\contentsline {subsection}{\numberline {2.4}Lernverfahren}{11}{subsection.2.4}% 
+\contentsline {subsection}{\numberline {2.5}Distanzfunktion}{12}{subsection.2.5}% 
+\contentsline {subsection}{\numberline {2.6}Siegerneuron anpassen}{12}{subsection.2.6}% 
+\contentsline {subsection}{\numberline {2.7}Nachbarneuronen des Siegerneurons anpassen}{12}{subsection.2.7}% 
+\contentsline {subsection}{\numberline {2.8}Visualisierung}{13}{subsection.2.8}% 
+\contentsline {subsection}{\numberline {2.9}Anwendungsgebiete}{14}{subsection.2.9}% 
+\contentsline {section}{\numberline {3}Sequenzen}{15}{section.3}% 
+\contentsline {subsection}{\numberline {3.1}Motivation}{15}{subsection.3.1}% 
+\contentsline {subsection}{\numberline {3.2}Problem}{15}{subsection.3.2}% 
+\contentsline {subsection}{\numberline {3.3}Technik}{15}{subsection.3.3}% 
+\contentsline {subsection}{\numberline {3.4}\active@dq \dq@prtct {`}Shallow Deep Learning\active@dq \dq@prtct {'} Methode}{16}{subsection.3.4}% 
+\contentsline {subsubsection}{\numberline {3.4.1}Input}{17}{subsubsection.3.4.1}% 
+\contentsline {subsubsection}{\numberline {3.4.2}Segmente extrahieren}{17}{subsubsection.3.4.2}% 
+\contentsline {subsubsection}{\numberline {3.4.3}Spektogramm und Deep Learning Modul}{17}{subsubsection.3.4.3}% 
+\contentsline {subsubsection}{\numberline {3.4.4}Shallow Features}{18}{subsubsection.3.4.4}% 
+\contentsline {subsubsection}{\numberline {3.4.5}Klassifizierung}{18}{subsubsection.3.4.5}% 
+\contentsline {subsubsection}{\numberline {3.4.6}Training}{18}{subsubsection.3.4.6}% 
+\contentsline {subsection}{\numberline {3.5}Evaluation (Vorschlag)}{18}{subsection.3.5}% 
+\contentsline {section}{\numberline {4}Ethik}{19}{section.4}% 
+\contentsline {subsection}{\numberline {4.1}Thema}{19}{subsection.4.1}% 
+\contentsline {subsection}{\numberline {4.2}Verantwortung als Informatiker}{19}{subsection.4.2}% 

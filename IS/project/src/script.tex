@@ -14,6 +14,9 @@
 \usepackage[utf8]{inputenc} % UTF-8
 \usepackage {tikz}
 \usepackage{amsmath} % Graphs
+\usepackage{etoolbox} % Well formatted Links in bib
+\apptocmd{\thebibliography}{\raggedright}{}{} % Well formatted Links in bib
+\usepackage{hyperref} % Links
 
 %%% Commands
 % ToC title
@@ -50,12 +53,12 @@
         \textbf{Ethik}. Zum einen werden Problemstellungen aufgezeigt, zum anderen auf
         Implementationen verwiesen, die in der zugehörigen Präsentation vorgestellt werden.\\ Eine
         Lösungsstrategie für das \textit{Problem des Handlungsreisenden (Traveling Salesman
-        Problem)} wird im Kapitel \textbf{Suchen} beschrieben. \textit{Selbstorganisierte Karten
-            (Selforganizing Maps)} zeigen eine Strategie des \textbf{Lernen}s, ein \textit{Deep
-        Learning}- Ansatz zur Datenanalyse von Sensordaten mobiler Endgeräte gibt Einblicke in
-        die \textbf{Sequenzverarbeitung} und eine Diskussion zum \textit{Trolley Problem} lädt
+        Problem)} wird im Kapitel \textbf{Suchen} beschrieben~\cite{suchen, salesman, impl}.
+        \textit{Selbstorganisierte Karten (Selforganizing Maps)} zeigen eine Strategie des \textbf{Lernen}s~\cite{lernen, som},
+        ein \textit{Deep Learning}- Ansatz zur Datenanalyse von Sensordaten mobiler Endgeräte gibt Einblicke in
+        die \textbf{Sequenzverarbeitung}~\cite{sequenzen} und eine Diskussion zum \textit{Trolley Problem} lädt
         zur Diskussion über die \textbf{Ethik} in Verbindung mit \textit{intelligenten Systemen}
-        ein.
+        ein~\cite{trolley, Eimler2018}.
     \end{abstract}
 
     \tableofcontents
@@ -404,9 +407,17 @@
         \caption{Datensätze für eine Evaluierung}
     \end{figure}
 
+    \newpage
+
     \section{Ethik}
 
+    \subsection{Thema}
 
-    \section{Quellen}
+    \subsection{Verantwortung als Informatiker}
+
+    \newpage
+
+    \bibliographystyle{plain}
+    \bibliography{script}
 
 \end{document}

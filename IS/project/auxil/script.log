@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.2.5)  15 FEB 2020 16:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6930 64-bit) (preloaded format=pdflatex 2019.2.5)  16 FEB 2020 13:03
 entering extended mode
 **./script.tex
 (script.tex
@@ -432,7 +432,121 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
 LaTeX Info: Redefining \[ on input line 2844.
 LaTeX Info: Redefining \] on input line 2845.
 )
-script.tex:38: Argument of \reserved@a has an extra }
+("C:\Program Files\MiKTeX 2.9\tex/latex/etoolbox\etoolbox.sty"
+Package: etoolbox 2018/08/19 v2.5f e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count119
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\hyperref.sty"
+Package: hyperref 2018/11/30 v6.88e Hypertext links for LaTeX
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\hobsub-hyperref.sty"
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\hobsub-generic.sty"
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO
+)
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex/generic/ifxetex\ifxetex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\auxhook.sty"
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\kvoptions.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+)
+\@linkdim=\dimen161
+\Hy@linkcounter=\count120
+\Hy@pagecounter=\count121
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\pd1enc.def"
+File: pd1enc.def 2018/11/30 v6.88e Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+\Hy@SavedSpaceFactor=\count122
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/00miktex\hyperref.cfg"
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4519.
+Package hyperref Info: Link nesting OFF on input line 4524.
+Package hyperref Info: Hyper index ON on input line 4527.
+Package hyperref Info: Plain pages OFF on input line 4534.
+Package hyperref Info: Backreferencing OFF on input line 4539.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4772.
+\c@Hy@tempcnt=\count123
+
+(C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/latex/url\url.sty
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5125.
+\XeTeXLinkMargin=\dimen162
+\Fld@menulength=\count124
+\Field@Width=\dimen163
+\Fld@charsize=\dimen164
+Package hyperref Info: Hyper figures OFF on input line 6380.
+Package hyperref Info: Link nesting OFF on input line 6385.
+Package hyperref Info: Hyper index ON on input line 6388.
+Package hyperref Info: backreferencing OFF on input line 6395.
+Package hyperref Info: Link coloring OFF on input line 6400.
+Package hyperref Info: Link coloring with OCG OFF on input line 6405.
+Package hyperref Info: PDF/A mode OFF on input line 6410.
+LaTeX Info: Redefining \ref on input line 6450.
+LaTeX Info: Redefining \pageref on input line 6454.
+\Hy@abspage=\count125
+\c@Item=\count126
+\c@Hfootnote=\count127
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\hpdftex.def"
+File: hpdftex.def 2018/11/30 v6.88e Hyperref driver for pdfTeX
+\Fld@listcount=\count128
+\c@bookmark@seq@number=\count129
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\rerunfilecheck.sty"
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+82.
+)
+\Hy@SectionHShift=\skip49
+)
+script.tex:41: Argument of \reserved@a has an extra }
 I've run across a `}' that doesn't seem to match anything.
 For example, `\def\a#1{...}' and `\a}' would produce
 this error. If you simply proceed now, the `\par' that
@@ -441,8 +555,8 @@ argument that might be the root of the problem. But if
 your `}' was spurious, just type `2' and it will go away.
 
 Runaway argument?
-{\def \@currenvir {center}\edef \@currenvline {\on@line }\csname cent\ETC.
-script.tex:38: Paragraph ended before \reserved@a was complete
+{\def \@currenvir {center}\edef \@currenvline {\on@line }\csuse {@beg\ETC.
+script.tex:41: Paragraph ended before \reserved@a was complete
 I suspect you've forgotten a `}', causing me to apply this
 control sequence to too much text. How can we recover?
 My plan is to forget the whole thing and hope for the best.
@@ -450,71 +564,39 @@ My plan is to forget the whole thing and hope for the best.
 (D:/git\ws2019\IS\project\auxil\script.aux)
 \openout1 = `script.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
-LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
 
 (C:\Users\Main\AppData\Roaming\MiKTeX\2.9\tex/context/base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count119
-\scratchdimen=\dimen161
+\scratchcounter=\count130
+\scratchdimen=\dimen165
 \scratchbox=\box40
-\nofMPsegments=\count120
-\nofMParguments=\count121
+\nofMPsegments=\count131
+\nofMParguments=\count132
 \everyMPshowfont=\toks34
-\MPscratchCnt=\count122
-\MPscratchDim=\dimen162
-\MPnumerator=\count123
-\makeMPintoPDFobject=\count124
+\MPscratchCnt=\count133
+\MPscratchDim=\dimen166
+\MPnumerator=\count134
+\makeMPintoPDFobject=\count135
 \everyMPtoPDFconversion=\toks35
 ) ("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
-("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\infwarerr.sty"
-Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
-)
 ("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\grfext.sty"
 Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\kvdefinekeys.sty"
-Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\ltxcmds.sty"
-Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
-)))
-("C:\Program Files\MiKTeX 2.9\tex/latex/oberdiek\kvoptions.sty"
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\kvsetkeys.sty"
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\etexcmds.sty"
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\ifluatex.sty"
-Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-))))
-("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\pdftexcmds.sty"
-Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
-)
-
-("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\ifpdf.sty"
-Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
 )
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
 38.
@@ -524,14 +606,34 @@ G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
 ABD: EveryShipout initializing macros
-<../../resources/Haw_logo.png, id=4, 301.125pt x 110.4125pt>
+\AtBeginShipoutBox=\box41
+Package hyperref Info: Link coloring OFF on input line 46.
+
+("C:\Program Files\MiKTeX 2.9\tex/latex/hyperref\nameref.sty"
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+
+("C:\Program Files\MiKTeX 2.9\tex/generic/oberdiek\gettitlestring.sty"
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count136
+)
+LaTeX Info: Redefining \ref on input line 46.
+LaTeX Info: Redefining \pageref on input line 46.
+LaTeX Info: Redefining \nameref on input line 46.
+
+(D:/git\ws2019\IS\project\auxil\script.out)
+(D:/git\ws2019\IS\project\auxil\script.out)
+\@outlinefile=\write4
+\openout4 = `script.out'.
+
+<../../resources/Haw_logo.png, id=158, 301.125pt x 110.4125pt>
 File: ../../resources/Haw_logo.png Graphic file (type png)
 <use ../../resources/Haw_logo.png>
-Package pdftex.def Info: ../../resources/Haw_logo.png  used on input line 45.
+Package pdftex.def Info: ../../resources/Haw_logo.png  used on input line 49.
 (pdftex.def)             Requested size: 227.62204pt x 83.46452pt.
 
 
-script.tex:45: LaTeX Error: \begin{document} ended by \end{center}.
+script.tex:49: LaTeX Error: \begin{document} ended by \end{center}.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help
@@ -539,93 +641,42 @@ Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-script.tex:45: Missing } inserted
+script.tex:49: Missing } inserted
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
 With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-script.tex:45: Too many }'s
+script.tex:49: Too many }'s
 You've closed more groups than you opened.
 Such booboos are generally harmless, so keep going.
 
-script.tex:45: Extra \endgroup
+script.tex:49: Extra \endgroup
 Things are pretty mixed up, but I think the worst is over.
 
-(D:/git\ws2019\IS\project\auxil\script.toc [1
+[1
 
 {C:/Users/Main/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <../../resour
-ces/Haw_logo.png (PNG copy)>]
+ces/Haw_logo.png (PNG copy)>] (D:/git\ws2019\IS\project\auxil\script.toc
 [2])
-\tf@toc=\write4
-\openout4 = `script.toc'.
+\tf@toc=\write5
+\openout5 = `script.toc'.
 
  [3]
-script.tex:88: ngerman: The command "h is undefined
+script.tex:91: ngerman: The command "h is undefined
 Use `` for a simple double quote character.
 
-script.tex:88: ngerman: The command ". is undefined
+script.tex:91: ngerman: The command ". is undefined
 Use `` for a simple double quote character.
 
 
-Overfull \hbox (5.06126pt too wide) in paragraph at lines 79--89
+Overfull \hbox (5.06126pt too wide) in paragraph at lines 82--92
 \OT1/cmr/m/n/10.95 Le-be-we-sen ab-lei-ten. Ziel von ge-ne-ti-schen Al-go-rith-
 men ist es op-ti-mier-te L[]osun-
  []
 
 [4]
-
-script.tex:96: Package xcolor Error: Undefined color `processblue'.
-
-See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-script.tex:96: Package pgfkeys Error: I do not know the key '/tikz/processblue'
- and I am going to ignore it. Perhaps you misspelled it.
-
-See the pgfkeys package documentation for explanation.
-Type  H <return>  for immediate help
-This error message was generated by an \errmessage
-command, so I can't give any explicit help.
-Pretend that you're Hercule Poirot: Examine all clues,
-and deduce the truth by order and method.
-
-
-script.tex:97: Package xcolor Error: Undefined color `processblue'.
-
-See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-script.tex:97: Package pgfkeys Error: I do not know the key '/tikz/processblue'
- and I am going to ignore it. Perhaps you misspelled it.
-
-See the pgfkeys package documentation for explanation.
-Type  H <return>  for immediate help
-(That was another \errmessage.)
-
-
-script.tex:98: Package xcolor Error: Undefined color `processblue'.
-
-See the xcolor package documentation for explanation.
-Type  H <return>  for immediate help
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-script.tex:98: Package pgfkeys Error: I do not know the key '/tikz/processblue'
- and I am going to ignore it. Perhaps you misspelled it.
-
-See the pgfkeys package documentation for explanation.
-Type  H <return>  for immediate help
-(That was another \errmessage.)
-
 
 script.tex:99: Package xcolor Error: Undefined color `processblue'.
 
@@ -640,7 +691,10 @@ script.tex:99: Package pgfkeys Error: I do not know the key '/tikz/processblue'
 
 See the pgfkeys package documentation for explanation.
 Type  H <return>  for immediate help
-(That was another \errmessage.)
+This error message was generated by an \errmessage
+command, so I can't give any explicit help.
+Pretend that you're Hercule Poirot: Examine all clues,
+and deduce the truth by order and method.
 
 
 script.tex:100: Package xcolor Error: Undefined color `processblue'.
@@ -738,179 +792,236 @@ See the pgfkeys package documentation for explanation.
 Type  H <return>  for immediate help
 (That was another \errmessage.)
 
-script.tex:124: Missing $ inserted
+
+script.tex:106: Package xcolor Error: Undefined color `processblue'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+script.tex:106: Package pgfkeys Error: I do not know the key '/tikz/processblue
+' and I am going to ignore it. Perhaps you misspelled it.
+
+See the pgfkeys package documentation for explanation.
+Type  H <return>  for immediate help
+(That was another \errmessage.)
+
+
+script.tex:107: Package xcolor Error: Undefined color `processblue'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+script.tex:107: Package pgfkeys Error: I do not know the key '/tikz/processblue
+' and I am going to ignore it. Perhaps you misspelled it.
+
+See the pgfkeys package documentation for explanation.
+Type  H <return>  for immediate help
+(That was another \errmessage.)
+
+
+script.tex:108: Package xcolor Error: Undefined color `processblue'.
+
+See the xcolor package documentation for explanation.
+Type  H <return>  for immediate help
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+script.tex:108: Package pgfkeys Error: I do not know the key '/tikz/processblue
+' and I am going to ignore it. Perhaps you misspelled it.
+
+See the pgfkeys package documentation for explanation.
+Type  H <return>  for immediate help
+(That was another \errmessage.)
+
+script.tex:127: Missing $ inserted
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-script.tex:129: Missing $ inserted
+script.tex:132: Missing $ inserted
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 [5]
-Overfull \hbox (0.16423pt too wide) in paragraph at lines 145--152
+Overfull \hbox (0.16423pt too wide) in paragraph at lines 148--155
 \OT1/cmr/m/n/10.95 Ein zuf[]alli-ger Kreu-zungs-punkt in-ner-halb des Vek-tors 
 ei-nes se-lek-tier-ten Chro-
  []
 
 [6]
-<../../resources/properties_algorithm.png, id=33, 488.57532pt x 321.45094pt>
+<../../resources/properties_algorithm.png, id=248, 488.57532pt x 321.45094pt>
 File: ../../resources/properties_algorithm.png Graphic file (type png)
 <use ../../resources/properties_algorithm.png>
 Package pdftex.def Info: ../../resources/properties_algorithm.png  used on inpu
-t line 169.
+t line 172.
 (pdftex.def)             Requested size: 284.52756pt x 187.20193pt.
-<../../resources/properties_results.png, id=35, 486.31688pt x 189.70876pt>
+<../../resources/properties_results.png, id=250, 486.31688pt x 189.70876pt>
 File: ../../resources/properties_results.png Graphic file (type png)
 <use ../../resources/properties_results.png>
 Package pdftex.def Info: ../../resources/properties_results.png  used on input 
-line 171.
+line 174.
 (pdftex.def)             Requested size: 284.52756pt x 110.99219pt.
-<../../resources/tsp_cities.png, id=36, 469.755pt x 289.83281pt>
+<../../resources/tsp_cities.png, id=251, 469.755pt x 289.83281pt>
 File: ../../resources/tsp_cities.png Graphic file (type png)
 <use ../../resources/tsp_cities.png>
-Package pdftex.def Info: ../../resources/tsp_cities.png  used on input line 177
+Package pdftex.def Info: ../../resources/tsp_cities.png  used on input line 180
 .
 (pdftex.def)             Requested size: 284.52756pt x 175.5506pt.
  [7 <../../resources/properties_algorithm.png> <../../resources/properties_resu
 lts.png>]
-<../../resources/tsp_cities_connected.png, id=43, 463.7325pt x 283.81032pt>
+<../../resources/tsp_cities_connected.png, id=259, 463.7325pt x 283.81032pt>
 File: ../../resources/tsp_cities_connected.png Graphic file (type png)
 <use ../../resources/tsp_cities_connected.png>
 Package pdftex.def Info: ../../resources/tsp_cities_connected.png  used on inpu
-t line 179.
+t line 182.
 (pdftex.def)             Requested size: 284.52756pt x 174.13739pt.
  [8 <../../resources/tsp_cities.png> <../../resources/tsp_cities_connected.png>
 ]
-<../../resources/gehirn.png, id=49, 456.95718pt x 460.72125pt>
+<../../resources/gehirn.png, id=266, 456.95718pt x 460.72125pt>
 File: ../../resources/gehirn.png Graphic file (type png)
 <use ../../resources/gehirn.png>
-Package pdftex.def Info: ../../resources/gehirn.png  used on input line 202.
+Package pdftex.def Info: ../../resources/gehirn.png  used on input line 205.
 (pdftex.def)             Requested size: 227.62204pt x 229.49536pt.
  [9 <../../resources/gehirn.png>]
-<../../resources/aufbau.png, id=54, 555.57562pt x 191.9672pt>
+<../../resources/aufbau.png, id=273, 555.57562pt x 191.9672pt>
 File: ../../resources/aufbau.png Graphic file (type png)
 <use ../../resources/aufbau.png>
-Package pdftex.def Info: ../../resources/aufbau.png  used on input line 215.
+Package pdftex.def Info: ../../resources/aufbau.png  used on input line 218.
 (pdftex.def)             Requested size: 341.43306pt x 117.97563pt.
-<../../resources/neuron.png, id=55, 553.31718pt x 265.74281pt>
+<../../resources/neuron.png, id=274, 553.31718pt x 265.74281pt>
 File: ../../resources/neuron.png Graphic file (type png)
 <use ../../resources/neuron.png>
-Package pdftex.def Info: ../../resources/neuron.png  used on input line 226.
+Package pdftex.def Info: ../../resources/neuron.png  used on input line 229.
 (pdftex.def)             Requested size: 341.43306pt x 163.98029pt.
  [10 <../../resources/aufbau.png> <../../resources/neuron.png>]
-<../../resources/netz.png, id=61, 371.88937pt x 200.24812pt>
+<../../resources/netz.png, id=283, 371.88937pt x 200.24812pt>
 File: ../../resources/netz.png Graphic file (type png)
 <use ../../resources/netz.png>
-Package pdftex.def Info: ../../resources/netz.png  used on input line 237.
+Package pdftex.def Info: ../../resources/netz.png  used on input line 240.
 (pdftex.def)             Requested size: 341.43306pt x 183.85468pt.
  [11 <../../resources/netz.png>]
-<../../resources/distanzfunktionen.png, id=66, 420.06938pt x 110.66344pt>
+<../../resources/distanzfunktionen.png, id=290, 420.06938pt x 110.66344pt>
 File: ../../resources/distanzfunktionen.png Graphic file (type png)
 <use ../../resources/distanzfunktionen.png>
 Package pdftex.def Info: ../../resources/distanzfunktionen.png  used on input l
-ine 257.
+ine 260.
 (pdftex.def)             Requested size: 341.43306pt x 89.94757pt.
 
-script.tex:273: Double subscript
-I treat `x_1_2' essentially like `x_1{}_2'.
-
-script.tex:275: Double subscript
+script.tex:276: Double subscript
 I treat `x_1_2' essentially like `x_1{}_2'.
 
 script.tex:278: Double subscript
 I treat `x_1_2' essentially like `x_1{}_2'.
 
+script.tex:281: Double subscript
+I treat `x_1_2' essentially like `x_1{}_2'.
+
 [12 <../../resources/distanzfunktionen.png>]
-<../../resources/zoo_table.png, id=74, 746.79pt x 453.94594pt>
+<../../resources/zoo_table.png, id=300, 746.79pt x 453.94594pt>
 File: ../../resources/zoo_table.png Graphic file (type png)
 <use ../../resources/zoo_table.png>
-Package pdftex.def Info: ../../resources/zoo_table.png  used on input line 290.
+Package pdftex.def Info: ../../resources/zoo_table.png  used on input line 293.
 
 (pdftex.def)             Requested size: 426.79134pt x 259.43068pt.
 
-Overfull \hbox (66.79134pt too wide) in paragraph at lines 290--291
+Overfull \hbox (66.79134pt too wide) in paragraph at lines 293--294
  [][] 
  []
 
-<../../resources/zoo.png, id=75, 513.41812pt x 487.8225pt>
+<../../resources/zoo.png, id=301, 513.41812pt x 487.8225pt>
 File: ../../resources/zoo.png Graphic file (type png)
 <use ../../resources/zoo.png>
-Package pdftex.def Info: ../../resources/zoo.png  used on input line 296.
+Package pdftex.def Info: ../../resources/zoo.png  used on input line 299.
 (pdftex.def)             Requested size: 341.43306pt x 324.41277pt.
 [13 <../../resources/zoo_table.png>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 305.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 308.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex/latex/base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 305.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 308.
  [14 <../../resources/zoo.png>]
-Overfull \hbox (18.88956pt too wide) in paragraph at lines 329--332
+Overfull \hbox (18.88956pt too wide) in paragraph at lines 332--335
 \OT1/cmr/m/n/10.95 W[]ahrend \OT1/cmr/m/it/10.95 De-ep Lear-ning \OT1/cmr/m/n/1
 0.95 bei Im-ple-men-ta-tio-nen, die Hochleistungs-Rechencluster
  []
 
 [15]
-script.tex:349: Undefined control sequence
+script.tex:352: Undefined control sequence
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<../../resources/prozess.png, id=88, 430.60875pt x 549.55313pt>
+<../../resources/prozess.png, id=319, 430.60875pt x 549.55313pt>
 File: ../../resources/prozess.png Graphic file (type png)
 <use ../../resources/prozess.png>
-Package pdftex.def Info: ../../resources/prozess.png  used on input line 350.
+Package pdftex.def Info: ../../resources/prozess.png  used on input line 353.
 (pdftex.def)             Requested size: 341.43306pt x 435.75223pt.
 [16 <../../resources/prozess.png>]
-Overfull \hbox (2.47586pt too wide) in paragraph at lines 368--374
+Overfull \hbox (2.47586pt too wide) in paragraph at lines 371--377
 \OT1/cmr/m/n/10.95 ge-legt ist In-ten-sit[]ats-un-ter-schie-de in den Tr[]aghei
 ts-punk-ten des Spek-to-gramms
  []
 
-script.tex:376: Undefined control sequence
+script.tex:379: Undefined control sequence
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<../../resources/features.png, id=93, 856.70062pt x 489.32813pt>
+<../../resources/features.png, id=326, 856.70062pt x 489.32813pt>
 File: ../../resources/features.png Graphic file (type png)
 <use ../../resources/features.png>
-Package pdftex.def Info: ../../resources/features.png  used on input line 377.
+Package pdftex.def Info: ../../resources/features.png  used on input line 380.
 (pdftex.def)             Requested size: 335.7426pt x 191.77051pt.
 [17 <../../resources/features.png>]
-script.tex:402: Undefined control sequence
+script.tex:405: Undefined control sequence
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-<../../resources/datasets.png, id=98, 749.80125pt x 140.02313pt>
+<../../resources/datasets.png, id=333, 749.80125pt x 140.02313pt>
 File: ../../resources/datasets.png Graphic file (type png)
 <use ../../resources/datasets.png>
-Package pdftex.def Info: ../../resources/datasets.png  used on input line 403.
+Package pdftex.def Info: ../../resources/datasets.png  used on input line 406.
 (pdftex.def)             Requested size: 455.24408pt x 85.01657pt.
 
-Overfull \hbox (95.24408pt too wide) in paragraph at lines 403--404
+Overfull \hbox (95.24408pt too wide) in paragraph at lines 406--407
 [][] 
  []
 
-[18 <../../resources/datasets.png>] (D:/git\ws2019\IS\project\auxil\script.aux)
+[18 <../../resources/datasets.png>] [19]
+(D:/git\ws2019\IS\project\auxil\script.bbl) [20]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 423.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 423.
+
+(D:/git\ws2019\IS\project\auxil\script.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 423.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 423.
+Package rerunfilecheck Info: File `script.out' has not changed.
+(rerunfilecheck)             Checksum: 6692B36AD4E2498C99CCD5E30485EC23;2521.
  ) 
 Here is how much of TeX's memory you used:
- 12405 strings out of 492946
- 248321 string characters out of 3135531
- 287886 words of memory out of 3000000
- 16046 multiletter control sequences out of 15000+200000
- 11323 words of font info for 40 fonts, out of 3000000 for 9000
+ 16325 strings out of 492946
+ 306629 string characters out of 3135531
+ 374873 words of memory out of 3000000
+ 19860 multiletter control sequences out of 15000+200000
+ 11790 words of font info for 42 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,8n,60p,419b,682s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 55i,8n,60p,848b,684s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKT
@@ -919,11 +1030,12 @@ onts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
 1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
 amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
 cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10
-.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on D:/git\ws2019\IS\project\out\script.pdf (18 pages, 2565991 by
+.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:
+/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on D:/git\ws2019\IS\project\out\script.pdf (20 pages, 2618438 by
 tes).
 PDF statistics:
- 135 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 500000)
- 94 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 419 PDF objects out of 1000 (max. 8388607)
+ 79 named destinations out of 1000 (max. 500000)
+ 398 words of extra memory for PDF output out of 10000 (max. 10000000)
 

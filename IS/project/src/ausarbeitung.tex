@@ -1,0 +1,208 @@
+%! Author = Adrian Helberg
+%! Abgabe = 18.02.2020
+
+% Preamble
+\documentclass[11pt]{article}
+
+%%% Packages
+\usepackage{ngerman}
+\usepackage{color} % Colored font
+\usepackage{graphicx} % Images
+\usepackage{titling} % Title formatting
+\usepackage[utf8]{inputenc} % UTF-8
+\usepackage {tikz}
+\usepackage{amsmath} % Graphs
+\usepackage{etoolbox} % Well formatted Links in bib
+\apptocmd{\thebibliography}{\raggedright}{}{} % Well formatted Links in bib
+\usepackage{hyperref} % Links
+
+%%% Title
+\pretitle{
+    \begin{center}
+        \includegraphics[width=8cm]{../../resources/Haw_logo.png}
+    \end{center}
+}
+\title{
+    \begin{center}
+        \Huge \textbf{Intelligente Systeme}\\
+        {\color{blue}- Ausarbeitung -}\\~\\
+        \Large Prüfungsform: Referat
+    \end{center}
+}
+\author{Adrian Helberg\\ Matr.Nr. 2309051}
+\date{Abgabe: 18.02.2020}
+
+% Document
+\begin{document}
+
+    \maketitle
+
+    \begin{abstract}
+        Das Referat beschäftigt sich mit Konzepten der drei Kernbereiche aus \textit{intelligente
+        Systeme}: \textbf{Suchen}, \textbf{Lernen} und \textbf{Verarbeitung von Sequenzen}. Zum
+        einen werden Problemstellungen aufgezeigt, zum anderen auf Implementationen verwiesen, die
+        in der zugehörigen Präsentation vorgestellt werden.\\ Eine
+        Lösungsstrategie für das \textit{Problem des Handlungsreisenden (Traveling Salesman
+        Problem)} wird im Kapitel \textbf{Suchen} beschrieben~\cite{suchen, salesman, impl}.
+        \textit{Selbstorganisierte Karten (Selforganizing Maps)} zeigen eine Strategie des
+        \textbf{Lernen}s~\cite{lernen, som} und ein \textit{Deep Learning}- Ansatz zur Datenanalyse
+        von Sensordaten mobiler Endgeräte gibt Einblicke in die
+        \textbf{Sequenzverarbeitung}~\cite{sequenzen}.\\
+        Weiter lädt eine  Diskussion zu einem \textit{Trolley Problem} in Verbindung mit
+        \textit{intelligenten Systemen} zu einer kritischen Fragestellung der \textbf{Ethik}
+        ein~\cite{trolley} und zum Abschluss gibt es eine persönliche Einschätzung zur
+        \textbf{Verantwortung als Informatiker}.
+    \end{abstract}
+
+    \tableofcontents
+    \newpage
+
+    \section{Stichwortverzeichnis}
+
+    \subsection{Suchen}
+
+    \begin{itemize}
+        \item Problem des Handlungsreisenden (Traveling Salesman Problem)
+        \item Informierte Suche
+        \item Kombinatorisches Optimierungsproblem
+        \item Evolutionärer Algorithmus (Genetischer Algorithmus)
+        \begin{itemize}
+            \item Chromosom
+            \item Fitness
+            \item Selektion
+            \item Kreuzung
+            \item Mutation
+            \item Austausch
+        \end{itemize}
+        \item Visualisierung mit \textit{Java}
+    \end{itemize}
+
+    \subsection{Lernen}
+
+    \begin{itemize}
+        \item Unüberwachtes Lernen (unsupervised learning)
+        \item Neuroinformatik
+        \item Selbstorganisierende Karten (Self-organizing Maps)
+        \begin{itemize}
+            \item Klassifizierung
+            \item Neuronale Nachbarschaft
+            \item Topologieerhaltene Abbildung auf weniger Dimensionen
+            \item \textit{Kohonen}-Netz
+            \item Siegerneuronen
+            \item Distanzfunktionen
+        \end{itemize}
+        \item Visualisierung anhand eines Beispiels
+    \end{itemize}
+
+    \subsection{Verarbeitung von Sequenzen}
+
+    \begin{itemize}
+        \item Sensordaten mobiler Endgeräte (Trägheitssensoren, Gyroskope)
+        \item "`Tiefes"' Lernen (Deep Learning)
+        \item Klassifizierungsmethode
+        \item Analyse großer Datenmengen (\textit{Big Data})
+        \item \textit{Human Activity Recognition} (\textit{HAR})
+        \item Problem durch geringe Verfügbarkeit mobiler Ressourcen
+        \item Herausarbeiten von Eigenschaften (Feature Detection)
+        \item "`Shallow Deep Learning"'
+        \begin{itemize}
+            \item Segmente extrahieren
+            \item Spektogramme
+            \item Deep Learnung Modul
+            \item Shallow Features
+            \item Klassifizierung
+            \item Training
+            \item Mögliche Evaluation
+        \end{itemize}
+        \item Visualisierung anhand eines Beispiels
+    \end{itemize}
+    \newpage
+
+    \section{Ethik}
+
+    \subsection{Einleitung}
+
+    Die Abwägung kritischer Verkehrsituationen ist zurzeit nur sehr begrenzt möglich. Zum einen hat
+    der menschliche Fahrer meist nur wenige Sekunden, um eine Entscheidung zu treffen, zum anderen
+    ist es in der Gefahrensituation kaum möglich die ganze Situation zu begreifen. In
+    voraussichtlicher Zeit werden Autos durch genügend Rechenleistung in der Lage sein, die Folgen
+    eines Verkehrsunfalls genauer analysieren zu können, als ein menschlicher Fahrer.
+    Der Artikel "`Einer muss sterben - nur wer?"'~\cite{ethik} setzt sich mit dem moralischen
+    Dilemma des autonomen Fahrens auseinander - ein \textit{Trolley Problem}. Das Problem beschreibt
+    die Abwägung zwischen Menschenleben bei Verkehrsunfällen.
+
+    \subsection{Kriterien}
+
+    Nach welchen Kriterien ein Mensch in Gefahrensituationen im Straßenverkehr entscheidet, ist
+    schwer zu greifen, da hierzu eine subjektive Entscheidung getroffen wird. Weiter gibt
+    es eine Diskrepanz zwischem äußerem beabsichtigtem und tatsächlichem menschlichen Handeln, da
+    moralische Grundsätze über die "`Gesellschaftliche Intelligenz"' vermittelt werden, und es daher
+    Unterschiede im moralischen Denken der einzelnen Person gibt. Ein internationales
+    Forscherteam konnte bisher über 40 Millionen Datensätze über getroffene Entscheidung von
+    simulierten Verkehrssituationen sammeln, um diese Kriterien herauszuarbeiten.
+    \newpage
+
+    \subsection{Experiment}
+    Über ein frei zugängliche Online-Plattform "`Moral Machine"' \\(\url{http://moralmachine.mit
+    .edu/}) können die Nutzer verschiedene Verkehrssituationen "`durchspielen"' und so eine
+    Entscheidung
+    abgeben. Die Daten zeigen mehrere Tendenzen:
+    \begin{itemize}
+        \item Möglichst viele Leben retten
+        \item Mehr Frauen, als Männer und mehr Kinder, als Alte werden gerettet
+        \item Menschen mit höherer sozialer Stellung werden eher gerettet, als niedrigere
+        \item Menschen, die bei Rot über die Straße gehen, werden weniger häufig gerettet
+        \item Mitfahrer im Auto werden nicht häufiger gerettet, als Fußgänger
+    \end{itemize}
+    Weiter stellt sich heraus, dass es viele regionale Unterschiede gibt. In vielen asiatischen
+    Ländern
+    wurden junge Menschen beispielsweise seltener verschont als Alte.
+
+    \subsection{Hersteller}
+    Da das autonom agierende Fahrzeug die moralischen Entscheidung der Gesellschaft umsetzen muss,
+    und die Programmierer dieses auch leisten müssen, ist es von hoher Wichtigkeit für diese
+    Fragestellung, dass sich die Hersteller der Fahrzeuge äußern und
+    aktiver Teil der Diskussion sind. Dennoch weichen Hersteller derzeit noch diesem moralischen
+    Dilemma aus, da sie nach eigener Aussage zu sehr damit beschäftigt sind ein selbst fahrendes
+    Auto zur Marktreife zu bringen.
+
+    \subsection{Fazit}
+    Die Schlussfolgerung des Artikels besagt, dass moralische Fragen in allen Bereichen der
+    künstlichen Intelligenz gesamtgesellschaftlich diskutiert und erarbeitet werden müssen. Die
+    Autorin sagt außerdem, dass sich ethische Zulässigkeiten von Normen nicht aus
+    solchen nicht-repräsentativen Experimenten ableiten lassen. Damit vertritt sie eine ähnliche
+    Meinung wie die deutsche Ethik-Kommision (\textit{"`Autonomes und vernetztes
+    Fahren"'}~\cite{fahren}).
+
+    \newpage
+
+    \subsection{Kritik}
+    Dass sich Hersteller von autonomen Fahrzeugen derzeit noch aus der Diskussion über dieses
+    moralische Dilemma heraushalten, sehe ich sehr kritisch. Meiner Meinung nach stützt sich die
+    Industrie nur auf den statistischen Erfolg, den autonomes Fahren in Zukunft bringen kann.
+    Deutlich wird dies an einem im Artikel genanntes Argument der Autoindustrie:\\~\\
+    \textit{"`Ist der Straßenverkehr erst in Roboterhand, sollten ohnehin keine Unfälle mehr
+    passieren"'}\\~\\
+    Es wird möglich sein die Gesamtanzahl an Verkehrunfällen drastisch zu reduzieren, wobei das
+    Thema der Ethik allerdings zurückbleibt. Moralische Grundsätze von allen Seiten zu diskutieren
+    sollte ein fest integriertes System sein, das mit der Gesellschaft "`mitwächst"'.
+
+    \section{Verantwortung als Informatiker}
+    Da ich mich im Rahmen meiner Bachelorthesis ebenfalls mit Kernbereichen aus \textit{intelligente
+    Systeme} beschäftigen möchte, sehe ich mich in Zukunft unmittelbar in einer Position die Welt
+    "`mitformen"' zu können. Debei sollten intelligente Systeme dem Menschen unterstützend zur
+    Seite stehen, ohne selbst weitreichende Entscheidungen zu treffen. Da ich mich persönlich
+    vor der Bearbeitung dieses Referats nur sehr wenig mit der Ethik in der Informatik beschäftigt
+    habe, kann ich nachvollziehen, warum die Industrie beispielsweise zurzeit eher abgeneigt ist,
+    sich mit dieser zu beschäftigen.\\ Dennoch sollte für dieses Thema sensibilisiert werden, um so
+    einen sich entwickelnden Prozess zur Diskussion von ethischen Fragen zu etablieren.\\~\\
+    Da sich gesellschaftliche Normen in verschiedenen Gesellschaften stark unterscheiden können,
+    muss ich mir als Informatiker, im speziellen als Programmierer, darüber im Klaren sein, dass
+    ich evtl. "`ethische Funktionalitäten"' imlpementieren muss, welche ich nicht selbst vertrete.
+    Weiter möchte ich nicht in einer Welt leben, in der durch den Erwerb eines autonom fahrenden
+    Autos eine "`ethische Überlegenheit"' miterworben wird, bei der immer der Besitzer des Autos
+    geschützt wird, da er für dieses gezahlt hat.
+
+    \bibliographystyle{plain}
+    \bibliography{script}
+\end{document}

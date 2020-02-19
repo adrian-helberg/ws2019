@@ -1,4 +1,4 @@
 \beamer@sectionintoc {1}{Suchen}{3}{0}{1}
-\beamer@sectionintoc {2}{Lernen}{9}{0}{2}
-\beamer@sectionintoc {3}{Sequenzen}{10}{0}{3}
-\beamer@sectionintoc {4}{Quellen}{11}{0}{4}
+\beamer@sectionintoc {2}{Lernen}{10}{0}{2}
+\beamer@sectionintoc {3}{Sequenzen}{22}{0}{3}
+\beamer@sectionintoc {4}{Quellen}{28}{0}{4}

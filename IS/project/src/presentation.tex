@@ -45,6 +45,14 @@
     \tableofcontents
     }
 
+    \AtBeginSection[]
+    {
+        \frame {
+            \frametitle{Inhalt}
+            \tableofcontents[currentsection]
+        }
+    }
+
     \section{Suchen}
     \frame{
     \frametitle{Problem des Handlungsreisenden}
@@ -142,6 +150,14 @@
         \end{center}
     }
 
+    \AtBeginSection[]
+    {
+        \frame {
+            \frametitle{Inhalt}
+            \tableofcontents[currentsection]
+        }
+    }
+
     \section{Lernen}
     \frame{
         \frametitle{Selbstorganierende Karte}
@@ -161,11 +177,195 @@
         \end{itemize}
     }
 
+    \frame{
+        \frametitle{Prinzip}
+        \begin{figure}
+            \centering
+            \includegraphics[width=6cm]{../../resources/gehirn.png}
+            \caption{Topologische Abbildung des sensorischen Kortex}
+        \end{figure}
+    }
+
+    \frame{
+    \frametitle{Neuron}
+        \begin{figure}
+            \centering
+            \includegraphics[width=8cm]{../../resources/neuron.png}
+            \caption{Neuron einer \textit{SOM}}
+        \end{figure}
+        \begin{itemize}
+            \setlength\itemsep{0.6em}
+            \item Keine Aktivierungsfunktion
+            \item Kein Mappingfunktion (Oputput)
+        \end{itemize}
+    }
+
+    \frame{
+        \frametitle{Neuron}
+        \begin{figure}
+            \centering
+            \includegraphics[width=8cm]{../../resources/netz.png}
+            \caption{\textit{Kohonen}-Netz}
+        \end{figure}
+        \begin{itemize}
+            \item Eingabeneuronen sind über die Gewichtsvektoren mit den Ausgabeneuronen
+                  vollvermascht
+        \end{itemize}
+    }
+
+    \frame{
+        \frametitle{Lernen}
+        \begin{itemize}
+            \setlength\itemsep{1em}
+            \item Auswahl von Neuronen über die "`Eignung"' (Distanzfunktion)
+            \item Abstand zwischen Eingabevektoren und Gewichtvektoren wird bestimmt
+            \item Zufällige Auswahl bei gleicher Diszanz
+            \item \textit{Besonderes}: "`Sigerneuron"' \textbf{und} dessen Nachbarneuronen werden
+                angepasst
+        \end{itemize}
+    }
+
+    \frame{
+        \frametitle{Distanzfunktionen}
+        \begin{figure}
+            \centering
+            \includegraphics[width=10cm]{../../resources/distanzfunktionen.png}
+            \caption{Gaussche Glockenfunktion, Zylinderfunktion und "`Mexican-Hat"'}
+        \end{figure}
+    }
+
+    \frame{
+        \frametitle{Anpassen}
+        \begin{block}{Siegerneuron anpassen}
+            $W_c = W_c + \Delta W_c$ und $\Delta W_c = \eta * (x-W_c)$, mit
+            \begin{itemize}
+                \item $c$ als Siegerneuron
+                \item $W_c$ als Gewichtungsvektor
+                \item Eingabevektor $x$
+            \end{itemize}
+            Es gilt $0 < \eta < 1$.
+        \end{block}
+    }
+
+    \frame{
+        \frametitle{Anpassen}
+        \begin{block}{Nachbarneuronen anpassen}
+            $\Delta W_j = \eta * h_c_j * (x - W_j)$, mit
+            \begin{itemize}
+                \item $h_c_j$ als Nachbarschaftsfunktion (Wie stark lernt das Neuron $j$ mit bei Siegerneuron $c$)
+            \end{itemize}
+        \end{block}\\~\\
+        Als Funktion des Abstandes $z$ der Neuronen wird in der Praxis oft eine Zylinderfunktion
+        gewählt:\\~\\
+        $Zylinder: h_c_j(z) =
+        \begin{cases}
+            1 & falls \; z < d\\
+            0 & sonst.
+        \end{cases}$
+    }
+
+    \frame{
+        \frametitle{Anwendung - Fragestellung}
+        \begin{figure}
+            \centering
+            \includegraphics[width=10cm]{../../resources/zoo_table.png}
+            \caption{Sind ähnliche Tiere eines Zoos benachbart?}
+        \end{figure}
+    }
+
+    \frame{
+    \frametitle{Anwendung - Resultierende Map}
+    \begin{figure}
+    \centering
+    \includegraphics[width=6.8cm]{../../resources/zoo.png}
+    \caption{Reduktion mehrerer Dimensionen auf 2 (Karte)}
+    \end{figure}
+    }
+
+    \frame{
+    \frametitle{Anwendung - Anwendungsgebiete}
+    \begin{itemize}
+        \setlength\itemsep{1em}
+        \item Dimensionsreduktion
+        \item Optimierung
+        \item Data Mining- Cluster
+        \item Data Mining - Regeln
+        \item Überwachenung und Anomaliedetektion
+        \item Kontextkarten
+    \end{itemize}
+    }
+
+    \AtBeginSection[]
+    {
+        \frame {
+            \frametitle{Inhalt}
+            \tableofcontents[currentsection]
+        }
+    }
+
     \section{Sequenzen}
     \frame{
-    \frametitle{Sequenzen}
-    A Deep Learning Approach to on-Node Sensor
-    Data Analytics for Mobile or Wearable Devices
+    \frametitle{Thema}
+        \begin{definition}{Verarbeitung mobiler Sensordaten}
+            \begin{itemize}
+                \setlength\itemsep{1em}
+                \item Steigende Beliebtheit tragbarer Endgeräte
+                \item Kontinuierliche Erfassung physiologischer und funktionellen Daten
+                \item Anwendungen bei Apps für Sport, Gesundheit und Wohlbefinden
+                \item Verarbeitung und Analyse von \textbf{Big Data}
+                \item \textit{Deep Learning}- Ansatz
+            \end{itemize}
+        \end{definition}
+    }
+
+    \frame{
+    \frametitle{Thema}
+    \begin{definition}{\textit{Human Activity Recognition} (HAR)}
+        \begin{itemize}
+        \setlength\itemsep{1em}
+            \item Auswertung zeitlicher Reihendaten von Trägheitssensoren
+            \item Identifikation ausgeführter Aktionen: Klassifizierung von Bewegungsabläufen
+            \item Erkennung von Krankheitsausbrüchen (z.B. Parkinson) oder Wirksamkeit einer
+                Behandlung
+        \end{itemize}
+    \end{definition}
+    }
+
+    \frame{
+        \frametitle{Problem}
+        \begin{itemize}
+            \setlength\itemsep{1em}
+            \item \textit{Deep Learning} ist zur Zeit sehr erfolgreich bei Implamentationen, die
+                Hochleistungs-Rechencluster nutzen.
+            \item Einsatz auf mobilen Endgeräten stellt sich als schwierig heraus, da nur geringe
+                Ressourcen zur Verfügung stehen
+            \item Gesucht ist ein optimiertes Verfahren: Bestes Ergebnis bei geringsten Ressourcen
+        \end{itemize}
+    }
+
+    \frame{
+        \frametitle{Technik}
+        \begin{itemize}
+            \setlength\itemsep{1em}
+            \item Entwerfen der Klassifizierungsmethode für eine Zeitreihenanalyse
+            \item Auswahl von Merkmalen der Klassen
+            \item Oft durch den Einsatz von \textit{Deep Believe Networks} (DBN),
+                \textit{Restricted Boltzman Machines} (RBM) oder
+                \textit{Convolutional Neural Networks} (CNN) umgesetzt
+            \item Herausarbeiten von \textit{Features} aus Rohdaten
+        \end{itemize}
+    }
+
+    \frame{
+        \frametitle{"`Shallow Deep Learning"'- Methode}
+    }
+
+    \AtBeginSection[]
+    {
+        \frame {
+            \frametitle{Inhalt}
+            \tableofcontents[currentsection]
+        }
     }
 
     \section{Quellen}

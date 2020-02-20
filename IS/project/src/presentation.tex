@@ -38,6 +38,7 @@
 
 % Slides
 \begin{document}
+    \nocite{*} % List bibliography without even citing
     \frame{\titlepage}
 
     \frame{
@@ -217,9 +218,9 @@
         \frametitle{Lernen}
         \begin{itemize}
             \setlength\itemsep{1em}
-            \item Auswahl von Neuronen über die "`Eignung"' (Distanzfunktion)
+            \item Auswahl von Neuronen über die "`Eignung"' (euklidische Norm)
             \item Abstand zwischen Eingabevektoren und Gewichtvektoren wird bestimmt
-            \item Zufällige Auswahl bei gleicher Diszanz
+            \item Zufällige Auswahl bei gleicher Distanz
             \item \textit{Besonderes}: "`Sigerneuron"' \textbf{und} dessen Nachbarneuronen werden
                 angepasst
         \end{itemize}
@@ -265,6 +266,19 @@
     }
 
     \frame{
+        \frametitle{Lernmetapher}
+        \begin{definition}{"`Kupferschmiede"'}
+            Ein Kupferschmied hämmert auf einer Kupferplatte. Hierbei bestimmt
+            \begin{itemize}
+                \item der Vektor $x$, wohin
+                \item die Lernrate $\eta$, wie stark
+                \item der Lernradius $d$, mit welcher Hammergröße und
+                \item die Nachbarschaftsfunktion $h_c_j$, mit welcher Hammerform geschlagen wird
+            \end{itemize}
+        \end{definition}
+    }
+
+    \frame{
         \frametitle{Anwendung - Fragestellung}
         \begin{figure}
             \centering
@@ -276,9 +290,9 @@
     \frame{
     \frametitle{Anwendung - Resultierende Map}
     \begin{figure}
-    \centering
-    \includegraphics[width=6.8cm]{../../resources/zoo.png}
-    \caption{Reduktion mehrerer Dimensionen auf 2 (Karte)}
+        \centering
+        \includegraphics[width=6.8cm]{../../resources/zoo.png}
+        \caption{Reduktion mehrerer Dimensionen auf 2 (Karte)}
     \end{figure}
     }
 
@@ -288,9 +302,9 @@
         \setlength\itemsep{1em}
         \item Dimensionsreduktion
         \item Optimierung
-        \item Data Mining- Cluster
+        \item Data Mining - Cluster
         \item Data Mining - Regeln
-        \item Überwachenung und Anomaliedetektion
+        \item Überwachung und Anomaliedetektion
         \item Kontextkarten
     \end{itemize}
     }
@@ -310,7 +324,7 @@
             \begin{itemize}
                 \setlength\itemsep{1em}
                 \item Steigende Beliebtheit tragbarer Endgeräte
-                \item Kontinuierliche Erfassung physiologischer und funktionellen Daten
+                \item Kontinuierliche Erfassung physiologischer und funktioneller Daten
                 \item Anwendungen bei Apps für Sport, Gesundheit und Wohlbefinden
                 \item Verarbeitung und Analyse von \textbf{Big Data}
                 \item \textit{Deep Learning}- Ansatz
@@ -335,7 +349,7 @@
         \frametitle{Problem}
         \begin{itemize}
             \setlength\itemsep{1em}
-            \item \textit{Deep Learning} ist zur Zeit sehr erfolgreich bei Implamentationen, die
+            \item \textit{Deep Learning} ist zur Zeit sehr erfolgreich bei Implementationen, die
                 Hochleistungs-Rechencluster nutzen.
             \item Einsatz auf mobilen Endgeräten stellt sich als schwierig heraus, da nur geringe
                 Ressourcen zur Verfügung stehen
@@ -358,6 +372,120 @@
 
     \frame{
         \frametitle{"`Shallow Deep Learning"'- Methode}
+        \begin{definition}{Prinzip}
+            \textit{Shallow Deep Learning} setzt sich aus \textit{Deep Learning} und
+            \textit{Shallow Learning} zusammen und ist für \textit{HAR} unterteilt in:
+            \begin{itemize}
+                \setlength\itemsep{0.8em}
+                \item Input
+                \item Segmentextraktion
+                \item Spektorgramm
+                \item \textit{Deep Learning} Modul
+                \item \textit{Shallow Features}
+                \item Training
+                \item Evaluation
+            \end{itemize}
+        \end{definition}
+    }
+
+    \frame{
+        \frametitle{Ablauf}
+        \begin{figure}
+            \centering
+            \includegraphics[width=5cm]{../../resources/prozess.png}
+            \caption{Schamatischer Ablauf}
+        \end{figure}
+    }
+
+    \frame{
+        \frametitle{Prozess}
+        \begin{block}{Input}
+            Um eingehende Daten (Input) zu generieren wird auf verbaute Trägheitssensoren wie
+            \begin{itemize}
+                \item Beschleunigungsmesser und
+                \item Gyroskope
+            \end{itemize}
+            zugegriffen. Zugriffe auf anderen Sensoren, wie Elektrokardiographie (EKG)
+            oder Elektromyographie (EMG), sind ebenfalls möglich (Smartwatch)
+        \end{block}
+    }
+
+    \frame{
+        \frametitle{Prozess}
+        \begin{block}{Segmente extrahieren}
+            \begin{itemize}
+                \item Extraktion von $n$ Segmenten aus den Rohdaten ($n$ hängt von der Art der Anwendung ab)
+                \item Segmente bei \textit{HAR} werden auf 4 bis 10 Sekunden (\textit{sliding window}) gesetzt
+                \begin{itemize}
+                    \item Genauigkeit der Erkennung der ausgeführten Aktivität soll maximal sein
+                    \item Verschleierung der Grenzen zwischen verschiedenen Aktivitäten soll
+                        minimal sein
+                \end{itemize}
+            \end{itemize}
+        \end{block}
+    }
+
+    \frame{
+    \frametitle{Prozess}
+        \begin{block}{Spektogramm}
+            \begin{itemize}
+                \item Segmente werden als Spektogramm-Repräsentation an das \textit{Deep Learning} Modul weitergereich
+                \item Herausarbeiten von Intensitätsunterschieden in den Trägheitspunkten des Spektogramms, wie
+                \begin{itemize}
+                    \item Zeit- und Abtastrateninvarianz
+                    \item Amplituden
+                    \item Frequenz
+                \end{itemize}
+            \end{itemize}
+        \end{block}
+    }
+
+    \frame{
+        \frametitle{Prozess}
+        \begin{figure}
+            \centering
+            \includegraphics[width=10.8cm]{../../resources/features.png}
+            \caption{Spektorgramme aus verschiedenen Aktivitäten}
+        \end{figure}
+    }
+
+    \frame{
+        \frametitle{Prozess}
+        \begin{block}{Shallow Features}
+            Intensitätsunterschiede in den Spektogrammen ergeben "`flache"' Merkmale, die auf die Spektogramme
+            angewendet werden. Beispiele sind
+            \begin{itemize}
+                \item Quadratischer Mittelwert
+                \item Standartabweichung
+            \end{itemize}
+        \end{block}
+        \begin{block}{Klassifizierung}
+            Sobald sowohl flache ("`shallow learned"'), als auch tiefe ("`deep learned"') Eigenschaften berechnet wurden, können diese zu einem eindeutigen Vektor
+            zusammengeführt und klassifiziert werden
+        \end{block}
+    }
+
+    \frame{
+        \frametitle{Prozess}
+        \begin{block}{Training}
+            Flache und tiefe Features werden zusammen in einem einheitlichen, neuronalem Netz trainiert.
+            In jeder Schicht des neuronalen Netzes werden Fehler
+            (Errors) zwischen den Soll- und Istwerten in einer \textit{Backwards Propagation}-
+            Routine genutzt, um die Gewichtungen in den \textit{Hidden-Layers} anzupassen.
+        \end{block}
+        \begin{block}{Evaluation}
+            Das vorgeschlagene \textit{Shallow Deep Learning}-Verfahren könnte nun mit verschiedenen
+            Datensätzen analysiert und evaluiert werden
+        \end{block}
+    }
+
+    \frame{
+        \frametitle{Prozess}
+        \begin{figure}
+            \centering
+            \includegraphics[width=11cm]{../../resources/datasets.png}
+            \caption{Datensätze für eine Evaluierung}
+        \end{figure}
     }
 
     \AtBeginSection[]
@@ -369,10 +497,17 @@
     }
 
     \section{Quellen}
-    \frame{
+    \frame[allowframebreaks]{
     \frametitle{Quellen}
         \bibliographystyle{plain}
         \bibliography{script}
+    }
+
+    \frame{
+    \frametitle{Danksagung}
+    \begin{center}
+        Danke für die Aufmerksamkeit!
+    \end{center}
     }
 
 \end{document}
